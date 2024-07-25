@@ -29,6 +29,10 @@ Various resources to learn intricate details about elixir. The "Awesome Elixir"
 list will cover a lot, but will surface important ones from there to here as I
 come across them.
 
+### Books
+- [ ] [Elixir in Action](https://learning.oreilly.com/library/view/elixir-in-action/9781633438514/)
+
+### Online
 - [Awesome Elixir List](https://github.com/h4cc/awesome-elixir) - Great big list
 of elixir resources.
 - [Thinking in Elixir](https://podcast.thinkingelixir.com/)
