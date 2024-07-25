@@ -18,14 +18,17 @@ small projects here to learn elixir in-depth.
 
 
 ## Resources
-Various resources to learn intricate details about elixir.
-
-## Applications to Build
-These are applications to build for fun that exercise the above.
+Various resources to learn intricate details about elixir. The "Awesome Elixir"
+list will cover a lot, but will surface important ones from there to here as I
+come across them.
 
 - [Awesome Elixir List](https://github.com/h4cc/awesome-elixir) - Great big list
 of elixir resources.
 - [Thinking in Elixir](https://podcast.thinkingelixir.com/)
+
+## Applications to Build
+These are applications to build for fun that exercise the learning path.
+
 ### Generic SaaS Application
 Build all the nuts and bolts needed to build any kind of SaaS application.
 - Account creation
