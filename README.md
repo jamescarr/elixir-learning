@@ -3,15 +3,22 @@
 This is a repository for my own self-guided elixir learning. I'll be committing various
 small projects here to learn elixir in-depth.
 
+## Project Table of Contents
+
+- [Task Processor](task_processor/)
+
 ## Learning Guide
 
 - [ ] Unit Testing
 - [ ] Distributed Task Processing
 - [ ] Third Party APIs
+  - [ ] OpenAI
 - [ ] Web Frameworks
- - [ ] Phoenix
- - [ ] Auth Management
+  - [ ] Phoenix
+  - [ ] Auth Management
 - [ ] Working with ORMs
+  - [ ] Redis
+  - [ ] Postgresql
 - [ ] Logging infrastructure
 - [ ] Tracing / Observability
 - [ ] GraphQL
@@ -28,6 +35,9 @@ of elixir resources.
 
 ## Applications to Build
 These are applications to build for fun that exercise the learning path.
+
+### OpenAI Chatbot
+A chatbot that works with OpenAI.
 
 ### Generic SaaS Application
 Build all the nuts and bolts needed to build any kind of SaaS application.
