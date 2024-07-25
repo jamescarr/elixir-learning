@@ -36,6 +36,10 @@ Build all the nuts and bolts needed to build any kind of SaaS application.
 ### Job Board
 A Generic job board type application.
 
+### Blog
+General blogging platform. Extra credit if it can generate and publish the
+HTML to a CDN.
+
 ### API Integration SaaS
 Basically, build zapier given what you can reason about it from the outside.
 Let people connect APIs, run background tasks that regularlly poll and sync
