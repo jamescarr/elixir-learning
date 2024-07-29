@@ -2,20 +2,49 @@ defmodule PentoWeb.WrongLive do
   use PentoWeb, :live_view
 
   def mount(_params, _session, socket) do
-    {:ok, assign(socket, score: 0, message: "Make a guess:")}
+    {:ok, assign(
+      socket,
+      score: 0,
+      correct_number: :rand.uniform(10),
+      message: "Make a guess:",
+      game_won: false)
+    }
+  end
+
+  defp score_guess(guess, correct_number, score) do
+    if guess == correct_number do
+      {true, "Your decision: #{guess}. YOU ARE CORRECT!", score + 1}
+    else
+      {false, "Your decision: #{guess}. WRONG! Guess again!", score - 1}
+    end
+  end
+
+  def handle_params(_params, _url, socket) do
+    {:noreply, assign(socket,
+      score: 0,
+      correct_number: :rand.uniform(10),
+      message: "Make a guess:",
+      game_won: false
+    )}
   end
 
   def handle_event("guess", %{"number" => guess}, socket) do
-    message = "Your decision: #{guess}. WRONG! Guess again!"
-    score = socket.assigns.score - 1
+    guess = String.to_integer(guess)
+    correct_number = socket.assigns.correct_number
+    {game_won,  message, score} = score_guess(guess, correct_number, socket.assigns.score)
     {
       :noreply,
       assign(
         socket,
         message: message,
-        score: score
+        score: score,
+        game_won: game_won
       )
     }
+  end
+
+  def time() do
+    DateTime.utc_now |> to_string()
   end
 
   def render(assigns) do
@@ -26,13 +55,22 @@ defmodule PentoWeb.WrongLive do
       </h2>
       <br/>
       <h2>
-        <%= for n <- 1..10 do %>
-          <.link class="bg-blue-500 hover:bg-blue-700
-                      text-white font-bold py-2 px-4 border border-blue-700
-                      rounded m-1"
-                 phx-click="guess" phx-value-number={n} >
-            <%= n %>
+        <%= if @game_won do %>
+          <.link
+            patch={~p"/guess"}
+            class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+          >
+              Restart Game
           </.link>
+        <% else %>
+          <%= for n <- 1..10 do %>
+            <.link class="bg-blue-500 hover:bg-blue-700
+                        text-white font-bold py-2 px-4 border border-blue-700
+                        rounded m-1"
+                   phx-click="guess" phx-value-number={n} >
+              <%= n %>
+            </.link>
+          <% end %>
         <% end %>
       </h2>
     """
