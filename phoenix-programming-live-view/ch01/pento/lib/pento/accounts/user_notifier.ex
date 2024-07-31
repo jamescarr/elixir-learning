@@ -1,19 +1,24 @@
 defmodule Pento.Accounts.UserNotifier do
   import Swoosh.Email
-
   alias Pento.Mailer
+  require Logger
 
   # Delivers the email using the application mailer.
   defp deliver(recipient, subject, body) do
     email =
       new()
       |> to(recipient)
-      |> from({"Pento", "contact@example.com"})
+      |> from({"Pento", "mailgun@sandbox6b3be3f286c2409ab2d71b6fb9b1d52c.mailgun.org"})
       |> subject(subject)
       |> text_body(body)
 
-    with {:ok, _metadata} <- Mailer.deliver(email) do
-      {:ok, email}
+    case Mailer.deliver(email) do
+      {:ok, response} ->
+        Logger.info("Email sent successfully: #{inspect(response)}")
+        {:ok, email}
+      {:error, reason} ->
+        Logger.error("Failed to send email: #{inspect(reason)}")
+        {:error, email}
     end
   end
 

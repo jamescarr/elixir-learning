@@ -1,6 +1,5 @@
 defmodule PentoWeb.Router do
   use PentoWeb, :router
-
   import PentoWeb.UserAuth
 
   pipeline :browser do

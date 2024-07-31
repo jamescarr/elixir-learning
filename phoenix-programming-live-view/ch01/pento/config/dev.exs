@@ -1,6 +1,10 @@
 import Config
 
 # Configure your database
+
+
+config :pento, Pento.Mailer, adapter: Swoosh.Adapters.Mailgun
+
 config :pento, Pento.Repo,
   username: "postgres",
   password: "postgres",
@@ -82,4 +86,6 @@ config :phoenix_live_view,
   enable_expensive_runtime_checks: true
 
 # Disable swoosh api client as it is only required for production adapters.
-config :swoosh, :api_client, false
+config :pento, Pento.Mailer, adapter: Swoosh.Adapters.Mailgun
+# Configures Swoosh API Client
+config :swoosh, api_client: Swoosh.ApiClient.Finch, finch_name: Pento.Finch
