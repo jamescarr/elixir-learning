@@ -1,13 +1,17 @@
 defmodule PentoWeb.WrongLive do
+  alias Pento.Accounts
   use PentoWeb, :live_view
 
-  def mount(_params, _session, socket) do
+  def mount(_params, session, socket) do
     {:ok, assign(
       socket,
-      score: 0,
-      correct_number: :rand.uniform(10),
-      message: "Make a guess:",
-      game_won: false)
+      Map.merge(
+        fresh_game_attributes(),
+          %{
+            session_id: session["live_socket_id"],
+          }
+        )
+      )
     }
   end
 
@@ -19,12 +23,18 @@ defmodule PentoWeb.WrongLive do
     end
   end
 
-  def handle_params(_params, _url, socket) do
-    {:noreply, assign(socket,
+  defp fresh_game_attributes() do
+    %{
       score: 0,
       correct_number: :rand.uniform(10),
       message: "Make a guess:",
       game_won: false
+    }
+  end
+
+  def handle_params(_params, _url, socket) do
+    {:noreply, assign(socket,
+      fresh_game_attributes()
     )}
   end
 
@@ -73,6 +83,10 @@ defmodule PentoWeb.WrongLive do
           <% end %>
         <% end %>
       </h2>
+      <pre>
+        <%= @current_user.email %>
+        <%= @session_id %>
+      </pre>
     """
   end
 end
