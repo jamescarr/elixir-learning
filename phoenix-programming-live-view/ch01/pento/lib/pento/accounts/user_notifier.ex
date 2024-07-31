@@ -3,12 +3,14 @@ defmodule Pento.Accounts.UserNotifier do
   alias Pento.Mailer
   require Logger
 
+  @from_address "mailgun@sandbox6b3be3f286c2409ab2d71b6fb9b1d52c.mailgun.org"
+
   # Delivers the email using the application mailer.
   defp deliver(recipient, subject, body) do
     email =
       new()
       |> to(recipient)
-      |> from({"Pento", "mailgun@sandbox6b3be3f286c2409ab2d71b6fb9b1d52c.mailgun.org"})
+      |> from({"Pento", @from_address})
       |> subject(subject)
       |> text_body(body)
 
