@@ -1,6 +1,10 @@
 <.header>
   Product <%= @product.id %>
   <:subtitle>This is a product record from your database.</:subtitle>
+  <sub>
+    <%= @current_time %>
+  </sub>
+
   <:actions>
     <.link patch={~p"/products/#{@product}/show/edit"} phx-click={JS.push_focus()}>
       <.button>Edit product</.button>

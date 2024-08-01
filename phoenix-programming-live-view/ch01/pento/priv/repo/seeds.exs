@@ -12,27 +12,14 @@
 
 alias Pento.Catalog
 
-products = [
-  %{
-    name: "Chess",
-    description: "The classic strategy game.",
-    sku: 5_678_910,
-    unit_price: 10.00
-  },
-  %{
-    name: "Tic-Tac-Toe",
-    description: "The game of Xs and Os",
-    sku: 11_121_314,
-    unit_price: 3.00
-  },
-  %{
-    name: "Table Tennis",
-    description: "Bat the ball back and forth, don't miss!",
-    sku: 15_222_324,
-    unit_price: 12.00
-  }
-]
 
-Enum.each products, fn product ->
+
+Enum.each 1..1_000_000, fn n ->
+  product = %{
+    name: "Product ##{n}",
+    description: "Lorem Ipsum #{n}",
+    sku: Enum.random(1_000_000..5_000_000),
+    unit_price: :rand.uniform() * 100
+  }
   Catalog.create_product(product)
 end

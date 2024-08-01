@@ -1,5 +1,8 @@
 <.header>
   Listing Products
+  <:subtitle>
+    More products more problems
+  </:subtitle>
   <:actions>
     <.link patch={~p"/products/new"}>
       <.button>New Product</.button>
@@ -42,3 +45,7 @@
     patch={~p"/products"}
   />
 </.modal>
+
+<pre>
+  <%= inspect assigns, pretty: true %>
+</pre>

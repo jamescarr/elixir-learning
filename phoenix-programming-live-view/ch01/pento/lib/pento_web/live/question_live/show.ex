@@ -1,7 +1,7 @@
-defmodule PentoWeb.ProductLive.Show do
+defmodule PentoWeb.QuestionLive.Show do
   use PentoWeb, :live_view
 
-  alias Pento.Catalog
+  alias Pento.FAQ
 
   @impl true
   def mount(_params, _session, socket) do
@@ -13,12 +13,9 @@ defmodule PentoWeb.ProductLive.Show do
     {:noreply,
      socket
      |> assign(:page_title, page_title(socket.assigns.live_action))
-     |> assign(:product, Catalog.get_product!(id))
-     |> assign(:current_time, DateTime.utc_now)
-
-    }
+     |> assign(:question, FAQ.get_question!(id))}
   end
 
-  defp page_title(:show), do: "Show Product"
-  defp page_title(:edit), do: "Edit Product"
+  defp page_title(:show), do: "Show Question"
+  defp page_title(:edit), do: "Edit Question"
 end
