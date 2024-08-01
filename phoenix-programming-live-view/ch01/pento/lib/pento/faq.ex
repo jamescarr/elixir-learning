@@ -6,6 +6,7 @@ defmodule Pento.FAQ do
   import Ecto.Query, warn: false
   alias Pento.Repo
 
+  alias Pento.Questions.Answer
   alias Pento.FAQ.Question
 
   @doc """
@@ -51,6 +52,7 @@ defmodule Pento.FAQ do
   """
   def create_question(attrs \\ %{}) do
     q = %Question{votes: 0}
+
     q
     |> Question.changeset(attrs)
     |> Repo.insert()
@@ -90,8 +92,21 @@ defmodule Pento.FAQ do
     Repo.delete(question)
   end
 
+  def answers_for_question(_id) do
+    answers = Repo.all(Answer)
+    IO.puts(answers)
+    [
+      %Answer{
+        :id => 10,
+        :body => "Sounds good to me. They need to get better.",
+        :votes => 12
+      }
+    ]
+  end
+
   @doc """
   Returns an `%Ecto.Changeset{}` for tracking question changes.
+    </div>
 
   ## Examples
 

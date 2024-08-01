@@ -20,7 +20,7 @@ defmodule PentoWeb.QuestionLive.FormComponent do
         phx-submit="save"
       >
         <.input field={@form[:title]} type="text" label="Title" />
-        <.input field={@form[:body]} type="text" label="Body" />
+        <.input field={@form[:body]} type="textarea" label="Body" />
         <:actions>
           <.button phx-disable-with="Saving...">Save Question</.button>
         </:actions>

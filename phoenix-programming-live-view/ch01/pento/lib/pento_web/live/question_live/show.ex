@@ -4,8 +4,9 @@ defmodule PentoWeb.QuestionLive.Show do
   alias Pento.FAQ
 
   @impl true
-  def mount(_params, _session, socket) do
-    {:ok, socket}
+  def mount(params, _session, socket) do
+    {:ok,
+      stream(socket, :answers, FAQ.answers_for_question(params["id"]))}
   end
 
   @impl true
