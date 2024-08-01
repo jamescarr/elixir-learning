@@ -7,9 +7,9 @@ import Config
 # before starting your production server.
 config :pento, PentoWeb.Endpoint, cache_static_manifest: "priv/static/cache_manifest.json"
 
-config :pento, Pento.Mailer, adapter: Swoosh.Adapters.Mailgun
 # Configures Swoosh API Client
 config :swoosh, api_client: Swoosh.ApiClient.Finch, finch_name: Pento.Finch
+
 # Disable Swoosh Local Memory Storage
 config :swoosh, local: false
 

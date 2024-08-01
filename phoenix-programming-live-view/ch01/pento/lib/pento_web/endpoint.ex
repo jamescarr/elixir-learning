@@ -7,7 +7,7 @@ defmodule PentoWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_pento_key",
-    signing_salt: "8LUEfL5i",
+    signing_salt: "esKi3YhX",
     same_site: "Lax"
   ]
 

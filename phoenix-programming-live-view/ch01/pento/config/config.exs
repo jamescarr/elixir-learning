@@ -11,7 +11,6 @@ config :pento,
   ecto_repos: [Pento.Repo],
   generators: [timestamp_type: :utc_datetime]
 
-
 # Configures the endpoint
 config :pento, PentoWeb.Endpoint,
   url: [host: "localhost"],
@@ -21,7 +20,7 @@ config :pento, PentoWeb.Endpoint,
     layout: false
   ],
   pubsub_server: Pento.PubSub,
-  live_view: [signing_salt: "abq667qW"]
+  live_view: [signing_salt: "R8OFJEou"]
 
 # Configures the mailer
 #
