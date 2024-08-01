@@ -55,6 +55,20 @@ defmodule Pento.Catalog do
     |> Repo.insert()
   end
 
+
+  @doc """
+  Updates a product unit price by specified amount.
+
+  """
+  def markdown_product(product, amount) do
+    attrs = %{
+      unit_price: product.unit_price - amount
+    }
+    product
+    |> Product.update_price_changeset(attrs)
+    |> Repo.update()
+  end
+
   @doc """
   Updates a product.
 
