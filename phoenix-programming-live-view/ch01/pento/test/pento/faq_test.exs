@@ -21,12 +21,12 @@ defmodule Pento.FAQTest do
     end
 
     test "create_question/1 with valid data creates a question" do
-      valid_attrs = %{title: "some title", body: "some body", votes: 42}
+      valid_attrs = %{title: "some title", body: "some body", votes: 0}
 
       assert {:ok, %Question{} = question} = FAQ.create_question(valid_attrs)
       assert question.title == "some title"
       assert question.body == "some body"
-      assert question.votes == 42
+      assert question.votes == 0
     end
 
     test "create_question/1 with invalid data returns error changeset" do
@@ -35,12 +35,12 @@ defmodule Pento.FAQTest do
 
     test "update_question/2 with valid data updates the question" do
       question = question_fixture()
-      update_attrs = %{title: "some updated title", body: "some updated body", votes: 43}
+      update_attrs = %{title: "some updated title", body: "some updated body", votes: 0}
 
       assert {:ok, %Question{} = question} = FAQ.update_question(question, update_attrs)
       assert question.title == "some updated title"
       assert question.body == "some updated body"
-      assert question.votes == 43
+      assert question.votes == 0
     end
 
     test "update_question/2 with invalid data returns error changeset" do

@@ -13,7 +13,6 @@ defmodule Pento.FAQFixtures do
       |> Enum.into(%{
         body: "some body",
         title: "some title",
-        votes: 42
       })
       |> Pento.FAQ.create_question()
 

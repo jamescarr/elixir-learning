@@ -50,7 +50,8 @@ defmodule Pento.FAQ do
 
   """
   def create_question(attrs \\ %{}) do
-    %Question{}
+    q = %Question{votes: 0}
+    q
     |> Question.changeset(attrs)
     |> Repo.insert()
   end

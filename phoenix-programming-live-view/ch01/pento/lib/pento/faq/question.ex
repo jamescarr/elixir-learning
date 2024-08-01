@@ -14,6 +14,6 @@ defmodule Pento.FAQ.Question do
   def changeset(question, attrs) do
     question
     |> cast(attrs, [:title, :body, :votes])
-    |> validate_required([:title, :body, :votes])
+    |> validate_required([:title, :body])
   end
 end

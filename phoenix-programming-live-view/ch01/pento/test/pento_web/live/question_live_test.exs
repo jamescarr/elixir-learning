@@ -4,9 +4,9 @@ defmodule PentoWeb.QuestionLiveTest do
   import Phoenix.LiveViewTest
   import Pento.FAQFixtures
 
-  @create_attrs %{title: "some title", body: "some body", votes: 42}
-  @update_attrs %{title: "some updated title", body: "some updated body", votes: 43}
-  @invalid_attrs %{title: nil, body: nil, votes: nil}
+  @create_attrs %{title: "some title", body: "some body"}
+  @update_attrs %{title: "some updated title", body: "some updated body"}
+  @invalid_attrs %{title: nil, body: nil}
 
   defp create_question(_) do
     question = question_fixture()
