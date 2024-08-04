@@ -11,6 +11,38 @@ defmodule PentoWeb.PromoLive do
       |> clear_form()}
   end
 
+  def handle_event(
+    "save",
+    %{"recipient" => recipient_params},
+    %{assigns: %{recipient: recipient}} = socket) do
+
+    changeset = recipient
+      |> Promo.change_recipient(recipient_params)
+
+    case Promo.send_promo(recipient) do
+      {:ok, _} ->
+        {:noreply, socket |> assign(trigger_submit: true) |> assign_form(changeset)
+          |> put_flash(:info, "Promo sent to #{recipient.first_name}")}
+      {:error, error} ->
+        {:noreply, socket |> assign(check_errors: true) |> assign_form(changeset)}
+    end
+
+
+    {:noreply, assign_form(socket, %{})}
+  end
+
+  def handle_event(
+    "validate",
+    %{"recipient" => recipient_params},
+    %{assigns: %{recipient: recipient}} = socket) do
+    changeset =
+      recipient
+      |> Promo.change_recipient(recipient_params)
+      |> Map.put(:action, :validate)
+
+    {:noreply, assign_form(socket, changeset)}
+  end
+
   def assign_recipient(socket) do
     socket
     |> assign(:recipient, %Recipient{})
