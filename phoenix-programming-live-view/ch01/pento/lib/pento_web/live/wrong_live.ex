@@ -7,11 +7,11 @@ defmodule PentoWeb.WrongLive do
       socket,
       Map.merge(
         fresh_game_attributes(),
-          %{
-            session_id: session["live_socket_id"],
-          }
-        )
+        %{
+          session_id: session["live_socket_id"],
+        }
       )
+    )
     }
   end
 
@@ -59,34 +59,34 @@ defmodule PentoWeb.WrongLive do
 
   def render(assigns) do
     ~H"""
-      <h1 class="mb-4 text-4xl font-extrabold">Your score: <%= @score %></h1>
-      <h2>
-        <%= @message %>
-      </h2>
-      <br/>
-      <h2>
-        <%= if @game_won do %>
-          <.link
-            patch={~p"/guess"}
-            class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
-          >
-              Restart Game
-          </.link>
+    <h1 class="mb-4 text-4xl font-extrabold">Your score: <%= @score %></h1>
+    <h2>
+      <%= @message %>
+    </h2>
+    <br/>
+    <h2>
+      <%= if @game_won do %>
+        <.link
+        patch={~p"/guess"}
+        class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
+        >
+        Restart Game
+        </.link>
         <% else %>
-          <%= for n <- 1..10 do %>
-            <.link class="bg-blue-500 hover:bg-blue-700
-                        text-white font-bold py-2 px-4 border border-blue-700
-                        rounded m-1"
-                   phx-click="guess" phx-value-number={n} >
-              <%= n %>
-            </.link>
+        <%= for n <- 1..10 do %>
+          <.link class="bg-blue-500 hover:bg-blue-700
+          text-white font-bold py-2 px-4 border border-blue-700
+          rounded m-1"
+          phx-click="guess" phx-value-number={n} >
+          <%= n %>
+          </.link>
           <% end %>
         <% end %>
-      </h2>
-      <pre>
-        <%= @current_user.email %>
-        <%= @session_id %>
-      </pre>
+    </h2>
+    <pre>
+      <%= @current_user.email %>
+      <%= @session_id %>
+    </pre>
     """
   end
 end

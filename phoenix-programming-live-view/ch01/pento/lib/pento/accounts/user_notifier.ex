@@ -18,6 +18,18 @@ defmodule Pento.Accounts.UserNotifier do
   end
 
   @doc """
+  Deliver promo email to recipient
+  """
+  def deliver_promotion(recipient) do
+    deliver(recipient.email, "Inside Is Your Doorway to SAVINGS", """
+    Hi #{recipient.first_name}!
+
+    We would like to invite you to sign up for our site with this special
+    promo code providing you with 10% off your first purchase!
+    """)
+  end
+
+  @doc """
   Deliver instructions to confirm account.
   """
   def deliver_confirmation_instructions(user, url) do

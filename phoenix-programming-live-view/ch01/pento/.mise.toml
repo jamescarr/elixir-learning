@@ -3,3 +3,4 @@ TEST = "test"
 
 [tools]
 elixir = "1.17.2"
+erlang = "27.0.1"
