@@ -27,9 +27,6 @@ defmodule PentoWeb.PromoLive do
       {:error, _} ->
         {:noreply, socket |> assign(check_errors: true) |> assign_form(changeset)}
     end
-
-
-    {:noreply, assign_form(socket, %{})}
   end
 
   def handle_event(
