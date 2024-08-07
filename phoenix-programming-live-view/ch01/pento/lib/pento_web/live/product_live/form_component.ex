@@ -39,6 +39,7 @@ defmodule PentoWeb.ProductLive.FormComponent do
         <%= for err <- upload_errors(@uploads.image, image) do %>
           <.error><%= err %></.error>
         <% end %>
+        <.button phx-click="cancel-upload" phx-value-ref={image.ref}>Cancel Upload</.button>
       <% end%>
     </div>
     """
@@ -69,11 +70,16 @@ defmodule PentoWeb.ProductLive.FormComponent do
     save_product(socket, socket.assigns.action, product_params)
   end
 
+  def handle_event("cancel-upload", %{"ref" => ref}, socket) do
+    {:noreply, cancel_upload(socket, :image, ref)}
+  end
+
   defp upload_static_file(%{path: path}, _entry) do
     filename = Path.basename(path)
     dest = Path.join("priv/static/images", filename)
     File.cp!(path, dest)
 
+    Process.sleep(:timer.seconds(5))
     {:ok, ~p"/images/#{filename}"}
   end
 
