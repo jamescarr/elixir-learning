@@ -3,6 +3,7 @@ defmodule Pento.CatalogFixtures do
   This module defines test helpers for creating
   entities via the `Pento.Catalog` context.
   """
+  import Pento.SurveyFixtures
 
   @doc """
   Generate a unique product sku.
@@ -19,7 +20,8 @@ defmodule Pento.CatalogFixtures do
         description: "some description",
         name: "some name",
         sku: unique_product_sku(),
-        unit_price: 120.5
+        unit_price: 120.5,
+        ratings: []
       })
       |> Pento.Catalog.create_product()
 

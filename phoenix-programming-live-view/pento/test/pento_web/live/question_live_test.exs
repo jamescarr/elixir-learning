@@ -90,8 +90,9 @@ defmodule PentoWeb.QuestionLiveTest do
     test "updates question within modal", %{conn: conn, question: question} do
       {:ok, show_live, _html} = live(conn, ~p"/faq/#{question}")
 
-      assert show_live |> element("a", "Edit") |> render_click() =~
-               "Edit Question"
+      click = show_live |> element("a", "Edit question") |> render_click()
+
+      assert click =~ "Edit question"
 
       assert_patch(show_live, ~p"/faq/#{question}/show/edit")
 
