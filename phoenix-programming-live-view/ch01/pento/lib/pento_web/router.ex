@@ -21,6 +21,7 @@ defmodule PentoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+    get "/product-images/:name", ProductImageController, :image
   end
 
   # Other scopes may use custom stacks.

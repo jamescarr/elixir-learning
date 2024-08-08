@@ -23,6 +23,8 @@ end
 config :ex_aws,
   json_codec: Jason
 
+config :ex_aws, :hackney_opts,
+  follow_redirect: true
 
 config :ex_aws,
   scheme: "https://",

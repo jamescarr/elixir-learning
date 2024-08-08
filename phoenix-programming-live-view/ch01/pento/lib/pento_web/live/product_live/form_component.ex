@@ -75,19 +75,14 @@ defmodule PentoWeb.ProductLive.FormComponent do
     {:noreply, cancel_upload(socket, :image, ref)}
   end
 
-  defp upload_static_file(%{path: path}, _entry) do
-    filename = Path.basename(path)
-    dest = Path.join("images", filename)
-
-    IO.puts("path: #{path}")
-    s3_bucket = Application.get_env(:pento, PentoWeb.ProductLive)[:s3_uploads_bucket]
-
-    status = path |> File.stream!([], 2048) |> S3.upload(s3_bucket, dest) |> ExAws.request()
-
-    IO.puts(status)
-
-    # Process.sleep(:timer.seconds(5)) # slow it down
-    {:ok, ~p"/images/#{filename}"}
+  defp upload_static_file(%{path: path}, entry) do
+    filename = entry.client_name
+    case  PentoWeb.S3Helper.upload_image(path, filename) do
+      {:ok, _} ->
+        {:ok, ~p"/product-images/#{filename}"}
+      {:error, response} ->
+        {:error, response}
+    end
   end
 
   def params_with_image(socket, params) do
