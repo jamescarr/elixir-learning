@@ -1,5 +1,7 @@
 [env]
 TEST = "test"
+S3_UPLOADS_BUCKET = "tutorial-pento-files"
+AWS_REGION = "us-east-2"
 
 [tools]
 elixir = "1.17.2"

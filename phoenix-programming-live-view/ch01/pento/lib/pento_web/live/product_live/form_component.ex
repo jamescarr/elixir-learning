@@ -1,7 +1,8 @@
 defmodule PentoWeb.ProductLive.FormComponent do
   use PentoWeb, :live_component
-
   alias Pento.Catalog
+  alias ExAws.S3
+
 
   @impl true
   def render(assigns) do
@@ -76,10 +77,16 @@ defmodule PentoWeb.ProductLive.FormComponent do
 
   defp upload_static_file(%{path: path}, _entry) do
     filename = Path.basename(path)
-    dest = Path.join("priv/static/images", filename)
-    File.cp!(path, dest)
+    dest = Path.join("images", filename)
 
-    Process.sleep(:timer.seconds(5))
+    IO.puts("path: #{path}")
+    s3_bucket = Application.get_env(:pento, PentoWeb.ProductLive)[:s3_uploads_bucket]
+
+    status = path |> File.stream!([], 2048) |> S3.upload(s3_bucket, dest) |> ExAws.request()
+
+    IO.puts(status)
+
+    # Process.sleep(:timer.seconds(5)) # slow it down
     {:ok, ~p"/images/#{filename}"}
   end
 

@@ -20,6 +20,21 @@ if System.get_env("PHX_SERVER") do
   config :pento, PentoWeb.Endpoint, server: true
 end
 
+config :ex_aws,
+  json_codec: Jason
+
+
+config :ex_aws,
+  scheme: "https://",
+  host: "s3.amazonaws.com",
+  access_key_id: [{:system, "AWS_ACCESS_KEY_ID"}],
+  secret_access_key: [{:system, "AWS_SECRET_ACCESS_KEY"}],
+  region: [{:system, "AWS_REGION"}],
+  security_token: [{:system, "AWS_SESSION_TOKEN"}]
+
+config :pento, PentoWeb.ProductLive,
+  s3_uploads_bucket: System.get_env("S3_UPLOADS_BUCKET")
+
 if config_env() == :prod do
   database_url =
     System.get_env("DATABASE_URL") ||
