@@ -21,7 +21,6 @@ defmodule PentoWeb.S3Helper do
   end
 
   defp get_image_from_s3(bucket, name) do
-    IO.puts("#{bucket}/#{name}")
     case S3.get_object(bucket, name) |> ExAws.request() do
       {:ok, %{body: image_binary, headers: headers}} ->
         content_type = headers
@@ -30,6 +29,7 @@ defmodule PentoWeb.S3Helper do
         {:ok, image_binary, content_type}
 
       {:error, reason} ->
+        # We really don't do anything special here. Maybe a default image
         {:error, reason}
     end
   end
