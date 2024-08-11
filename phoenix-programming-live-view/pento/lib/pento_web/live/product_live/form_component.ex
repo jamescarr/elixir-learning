@@ -1,7 +1,6 @@
 defmodule PentoWeb.ProductLive.FormComponent do
   use PentoWeb, :live_component
   alias Pento.Catalog
-  alias ExAws.S3
 
 
   @impl true
