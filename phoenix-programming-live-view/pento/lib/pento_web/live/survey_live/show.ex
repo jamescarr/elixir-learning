@@ -8,7 +8,7 @@ defmodule PentoWeb.SurveyLive.Show do
     ~H"""
     <div>
       <h2 class="font-medium text-2xl">
-        Demographics <%= raw "&x2713;" %>
+        Demographics <%= raw "&#x2713;" %>
       </h2>
       <ul>
         <li>Gender: <%= @demographic.gender %></li>
