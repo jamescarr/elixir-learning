@@ -276,7 +276,7 @@ defmodule PentoWeb.CoreComponents do
   attr :type, :string,
     default: "text",
     values: ~w(checkbox color date datetime-local email file month number password
-               range search select tel text textarea time url week)
+               range search select tel text textarea time url week rating)
 
   attr :field, Phoenix.HTML.FormField,
     doc: "a form field struct retrieved from the form, for example: @form[:email]"
@@ -300,6 +300,21 @@ defmodule PentoWeb.CoreComponents do
     |> assign_new(:name, fn -> if assigns.multiple, do: field.name <> "[]", else: field.name end)
     |> assign_new(:value, fn -> field.value end)
     |> input()
+  end
+
+  def input(%{type: "rating"} = assigns) do
+    ~H"""
+    <select
+      id={@id}
+      name={@name}
+      class="border focus:ring-zinc-500"
+      multiple={@multiple}
+      {@rest}
+      >
+      <option :if={@prompt} value=""><%= @prompt %></option>
+      <%= Phoenix.HTML.Form.options_for_select(@options, @value) %>
+    </select>
+    """
   end
 
   def input(%{type: "checkbox"} = assigns) do

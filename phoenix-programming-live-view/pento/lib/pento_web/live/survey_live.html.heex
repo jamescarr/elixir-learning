@@ -5,6 +5,10 @@
 
   <%= if @demographic do %>
     <SurveyLive.Show.details demographic={@demographic}/>
+    <hr />
+    <br />
+    <RatingLive.Index.product_list products={@products}
+      current_user={@current_user} />
   <% else %>
     <.live_component module={SurveyLive.Form}
       id="demographic-form"
