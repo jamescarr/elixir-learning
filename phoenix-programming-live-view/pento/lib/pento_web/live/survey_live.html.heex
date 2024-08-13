@@ -6,7 +6,8 @@
   <%= if @demographic do %>
     <SurveyLive.Show.details demographic={@demographic}/>
   <% else %>
-    <h2>Demographics Coming Soon!</h2>
+    <.live_component module={SurveyLive.Form}
+      id="demographic-form"
+      current_user={@current_user}/>
   <% end %>
-
 </section>

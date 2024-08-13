@@ -2,6 +2,7 @@ defmodule PentoWeb.SurveyLive.Component do
   use Phoenix.Component
 
   attr :content, :string, required: true
+
   slot :inner_block, required: true
 
   def hero(assigns) do
@@ -21,4 +22,14 @@ defmodule PentoWeb.SurveyLive.Component do
     -->
     """
   end
+
+  def title(assigns) do
+    ~H"""
+      <h1>
+        <%= render_slot(@inner_block) %>
+      </h1>
+      <h2><%= @content %></h2>
+    """
+  end
+
 end
