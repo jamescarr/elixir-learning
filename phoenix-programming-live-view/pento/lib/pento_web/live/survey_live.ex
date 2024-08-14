@@ -1,7 +1,10 @@
 defmodule PentoWeb.SurveyLive do
-  alias Pento.Survey
   use PentoWeb, :live_view
+  alias PentoWeb.Collapsable
+  alias Pento.Survey
+
   alias PentoWeb.SurveyLive.Component
+  alias Collapsable
   alias PentoWeb.SurveyLive
   alias PentoWeb.RatingLive
 
@@ -45,9 +48,7 @@ defmodule PentoWeb.SurveyLive do
           :products,
           List.replace_at(products, product_index, updated_product)
     )
-
   end
-
 
   def handle_demographic_created(socket, demographic) do
     IO.puts("handle demo created")

@@ -1,6 +1,5 @@
 defmodule PentoWeb.SurveyLive.Show do
   use Phoenix.Component
-  import Phoenix.HTML
   alias PentoWeb.CoreComponents
   alias Pento.Survey.Demographic
   alias Pento.EnumHelper
@@ -9,9 +8,6 @@ defmodule PentoWeb.SurveyLive.Show do
   def details(assigns) do
     ~H"""
     <div>
-      <h2 class="font-medium text-2xl">
-        Demographics <%= raw "&#x2713;" %>
-      </h2>
       <CoreComponents.table
         rows={[@demographic]}
         id={to_string @demographic.id} >
