@@ -2,6 +2,7 @@ defmodule PentoWeb.RatingLive.Form do
   use PentoWeb, :live_component
   alias Pento.Survey
   alias Pento.Survey.Rating
+  alias Pento.Survey.Demographic
   import PentoWeb.CoreComponents
 
   def update(assigns, socket) do

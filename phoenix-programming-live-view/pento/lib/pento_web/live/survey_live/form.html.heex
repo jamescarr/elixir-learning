@@ -19,8 +19,16 @@
       options={Enum.reverse(1920..2024)}
     />
 
+    <.input
+      field={@form[:education]}
+      type="select"
+      label="Education"
+      options={@education_options}
+    />
+
     <:actions>
       <.button phx-disable-with="Saving...">Save</.button>
     </:actions>
   </.simple_form>
 </div>
+

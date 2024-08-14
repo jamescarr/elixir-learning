@@ -9,8 +9,17 @@ defmodule PentoWeb.SurveyLive.Form do
       socket
       |> assign(assigns)
       |> assign_demographic()
+      |> assign_education_options()
       |> clear_form()
     }
+  end
+
+  defp assign_education_options(socket) do
+    opts = Enum.concat(
+      [{"select education...", ""}],
+      Demographic.education_options
+    )
+    assign(socket, :education_options, opts)
   end
 
   defp assign_demographic(
@@ -45,9 +54,7 @@ defmodule PentoWeb.SurveyLive.Form do
   end
 
   def handle_event("save", %{"demographic" => demo}, socket) do
-    IO.puts("Handling 'save' event and demographic record!")
     params = params_with_user_id(demo, socket)
-    IO.inspect(params)
     {:noreply, save_demographic(socket, params)}
   end
 
