@@ -196,6 +196,19 @@ defmodule PentoWeb.UserAuth do
   end
 
   @doc """
+  Used for routes that require the user to be authenticated
+  and an admin user.
+
+  If you want to enforce the user email is confirmed before
+  they use the application at all, here would be a good place.
+  """
+  def require_authenticated_admin_user(conn, opts) do
+    # for now, we fake it.
+    require_authenticated_user(conn, opts)
+
+  end
+
+  @doc """
   Used for routes that require the user to be authenticated.
 
   If you want to enforce the user email is confirmed before

@@ -62,6 +62,15 @@ defmodule PentoWeb.Router do
     post "/users/log_in", UserSessionController, :create
   end
 
+  scope "/admin", PentoWeb.Admin do
+    pipe_through [:browser, :require_authenticated_user]
+
+    live_session :require_authenticated_admin_user,
+      on_mount: [{PentoWeb.UserAuth, :ensure_authenticated}] do
+      live "/dashboard", DashboardLive
+    end
+  end
+
   scope "/", PentoWeb do
     pipe_through [:browser, :require_authenticated_user]
 
@@ -89,6 +98,7 @@ defmodule PentoWeb.Router do
 
       live "/faq/:id", QuestionLive.Show, :show
       live "/faq/:id/show/edit", QuestionLive.Show, :edit
+
     end
   end
 
