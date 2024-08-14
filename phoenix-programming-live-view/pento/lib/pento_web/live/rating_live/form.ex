@@ -13,7 +13,7 @@ defmodule PentoWeb.RatingLive.Form do
     }
   end
 
-  def assign_form(socket, changeset) do
+  def assign_form(socket, %Ecto.Changeset{} = changeset) do
     assign(socket, :form, to_form(changeset))
   end
 
@@ -28,6 +28,15 @@ defmodule PentoWeb.RatingLive.Form do
       %Rating{
         user_id: current_user.id,
         product_id: product.id})
+  end
+
+  def handle_event("validate", %{"rating" => rating_params}, socket) do
+    changeset =
+      socket.assigns.rating
+      |> Survey.change_rating(rating_params)
+      |> Map.put(:action, :validate)
+
+    {:noreply, assign_form(socket, changeset)}
   end
 
   def handle_event("save", %{"rating" => rating_params}, socket) do
