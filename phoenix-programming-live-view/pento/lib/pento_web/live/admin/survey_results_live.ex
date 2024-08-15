@@ -1,5 +1,7 @@
 defmodule PentoWeb.Admin.SurveyResultsLive do
   use PentoWeb, :live_component
+  use PentoWeb, :chart_live
+
   alias Pento.Catalog
   alias Contex.Plot
 
@@ -54,11 +56,6 @@ defmodule PentoWeb.Admin.SurveyResultsLive do
       |> assign(:chart, make_bar_chart(dataset))
   end
 
-  defp make_bar_chart(dataset) do
-    Contex.BarChart.new(dataset)
-  end
-
-
   def assign_dataset(
     %{ assigns: %{
         products_with_average_ratings: products_with_average_ratings }
@@ -68,12 +65,6 @@ defmodule PentoWeb.Admin.SurveyResultsLive do
         :dataset,
         make_bar_chart_dataset(products_with_average_ratings)
     )
-  end
-
-  defp make_bar_chart_dataset(data) do
-    IO.puts("make bar chart")
-    IO.inspect(data)
-    Contex.Dataset.new(data)
   end
 
   defp get_products_with_average_ratings(filter) do
