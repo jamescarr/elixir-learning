@@ -10,7 +10,10 @@ defmodule PentoWeb.Admin.SurveyActivityLive do
   end
 
   def assign_survey_activity(socket) do
-    assign(socket, :survey_activity, Presence.list_survey_takers())
+    IO.puts("Asssigning")
+    takers = Presence.list_survey_takers()
+    IO.inspect(takers)
+    assign(socket, :survey_activity, takers)
   end
 
 end

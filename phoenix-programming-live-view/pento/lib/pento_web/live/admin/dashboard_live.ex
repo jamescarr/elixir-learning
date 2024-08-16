@@ -1,4 +1,5 @@
 defmodule PentoWeb.Admin.DashboardLive do
+  alias PentoWeb.Admin.SurveyActivityLive
   alias PentoWeb.Admin.UserActivityLive
   alias PentoWeb.Admin.SurveyResultsLive
   use PentoWeb, :live_view
@@ -22,21 +23,39 @@ defmodule PentoWeb.Admin.DashboardLive do
     }
   end
 
-  def handle_info(%{event: "presence_diff"} = e, socket) do
-    IO.inspect(e)
+  def handle_info(%{
+      event: "presence_diff",
+      topic: "user-activity"
+    }, socket) do
+    IO.puts("updated")
     send_update(
       UserActivityLive,
       id: socket.assigns.user_activity_component_id)
+    {:noreply, socket}
+  end
+
+  def handle_info(%{
+      event: "presence_diff",
+      topic: "survey-activity"
+    }, socket) do
+    send_update(
+      SurveyActivityLive,
+      id: socket.assigns.survey_activity_component_id)
 
     {:noreply, socket}
   end
 
+
   def handle_info(%{event: "rating_created"}, socket) do
-    IO.puts("rating created recvd")
     send_update(
       SurveyResultsLive,
       id: socket.assigns.survey_results_component_id
     )
     {:noreply, socket}
   end
+
+  def handle_info(_event, socket) do
+    {:noreply, socket}
+  end
+
 end
