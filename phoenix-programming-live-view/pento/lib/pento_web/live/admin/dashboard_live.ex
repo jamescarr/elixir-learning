@@ -11,8 +11,9 @@ defmodule PentoWeb.Admin.DashboardLive do
 
     {:ok,
       socket
-      |> assign(:survey_results_component_id, "survey_results"
-    )}
+      |> assign(:survey_results_component_id, "survey_results")
+      |> assign(:user_activity_component_id, "user-activity")
+    }
   end
 
   def handle_info(%{event: "rating_created"}, socket) do

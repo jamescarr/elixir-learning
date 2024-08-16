@@ -22,6 +22,8 @@ config :pento, PentoWeb.Endpoint,
   pubsub_server: Pento.PubSub,
   live_view: [signing_salt: "R8OFJEou"]
 
+config :pento, PnetoWeb.Presence,
+  pubsub_server: Pento.PubSub
 # Configures the mailer
 #
 # By default it uses the "Local" adapter which stores the emails
