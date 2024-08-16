@@ -2,6 +2,7 @@ defmodule PentoWeb.SurveyLive do
   use PentoWeb, :live_view
   alias PentoWeb.Collapsable
   alias Pento.Survey
+  alias PentoWeb.Presence
 
   alias PentoWeb.SurveyLive.Component
   alias Collapsable
@@ -13,8 +14,21 @@ defmodule PentoWeb.SurveyLive do
     {:ok, socket
       |> assign_demographic
       |> assign_products
+      |> maybe_track_survey
     }
   end
+
+  def maybe_track_survey(%{assigns: %{
+    live_action:  :index,
+    current_user: current_user
+   }} = socket) do
+    if connected?(socket) do
+      Presence.track_survey(self(), current_user.email)
+    end
+    socket
+  end
+
+  def maybe_track_survey(socket), do: socket
 
   def assign_products(%{assigns: %{current_user: current_user}}=socket) do
     assign(socket, :products, list_products(current_user))
