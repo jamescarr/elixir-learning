@@ -4,6 +4,9 @@ defmodule PentoWeb.Admin.DashboardLive do
   alias PentoWeb.Admin.SurveyResultsLive
   use PentoWeb, :live_view
   alias PentoWeb.Endpoint
+  alias PentoWeb.Presence
+  require Logger
+
   @survey_results_topic "survey_results"
   @user_activity_topic "user_activity"
   @survey_activity_topic "survey_activity"
@@ -25,9 +28,8 @@ defmodule PentoWeb.Admin.DashboardLive do
 
   def handle_info(%{
       event: "presence_diff",
-      topic: "user-activity"
+      topic: @user_activity_topic
     }, socket) do
-    IO.puts("updated")
     send_update(
       UserActivityLive,
       id: socket.assigns.user_activity_component_id)
@@ -36,11 +38,13 @@ defmodule PentoWeb.Admin.DashboardLive do
 
   def handle_info(%{
       event: "presence_diff",
-      topic: "survey-activity"
+      topic: @survey_activity_topic
     }, socket) do
+    takers = Presence.list_survey_takers()
     send_update(
       SurveyActivityLive,
-      id: socket.assigns.survey_activity_component_id)
+      id: socket.assigns.survey_activity_component_id,
+      survey_activity: takers)
 
     {:noreply, socket}
   end
@@ -55,6 +59,7 @@ defmodule PentoWeb.Admin.DashboardLive do
   end
 
   def handle_info(_event, socket) do
+    Logger.warning("Unmatched event! #{inspect(_event)}")
     {:noreply, socket}
   end
 

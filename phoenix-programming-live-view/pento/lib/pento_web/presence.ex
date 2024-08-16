@@ -9,7 +9,7 @@ defmodule PentoWeb.Presence do
   @survey_activity_topic "survey_activity"
 
   def track_survey(pid, user_email) do
-    IO.puts("tracking survey for #{inspect(pid)} and #{user_email}")
+    Logger.info("tracking survey for #{inspect(pid)} and #{user_email}")
     Presence.track(
       pid,
       @survey_activity_topic,

@@ -1,19 +1,23 @@
 defmodule PentoWeb.Admin.SurveyActivityLive do
   use PentoWeb, :live_component
-  alias PentoWeb.Presence
+  require Logger
 
-  def update(_assigns, socket) do
+  def update(%{survey_activity: survey_activity}, socket) do
+    Logger.info("Updating activity")
+    IO.inspect(survey_activity)
     {:ok,
       socket
-      |> assign_survey_activity()
+      |> assign(:survey_activity, survey_activity)
     }
   end
 
-  def assign_survey_activity(socket) do
-    IO.puts("Asssigning")
-    takers = Presence.list_survey_takers()
-    IO.inspect(takers)
-    assign(socket, :survey_activity, takers)
+  def update(_params, socket) do
+    Logger.info("non-match update, #{inspect(_params)}")
+    {:ok,
+      socket
+      |> assign(:survey_activity, [[]])
+    }
   end
+
 
 end
