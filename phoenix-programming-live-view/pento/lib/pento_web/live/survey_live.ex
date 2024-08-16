@@ -5,8 +5,9 @@ defmodule PentoWeb.SurveyLive do
 
   alias PentoWeb.SurveyLive.Component
   alias Collapsable
-  alias PentoWeb.SurveyLive
-  alias PentoWeb.RatingLive
+  alias PentoWeb.{RatingLive, SurveyLive, Endpoint}
+
+  @survey_results_topic "survey_results"
 
   def mount(_params, _session, socket) do
     {:ok, socket
@@ -51,6 +52,7 @@ defmodule PentoWeb.SurveyLive do
   end
 
   def handle_demographic_created(socket, demographic) do
+    Endpoint.broadcast(@survey_results_topic, "rating_created", %{}) # I'm new!
     IO.puts("handle demo created")
     socket
     |> put_flash(:info, "Demographic successfully created!")
