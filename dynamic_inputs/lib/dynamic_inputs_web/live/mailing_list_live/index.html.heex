@@ -1,0 +1,41 @@
+<.header>
+  Listing Mailing lists
+  <:actions>
+    <.link patch={~p"/mailing_lists/new"}>
+      <.button>New Mailing list</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table
+  id="mailing_lists"
+  rows={@streams.mailing_lists}
+  row_click={fn {_id, mailing_list} -> JS.navigate(~p"/mailing_lists/#{mailing_list}") end}
+>
+  <:col :let={{_id, mailing_list}} label="Title"><%= mailing_list.title %></:col>
+  <:action :let={{_id, mailing_list}}>
+    <div class="sr-only">
+      <.link navigate={~p"/mailing_lists/#{mailing_list}"}>Show</.link>
+    </div>
+    <.link patch={~p"/mailing_lists/#{mailing_list}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={{id, mailing_list}}>
+    <.link
+      phx-click={JS.push("delete", value: %{id: mailing_list.id}) |> hide("##{id}")}
+      data-confirm="Are you sure?"
+    >
+      Delete
+    </.link>
+  </:action>
+</.table>
+
+<.modal :if={@live_action in [:new, :edit]} id="mailing_list-modal" show on_cancel={JS.patch(~p"/mailing_lists")}>
+  <.live_component
+    module={DynamicInputsWeb.MailingListLive.FormComponent}
+    id={@mailing_list.id || :new}
+    title={@page_title}
+    action={@live_action}
+    mailing_list={@mailing_list}
+    patch={~p"/mailing_lists"}
+  />
+</.modal>

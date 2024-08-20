@@ -1,0 +1,26 @@
+<.header>
+  Mailing list <%= @mailing_list.id %>
+  <:subtitle>This is a mailing_list record from your database.</:subtitle>
+  <:actions>
+    <.link patch={~p"/mailing_lists/#{@mailing_list}/show/edit"} phx-click={JS.push_focus()}>
+      <.button>Edit mailing_list</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.list>
+  <:item title="Title"><%= @mailing_list.title %></:item>
+</.list>
+
+<.back navigate={~p"/mailing_lists"}>Back to mailing_lists</.back>
+
+<.modal :if={@live_action == :edit} id="mailing_list-modal" show on_cancel={JS.patch(~p"/mailing_lists/#{@mailing_list}")}>
+  <.live_component
+    module={DynamicInputsWeb.MailingListLive.FormComponent}
+    id={@mailing_list.id}
+    title={@page_title}
+    action={@live_action}
+    mailing_list={@mailing_list}
+    patch={~p"/mailing_lists/#{@mailing_list}"}
+  />
+</.modal>
