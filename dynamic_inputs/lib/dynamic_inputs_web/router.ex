@@ -18,6 +18,16 @@ defmodule DynamicInputsWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    live_session :demo do
+      live "/webhooks", WebhookLive.Index, :index
+      live "/webhooks/new", WebhookLive.Index, :new
+      live "/webhooks/:id/edit", WebhookLive.Index, :edit
+
+      live "/webhooks/:id/", WebhookLive.Show, :show
+      live "/webhooks/:id/show/edit", WebhookLive.Show, :edit
+    end
+
   end
 
   # Other scopes may use custom stacks.
