@@ -20,6 +20,26 @@ defmodule DynamicInputsWeb.MailingListLive.FormComponent do
         phx-submit="save"
       >
         <.input field={@form[:title]} type="text" label="Title" />
+
+        <.inputs_for :let={ef} field={@form[:emails]}>
+          <input type="hidden" name="mailing_list[emails_sort][]" value={ef.index} />
+          <.input type="text" field={ef[:email]} placeholder="email" />
+          <.input type="text" field={ef[:name]} placeholder="name" />
+          <button
+            type="button"
+            name="mailing_list[emails_drop][]"
+            value={ef.index}
+            phx-click={JS.dispatch("change")}
+          >
+            <.icon name="hero-x-mark" class="w-6 h-6 relative top-2" />
+          </button>
+        </.inputs_for>
+
+        <input type="hidden" name="mailing_list[emails_drop][]" />
+
+        <button type="button" name="mailing_list[emails_sort][]" value="new" phx-click={JS.dispatch("change")}>
+          add more
+        </button>
         <:actions>
           <.button phx-disable-with="Saving...">Save Mailing list</.button>
         </:actions>
