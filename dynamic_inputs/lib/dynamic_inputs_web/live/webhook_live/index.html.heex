@@ -1,0 +1,45 @@
+<.header>
+  Listing Webhooks
+  <:actions>
+    <.link patch={~p"/webhooks/new"}>
+      <.button>New Webhook</.button>
+    </.link>
+  </:actions>
+</.header>
+
+<.table
+  id="webhooks"
+  rows={@streams.webhooks}
+  row_click={fn {_id, webhook} -> JS.navigate(~p"/webhooks/#{webhook}") end}
+>
+  <:col :let={{_id, webhook}} label="Name"><%= webhook.name %></:col>
+  <:col :let={{_id, webhook}} label="Url"><%= webhook.url %></:col>
+  <:col :let={{_id, webhook}} label="Content type"><%= webhook.content_type %></:col>
+  <:col :let={{_id, webhook}} label="Headers"><%= webhook.headers %></:col>
+  <:col :let={{_id, webhook}} label="Payload"><%= webhook.payload %></:col>
+  <:action :let={{_id, webhook}}>
+    <div class="sr-only">
+      <.link navigate={~p"/webhooks/#{webhook}"}>Show</.link>
+    </div>
+    <.link patch={~p"/webhooks/#{webhook}/edit"}>Edit</.link>
+  </:action>
+  <:action :let={{id, webhook}}>
+    <.link
+      phx-click={JS.push("delete", value: %{id: webhook.id}) |> hide("##{id}")}
+      data-confirm="Are you sure?"
+    >
+      Delete
+    </.link>
+  </:action>
+</.table>
+
+<.modal :if={@live_action in [:new, :edit]} id="webhook-modal" show on_cancel={JS.patch(~p"/webhooks")}>
+  <.live_component
+    module={DynamicInputsWeb.WebhookLive.FormComponent}
+    id={@webhook.id || :new}
+    title={@page_title}
+    action={@live_action}
+    webhook={@webhook}
+    patch={~p"/webhooks"}
+  />
+</.modal>
