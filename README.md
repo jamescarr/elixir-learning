@@ -9,18 +9,24 @@ small projects here to learn elixir in-depth.
 
 ## Learning Guide
 
-- [ ] Unit Testing
-- [ ] Distributed Task Processing
+- [x] Unit Testing
+- [x] Distributed Task Processing
 - [ ] Third Party APIs
   - [ ] OpenAI
-- [ ] Web Frameworks
-  - [ ] Phoenix
-  - [ ] Auth Management
-- [ ] Working with ORMs
+- [x] Web Frameworks
+  - [x] Phoenix
+  - [x] Auth Management
+    - [x] Google Auth
+    - [ ] Github Auth (since I'll be building developer tooling)
+- [x] Working with ORMs
   - [ ] Redis
-  - [ ] Postgresql
+  - [x] Postgresql
+  - [x] Ecto
 - [ ] Logging infrastructure
+  - [ ] Standard formatting
 - [ ] Tracing / Observability
+  - [ ] Open Telemetry
+  - [ ] Custom metrics
 - [ ] GraphQL
 
 
