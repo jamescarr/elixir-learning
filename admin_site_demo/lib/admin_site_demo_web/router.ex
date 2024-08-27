@@ -1,5 +1,6 @@
 defmodule AdminSiteDemoWeb.Router do
   use AdminSiteDemoWeb, :router
+  import Backpex.Router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -8,6 +9,7 @@ defmodule AdminSiteDemoWeb.Router do
     plug :put_root_layout, html: {AdminSiteDemoWeb.Layouts, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
+    plug Backpex.ThemeSelectorPlug
   end
 
   pipeline :api do
@@ -19,6 +21,17 @@ defmodule AdminSiteDemoWeb.Router do
 
     get "/", PageController, :home
   end
+
+  scope "/admin", AdminSiteDemoWeb do
+    pipe_through :browser
+
+    backpex_routes()
+
+    live_session :default, on_mount: Backpex.InitAssigns do
+      live_resources "/posts", PostLive
+    end
+  end
+
 
   # Other scopes may use custom stacks.
   # scope "/api", AdminSiteDemoWeb do
