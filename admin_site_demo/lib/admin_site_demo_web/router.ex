@@ -9,7 +9,6 @@ defmodule AdminSiteDemoWeb.Router do
     plug :put_root_layout, html: {AdminSiteDemoWeb.Layouts, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
-    plug Backpex.ThemeSelectorPlug
   end
 
   pipeline :api do

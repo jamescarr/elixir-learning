@@ -1,14 +1,6 @@
 <Backpex.HTML.Layout.app_shell fluid={@fluid?}>
   <:topbar>
     <Backpex.HTML.Layout.topbar_branding />
-    <Backpex.HTML.Layout.theme_selector
-          socket={@socket}
-          themes={[
-            {"Light", "light"},
-            {"Dark", "dark"},
-            {"Cyberpunk", "cyberpunk"}
-          ]}
-        />
 
     <Backpex.HTML.Layout.topbar_dropdown>
       <:label>
