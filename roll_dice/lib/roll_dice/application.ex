@@ -17,7 +17,10 @@ defmodule RollDice.Application do
       # Start a worker by calling: RollDice.Worker.start_link(arg)
       # {RollDice.Worker, arg},
       # Start to serve requests, typically the last entry
-      RollDiceWeb.Endpoint
+      RollDiceWeb.Endpoint,
+      OpentelemetryBandit.setup(),
+      OpentelemetryPhoenix.setup(adapter: :bandit),
+      OpentelemetryEcto.setup([:dice_game, :repo]) # if using ecto
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

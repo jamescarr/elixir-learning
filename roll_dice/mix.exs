@@ -9,7 +9,12 @@ defmodule RollDice.MixProject do
       elixirc_paths: elixirc_paths(Mix.env()),
       start_permanent: Mix.env() == :prod,
       aliases: aliases(),
-      deps: deps()
+      deps: deps(),
+      releases: [
+        roll_dice: [
+          applications: [opentelemetry: :temporary]
+        ]
+      ],
     ]
   end
 
@@ -58,7 +63,15 @@ defmodule RollDice.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
-      {:bandit, "~> 1.5"}
+      {:bandit, "~> 1.5"},
+
+      {:opentelemetry, "~> 1.4"},
+      {:opentelemetry_api, "~> 1.3"},
+      {:opentelemetry_exporter, "~> 1.7"},
+      {:opentelemetry_phoenix, "~> 1.2"},
+      # for Bandit
+      {:opentelemetry_bandit, "~> 0.1.4"},
+      {:opentelemetry_ecto, "~> 1.2"} # if using ecto
     ]
   end
 
