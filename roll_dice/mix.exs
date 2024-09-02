@@ -1,9 +1,9 @@
-defmodule AdminSiteDemo.MixProject do
+defmodule RollDice.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :admin_site_demo,
+      app: :roll_dice,
       version: "0.1.0",
       elixir: "~> 1.14",
       elixirc_paths: elixirc_paths(Mix.env()),
@@ -18,7 +18,7 @@ defmodule AdminSiteDemo.MixProject do
   # Type `mix help compile.app` for more information.
   def application do
     [
-      mod: {AdminSiteDemo.Application, []},
+      mod: {RollDice.Application, []},
       extra_applications: [:logger, :runtime_tools]
     ]
   end
@@ -32,7 +32,6 @@ defmodule AdminSiteDemo.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:bcrypt_elixir, "~> 3.0"},
       {:phoenix, "~> 1.7.14"},
       {:phoenix_ecto, "~> 4.5"},
       {:ecto_sql, "~> 3.10"},
@@ -59,8 +58,7 @@ defmodule AdminSiteDemo.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
-      {:bandit, "~> 1.5"},
-      {:backpex, "~> 0.6.0"}
+      {:bandit, "~> 1.5"}
     ]
   end
 
@@ -77,10 +75,10 @@ defmodule AdminSiteDemo.MixProject do
       "ecto.reset": ["ecto.drop", "ecto.setup"],
       test: ["ecto.create --quiet", "ecto.migrate --quiet", "test"],
       "assets.setup": ["tailwind.install --if-missing", "esbuild.install --if-missing"],
-      "assets.build": ["tailwind admin_site_demo", "esbuild admin_site_demo"],
+      "assets.build": ["tailwind roll_dice", "esbuild roll_dice"],
       "assets.deploy": [
-        "tailwind admin_site_demo --minify",
-        "esbuild admin_site_demo --minify",
+        "tailwind roll_dice --minify",
+        "esbuild roll_dice --minify",
         "phx.digest"
       ]
     ]
