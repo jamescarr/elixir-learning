@@ -1,5 +1,8 @@
 # RollDice
+Following the instructions on the [Getting Started](https://opentelemetry.io/docs/languages/erlang/getting-started/) page
+to get started with otel in elixir.
 
+## Development
 To start your Phoenix server:
 
   * Run `mix setup` to install and setup dependencies
