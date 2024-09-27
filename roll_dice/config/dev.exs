@@ -1,5 +1,8 @@
 import Config
 
+
+
+config :opentelemetry, traces_exporter: {:otel_exporter_stdout, []}
 # Configure your database
 config :roll_dice, RollDice.Repo,
   username: "postgres",
