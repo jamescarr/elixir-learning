@@ -1,3 +1,4 @@
+# lib/hello_supervisor/worker.ex
 defmodule HelloSupervisor.Worker do
   use GenServer
   require Logger
@@ -15,7 +16,7 @@ defmodule HelloSupervisor.Worker do
 
   @impl true
   def handle_info(:say_hello, state) do
-    Logger.info("hello from process #{inspect(self())}")
+    Logger.info("Hello from process #{inspect(self())}")
     schedule_work()
     {:noreply, state}
   end
@@ -27,5 +28,4 @@ defmodule HelloSupervisor.Worker do
   defp random_interval(max) do
     :rand.uniform(max - @offset) + @offset
   end
-
 end
