@@ -9,7 +9,7 @@ defmodule HelloSupervisor.Supervisor do
 
   @impl true
   def init(:ok) do
-    children = Enum.map(1..5, fn _ ->
+    publishers = Enum.map(1..5, fn _ ->
       %{
         id: UUID.uuid4(:default),
         start: {HelloSupervisor.Worker, :start_link, [[]]},
@@ -17,6 +17,10 @@ defmodule HelloSupervisor.Supervisor do
       }
     end)
 
-    Supervisor.init(children, strategy: :one_for_one)
+    consumers = [
+      HelloSupervisor.Consumer,
+    ]
+
+    Supervisor.init(publishers ++ consumers, strategy: :one_for_one)
   end
 end
