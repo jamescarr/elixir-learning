@@ -10,6 +10,9 @@ defmodule HelloSupervisor.Consumer do
 
   @impl true
   def init(:ok) do
+    name = String.to_atom("consumer_#{inspect(self())}")
+    Process.register(self(), name)
+
     send(self(), :connect)
     {:ok, %{conn: nil, chan: nil}}
   end

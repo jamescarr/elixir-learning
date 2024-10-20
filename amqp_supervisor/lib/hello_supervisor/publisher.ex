@@ -15,6 +15,8 @@ defmodule HelloSupervisor.Publisher do
 
   @impl true
   def init(:ok) do
+    name = String.to_atom("publisher_#{inspect(self())}")
+    Process.register(self(), name)
     case setup_rabbitmq() do
       {:ok, conn, chan} ->
         {:ok, %{conn: conn, chan: chan}}

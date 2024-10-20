@@ -12,9 +12,13 @@ defmodule HelloSupervisor.Worker do
 
   @impl true
   def init(:ok) do
-    {:ok, publisher} = HelloSupervisor.Publisher.start_link()
+    # Register the process using its own PID as part of its name
+    name = String.to_atom("worker_#{inspect(self())}")
+    Process.register(self(), name)
 
+    {:ok, publisher} = HelloSupervisor.Publisher.start_link()
     schedule_work()
+
     {:ok, %{publisher: publisher}}
   end
 
