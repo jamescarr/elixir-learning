@@ -23,7 +23,7 @@ defmodule Pento.Survey.Demographic do
   def changeset(demographic, attrs) do
     demographic
     |> cast(attrs, [:gender, :year_of_birth, :user_id, :education])
-    |> validate_required([:gender, :year_of_birth, :user_id, :education])
+    |> validate_required([:gender, :year_of_birth, :user_id])
     |> validate_inclusion(
       :gender,
       ["male", "female", "other", "prefer not to say"]

@@ -8,7 +8,7 @@ defmodule PentoWeb.SurveyLive.ListComponent do
 
   def item(assigns) do
     ~H"""
-      <li><%= @inner_block %></li>
+      <li><%= render_slot(@inner_block) %></li>
     """
   end
 

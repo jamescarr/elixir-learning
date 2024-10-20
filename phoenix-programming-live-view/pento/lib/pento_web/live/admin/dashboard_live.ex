@@ -58,8 +58,8 @@ defmodule PentoWeb.Admin.DashboardLive do
     {:noreply, socket}
   end
 
-  def handle_info(_event, socket) do
-    Logger.warning("Unmatched event! #{inspect(_event)}")
+  def handle_info(event, socket) do
+    Logger.warning("Unmatched event! #{inspect(event)}")
     {:noreply, socket}
   end
 

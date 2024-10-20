@@ -11,8 +11,8 @@ defmodule PentoWeb.Admin.SurveyActivityLive do
     }
   end
 
-  def update(_params, socket) do
-    Logger.info("non-match update, #{inspect(_params)}")
+  def update(params, socket) do
+    Logger.info("non-match update, #{inspect(params)}")
     {:ok,
       socket
       |> assign(:survey_activity, [[]])
