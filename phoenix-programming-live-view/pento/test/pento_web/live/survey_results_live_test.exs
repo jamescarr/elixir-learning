@@ -110,5 +110,39 @@ defmodule PentoWeb.SurveyResultsLiveTest do
 
       assert socket.assigns.products_with_average_ratings == [{"Test Game", 2.0}]
     end
+
+    test "ratings are filtered by age group", %{
+      socket: socket,
+      user: user,
+      product: product,
+      user2: user2
+    } do
+      create_rating(2, user, product)
+      create_rating(3, user2, product)
+
+      socket =
+        socket
+        |> SurveyResultsLive.assign_age_group_filter()
+        |> assert_keys(:age_group_filter, "all")
+        |> update_socket(:age_group_filter, "18 and under")
+        |> SurveyResultsLive.assign_age_group_filter()
+        |> assert_keys(:age_group_filter, "18 and under")
+        |> SurveyResultsLive.assign_gender_filter()
+        |> SurveyResultsLive.assign_products_with_average_ratings()
+        |> assert_keys(:products_with_average_ratings, [{"Test Game", 2.0}])
+
+    end
+
+    defp update_socket(socket, key, value) do
+      %{socket | assigns: Map.merge(socket.assigns, Map.new([{key, value}]))}
+    end
+
+    defp assert_keys(socket, key, value) do
+      assert socket.assigns[key] == value
+      socket
+    end
+
+
+
   end
 end
