@@ -21,6 +21,7 @@ defmodule Pento.Game.Shape do
   defp color(:s), do: :light_gray
   defp color(:f), do: :dark_blue
   defp color(:x), do: :blue
+  defp color(:t), do: :light_blue
 
   defp points(:i), do: [{3, 1}, {3, 2}, {3, 3}, {3, 4}, {3, 5}]
   defp points(:l), do: [{3, 1}, {3, 2}, {3, 3}, {3, 4}, {4, 4}]
