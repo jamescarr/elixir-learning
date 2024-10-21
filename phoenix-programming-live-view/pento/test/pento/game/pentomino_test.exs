@@ -29,7 +29,7 @@ defmodule Pento.Game.PentominoTest do
   end
 
   defp assert_shape(invalid_shape, _name, _points) do
-    flunk("Expected a Shape struct, got #{inspect(invalid_shape)}")
+    flunk("Expected a Pentomino struct, got #{inspect(invalid_shape)}")
   end
 
 
