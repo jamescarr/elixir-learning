@@ -18,5 +18,4 @@ defmodule PentoWeb.GameLive do
     <.live_component module={ControlPanel} id="panel"/>
     """
   end
-
 end

@@ -91,11 +91,16 @@ defmodule PentoWeb.GameLive.Component do
     <use
       x={ @x }
       y={ @y }
-      transform="rotate(#{@rotate}, 100, 100)"
+      transform={rotate(@rotate)}
       href="#triangle"
       fill={ color(@fill) } />
     """
   end
+
+  defp rotate(degrees) do
+    "rotate(#{degrees}, 50, 50)"
+  end
+
 
   defp place_pento({name, i}) do
     Pentomino.new(name: name, location: location(i))
