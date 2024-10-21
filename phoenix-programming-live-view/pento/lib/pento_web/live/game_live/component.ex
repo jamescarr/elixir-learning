@@ -69,6 +69,34 @@ defmodule PentoWeb.GameLive.Component do
     """
   end
 
+  attr :view_box, :string
+  slot :inner_block, required: true
+  def control_panel(assigns) do
+    ~H"""
+    <svg viewBox={ @view_box }>
+      <defs>
+        <polygon id="triangle" points="6.25 1.875, 12.5 12.5, 0 12.5" />
+      </defs>
+      <%= render_slot(@inner_block) %>
+    </svg>
+    """
+  end
+
+  attr :x, :integer, required: true
+  attr :y, :integer, required: true
+  attr :rotate, :integer, default: 0
+  attr :fill, :atom
+  def triangle(assigns) do
+    ~H"""
+    <use
+      x={ @x }
+      y={ @y }
+      transform="rotate(#{@rotate}, 100, 100)"
+      href="#triangle"
+      fill={ color(@fill) } />
+    """
+  end
+
   defp place_pento({name, i}) do
     Pentomino.new(name: name, location: location(i))
     |> Pentomino.to_shape

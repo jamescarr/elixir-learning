@@ -15,9 +15,10 @@ defmodule Pento.Game.Board do
   end
 
   def new(:tiny), do: new(:small, rect(5, 3))
+  def new(:small), do: new(:small, rect(10, 4))
+  def new(:medium), do: new(:all, rect(12, 5))
   def new(:widest), do: new(:all, rect(20, 3))
   def new(:wide), do: new(:all, rect(15, 4))
-  def new(:medium), do: new(:all, rect(12, 5))
   def new(:default), do: new(:all, rect(10, 6))
 
   def to_shape(board) do
