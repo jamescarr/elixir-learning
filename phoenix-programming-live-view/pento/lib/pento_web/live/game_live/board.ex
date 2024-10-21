@@ -1,9 +1,9 @@
 defmodule PentoWeb.GameLive.Board do
   use PentoWeb, :live_component
-
-  alias Pento.Game.{Board, Pentomino}
+  alias Pento.Game.Board
+  alias Pento.Game
   import PentoWeb.GameLive.{Colors, Component}
-
+  require Logger
 
   def update(%{puzzle: puzzle, id: id}, socket) do
     {:ok,
@@ -19,18 +19,11 @@ defmodule PentoWeb.GameLive.Board do
   end
 
   def assign_board(%{assigns: %{puzzle: puzzle}} = socket) do
-    active = Pentomino.new(name: :p, location: {7, 2})
-    completed = [
-      Pentomino.new(name: :u, rotation: 270, location: {1, 2}),
-      Pentomino.new(name: :v, rotation: 90, location: {4, 2})
-    ]
-    _puzzles = Board.puzzles() # atom must exist!
     board =
       puzzle
       |> String.to_existing_atom
       |> Board.new
-      |> Map.put(:completed_pentos, completed)
-      |> Map.put(:active_pento, active)
+
     assign(socket, board: board)
   end
 
@@ -57,6 +50,56 @@ defmodule PentoWeb.GameLive.Board do
           {Enum.map(@board.completed_pentos, & &1.name)} />
     </div>
     """
+  end
+
+  def handle_event("pick", %{"name" => name}, socket) do
+    {:noreply, socket |> pick(name) |> assign_shapes}
+  end
+
+  def handle_event("key", %{"key" => key}, socket) do
+    {:noreply, socket |> do_key(key) |> assign_shapes }
+  end
+
+
+
+  def do_key(socket, key) do
+    case key do
+    " " -> drop(socket)
+      "ArrowLeft" -> move(socket, :left)
+      "ArrowRight" -> move(socket, :right)
+      "ArrowUp" -> move(socket, :up)
+      "ArrowDown" -> move(socket, :down)
+      "Shift" -> move(socket, :rotate)
+      "Enter" -> move(socket, :flip)
+      "Space" -> drop(socket)
+      _ -> socket
+    end
+  end
+
+  # server crashes after a single move handle_event/3 undefined
+  def move(socket, move) do
+    case Game.maybe_move(socket.assigns.board, move) do
+      {:error, message} ->
+        put_flash(socket, :info, message)
+      {:ok, board} ->
+        socket |> assign(board: board) |> assign_shapes
+    end
+  end
+
+  def drop(socket) do
+    case Game.maybe_drop(socket.assigns.board) do
+      {:error, message} ->
+        put_flash(socket, :info, message)
+      {:ok, board} ->
+        socket |> assign(board: board) |> assign_shapes
+    end
+  end
+
+  # candidate for code to be moved to boundry layer of Pento.Game
+
+  def pick(socket, name) do
+    shape_name = String.to_existing_atom(name)
+    update(socket, :board, &Board.pick(&1, shape_name))
   end
 
 end

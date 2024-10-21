@@ -2,7 +2,7 @@ defmodule PentoWeb.GameLive.ControlPanel do
   use PentoWeb, :live_component
   alias Pento.Game.{Board, Pentomino}
   import PentoWeb.GameLive.{Colors, Component}
-
+  require Logger
 
   def update(%{id: id}, socket) do
     {:ok,
@@ -27,6 +27,12 @@ defmodule PentoWeb.GameLive.ControlPanel do
       </.control_panel>
     </div>
     """
+  end
+
+  def handle_event(name, payload, socket) do
+    Logger.info("Event caught but unhandled, #{name}")
+    Logger.info("Payload: #{inspect(payload)}")
+    {:noreply, socket}
   end
 
 end

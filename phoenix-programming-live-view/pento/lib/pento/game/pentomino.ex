@@ -42,4 +42,9 @@ defmodule Pento.Game.Pentomino do
   end
 
 
+  def overlapping?(pento1, pento2) do
+    {p1, p2} = {to_shape(pento1).points, to_shape(pento2).points}
+    Enum.count(p1 -- p2) != 5
+  end
+
 end
