@@ -8,14 +8,19 @@ defmodule Pento.Game.Board do
     points: []
   ]
 
-  def puzzles(), do: ~w[default wide widest medium tiny]a
+  def puzzles(), do: ~w[default small ball donut wide widest medium]a
 
-  def new(palette, points) do
-    %__MODULE__{palette: palette(palette), points: points}
+  def new(palette, points, hole \\ []) do
+    %__MODULE__{palette: palette(palette), points: points -- hole}
   end
 
-  def new(:tiny), do: new(:small, rect(5, 3))
-  def new(:small), do: new(:small, rect(10, 4))
+  def new(:small), do: new(:medium, rect(7, 5))
+  def new(:donut) do
+    new(:all, rect(8, 8), (for x <- 4..5, y <- 4..5, do: {x, y}))
+  end
+  def new(:ball) do
+    new(:all, rect(8, 8), (for x <- [1, 8], y <- [1,8], do: {x, y}))
+  end
   def new(:medium), do: new(:all, rect(12, 5))
   def new(:widest), do: new(:all, rect(20, 3))
   def new(:wide), do: new(:all, rect(15, 4))
@@ -82,7 +87,7 @@ defmodule Pento.Game.Board do
     points_on_board and no_overlapping_pentos
   end
 
-  def legal_move?(%{active_pento: pento, points: points}=board) do
+  def legal_move?(%{active_pento: pento, points: points}) do
     pento.location in points
   end
 
@@ -102,6 +107,6 @@ defmodule Pento.Game.Board do
   end
 
   defp palette(:all),   do: [:i, :l, :y, :n, :p, :w, :u, :v, :s, :f, :x, :t]
-  defp palette(:small), do: [:u, :v, :p]
+  defp palette(:medium), do: [:u, :v, :p, :t, :y, :l, :n]
 
 end
