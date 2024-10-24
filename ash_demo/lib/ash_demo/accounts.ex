@@ -5,6 +5,5 @@ defmodule AshDemo.Accounts do
     resource AshDemo.Accounts.Token
     resource AshDemo.Accounts.User
     resource AshDemo.Accounts.Profile
-    resource AshDemo.Accounts.Plan
   end
 end

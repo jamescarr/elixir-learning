@@ -49,7 +49,7 @@ config :spark,
 config :ash_demo,
   ecto_repos: [AshDemo.Repo],
   generators: [timestamp_type: :utc_datetime],
-  ash_domains: [AshDemo.Accounts]
+  ash_domains: [AshDemo.Accounts, AshDemo.Blog]
 
 # Configures the endpoint
 config :ash_demo, AshDemoWeb.Endpoint,
