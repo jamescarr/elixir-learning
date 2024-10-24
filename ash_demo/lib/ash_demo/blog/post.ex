@@ -21,12 +21,12 @@ defmodule AshDemo.Blog.Post do
 
     create :create do
       # accept title as input
-      accept [:title]
+      accept [:title, :content]
     end
 
     update :update do
       # accept content as input
-      accept [:content]
+      accept [:title, :content]
     end
 
     # Defines custom read action which fetches post by id.

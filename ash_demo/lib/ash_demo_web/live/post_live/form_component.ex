@@ -17,12 +17,11 @@ defmodule AshDemoWeb.PostLive.FormComponent do
         phx-change="validate"
         phx-submit="save"
       >
-        <%= if @form.source.type == :create do %>
-          <.input field={@form[:title]} type="text" label="Title" />
-        <% end %>
-        <%= if @form.source.type == :update do %>
-          <.input field={@form[:content]} type="text" label="Content" />
-        <% end %>
+        <.input field={@form[:title]} type="text" label="Title" /><.input
+          field={@form[:content]}
+          type="text"
+          label="Content"
+        />
 
         <:actions>
           <.button phx-disable-with="Saving...">Save Post</.button>
