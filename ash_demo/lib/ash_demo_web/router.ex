@@ -32,7 +32,9 @@ defmodule AshDemoWeb.Router do
       #
       # If an authenticated user must *not* be present:
       # on_mount {AshDemoWeb.LiveUserAuth, :live_no_user}
-      live "/posts", PostLive
+      live "/posts/new", PostLive.Index, :new
+      live "/posts/:id/edit", PostLive.Index, :edit
+      live "/posts/:id/show/edit", PostLive.Show, :edit
     end
   end
 
@@ -45,10 +47,6 @@ defmodule AshDemoWeb.Router do
             default_model_expand_depth: 4
 
     forward "/", AshDemoWeb.AshJsonApiRouter
-
-    forward "/redoc",
-      Redoc.Plug.RedocUI,
-      spec_url: "/api/open_api"
   end
 
   scope "/", AshDemoWeb do
@@ -70,6 +68,9 @@ defmodule AshDemoWeb.Router do
 
     # Remove this if you do not want to use the reset password feature
     reset_route auth_routes_prefix: "/auth"
+    live "/posts", PostLive.Index, :index
+    live "/posts/:id", PostLive.Show, :show
+
   end
 
   # Other scopes may use custom stacks.
