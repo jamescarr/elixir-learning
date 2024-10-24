@@ -1,5 +1,5 @@
 defmodule AshDemoWeb.AshJsonApiRouter do
   use AshJsonApi.Router,
-    domains: [],
+    domains: [Module.concat(["AshDemo.Accounts"])],
     open_api: "/open_api"
 end
