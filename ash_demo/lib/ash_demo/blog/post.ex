@@ -5,7 +5,8 @@ defmodule AshDemo.Blog.Post do
     domain: AshDemo.Blog,
     # Tells Ash you want this resource to store its data in Postgres.
     data_layer: AshPostgres.DataLayer,
-    extensions: [AshJsonApi.Resource]
+    extensions: [AshJsonApi.Resource],
+    notifiers: [Ash.Notifier.PubSub]
 
   # The Postgres keyword is specific to the AshPostgres module.
   postgres do

@@ -35,6 +35,13 @@ defmodule AshDemoWeb.Router do
       live "/posts/new", PostLive.Index, :new
       live "/posts/:id/edit", PostLive.Index, :edit
       live "/posts/:id/show/edit", PostLive.Show, :edit
+
+      live "/subscriptions", SubscriptionLive.Index, :index
+      live "/subscriptions/new", SubscriptionLive.Index, :new
+      live "/subscriptions/:id/edit", SubscriptionLive.Index, :edit
+
+      live "/subscriptions/:id", SubscriptionLive.Show, :show
+      live "/subscriptions/:id/show/edit", SubscriptionLive.Show, :edit
     end
   end
 

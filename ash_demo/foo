@@ -1,0 +1,4711 @@
+    1  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    2  cd ~/Downloads
+    3  mv Dracula+.itermcolors.txt Dracula+.itermcolors
+    4  brew install zsh
+    5  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/jamescarr/.zprofile
+    6  rxec $SHELL
+    7  exec $SHELL
+    8  brew install zsh
+    9  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/jamescarr/.zprofile\n    eval "$(/opt/homebrew/bin/brew shellenv)"
+   10  exec $SHELL
+   11  brew install neovim
+   12  brew tap homebrew/cask-fonts
+   13  brew install font-hack-nerd-font
+   14  ls -al
+   15  cd ~/Downloads
+   16  ls -al
+   17  rm -rf *
+   18  rm Ernest\ Cover\ Letter.pdf
+   19  brew install tmux
+   20  cd ..
+   21  ls
+   22  mkdir Projects
+   23  cd Projects
+   24  ls
+   25  ssh-keygen
+   26  cat ~/.ssh/id_ed25519.pub
+   27  rm ~/.ssh/*
+   28  ssh-keygen
+   29  cat ~/.ssh/id_ed25519.pub
+   30  ssh git@github.com
+   31  gpg
+   32  brew install gpg
+   33  mv ~/Downloads/mobile-suit-gundam-seed-destiny-hd-idwpgl7v6b8k0g4x.jpg ~/Pictures
+   34  rm ~/Downloads/*
+   35  gpg --full-generate-key\n
+   36  gpg --list-secret-keys --keyid-format=long\n
+   37  gpg --armor --export 428BD558C8B2F8F6
+   38  git clone https://github.com/gpakosz/.tmux.git
+   39  cd ..
+   40  cd Projects
+   41  ls
+   42  rm -rf .tmux
+   43  cd ..
+   44  ls
+   45  git clone https://github.com/gpakosz/.tmux.git
+   46  ln -s ~/.tmux/.tmux.conf ~/.config/tmux/tmux.conf
+   47  mkdir ~/.config/tmux
+   48  ln -s ~/.tmux/.tmux.conf ~/.config/tmux/tmux.conf
+   49  cp ~/.tmux/.tmux.conf.local "~/.config/tmux/tmux.conf.local
+   50  cp ~/.tmux/.tmux.conf.local "~/.config/tmux/tmux.conf.local"
+   51  tmux
+   52  ls -alR
+   53  cp ~/.tmux/.tmux.conf.local ~/.config/tmux/tmux.conf.local
+   54  cp ~/.tmux/.tmux.conf.local ~/.config/tmux/.tmux.conf.local
+   55  rm ~/.config/tmux/.tmux.conf.local
+   56  rm ~/.config/tmux/tmux.conf.local
+   57  cp ~/.tmux/.tmux.conf.local ~/.config/tmux/.tmux.conf.local
+   58  nvim ~/.config/tmux/.tmux.conf.local
+   59  exit
+   60  tmux
+   61  ls -al
+   62  exit
+   63  rm -rf ~/.tmux
+   64  rm -rf ~/.config/tmux
+   65  mkdir ~/.config/tmux
+   66  cd Projects
+   67  git clone git@github.com:jamescarr/.neovimrc.git
+   68  cd .neovimrc
+   69  make install
+   70  nvim
+   71  go
+   72  _go
+   73  brew install go
+   74  go 
+   75  nvim
+   76  brew install tsserver
+   77  brew install nodejs
+   78  npm i -g typescript-language-server
+   79  npm install -g npm@10.8.2
+   80  nvim
+   81  nvim ~/.config/nvim/lua/jamescarr/init.lua
+   82  brew instll silver-searcher
+   83  brew install silver-searcher
+   84  brew install the_silver_searcher
+   85  cd ~/.config/nvim
+   86  ag harpoon
+   87  nvim lua/jamescarr/lazy_init.lua
+   88  go
+   89  cd ~/Projects
+   90  mkdir file-upload-service-htmx\ncd file-upload-service-htmx
+   91  go mod init file-upload-service-htmx\n
+   92  go get -u github.com/labstack/echo/v4\n
+   93  nvim main.go
+   94  go main.go
+   95  %
+   96  go main.go
+   97  go install github.com/air-verse/air@latest
+   98  air -c .air.toml
+   99  air
+  100  go get github.com/air-verse/air@latest
+  101  ait
+  102  air
+  103  ls ~/.air
+  104  $(go env GOPATH)/bin/air
+  105  echo "PATH=$PATH:$(go env GOPATH)/bin" >> ~/.zshrc
+  106  exec $SHELL
+  107  air
+  108  air -c .air.toml\n
+  109  air init
+  110  nvim .air.toml
+  111  air -c .air.toml
+  112  %
+  113  nvim main.go
+  114  air -c .air.toml
+  115  brew install podman
+  116  nvim main.go
+  117  cd ~/.config/nvim
+  118  ag harpoon
+  119  nvim lua/jamescarr/packer.lua
+  120  nvim lua/jamescarr/lazy/local.lua
+  121  nvim go
+  122  nvim
+  123  ls
+  124  cd ~/Projects
+  125  ls
+  126  cd file-upload-service-htmx
+  127  nvim
+  128  cd Projects/file-upload-service-htmx
+  129  air
+  130  %
+  131  go get github.com/labstack/echo/v4\n
+  132  %
+  133  air
+  134  ls
+  135  cat main.go
+  136  rm -rf tmp
+  137  ls
+  138  air
+  139  go get github.com/labstack/echo/v4/middleware@v4.12.0
+  140  air
+  141  cd ..
+  142  mkdir go-learning
+  143  cd go-learning
+  144  $ git clone git@github.com:albertteoh/jaeger-go-example.git\n
+  145  git clone git@github.com:albertteoh/jaeger-go-example.git\n
+  146  rm -rf ~/.tmux
+  147  git clone --recursive https://github.com/tony/tmux-config.git ~/.tmux\n
+  148  ln -s ~/.tmux/.tmux.conf ~/.tmux.conf\n
+  149  cd ~/.tmux\n
+  150  tmux
+  151  exit
+  152  tmux
+  153  exit
+  154  rm -rf ~/.tmux
+  155  rm -rf ~/.tmux.conf
+  156  tmux
+  157  ls -al 
+  158  xit
+  159  exit
+  160  brew install pyenv
+  161  cd ..
+  162  brew install pyenv
+  163  pyenv install 3.12.0
+  164  python --version
+  165  nvim ~/.zshrc
+  166  exec $SHELL
+  167  python --version
+  168  pyenv use 3.12.0
+  169  pyenv help global
+  170  pyenv global 3.12.0
+  171  python --version
+  172  pip install powerline-status\n
+  173  pip install --upgrade pip
+  174  nvim ~/.config/tmux/.tmux.conf
+  175  tmux
+  176  :q!
+  177  exit
+  178  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm\n
+  179  mv ~/.tmux/* ~/.config/tmux
+  180  rm -rf ~/.tmux
+  181  tmux
+  182  exit
+  183  mv ~/.config/tmux ~/.tmux
+  184  tmux
+  185  exit
+  186  ls -alR ~/.tmux
+  187  ls -al ~/.tmux
+  188  mv ~/.tmux/.tmux.conf ~
+  189  tmux
+  190  exit
+  191  rm ~/.tmux
+  192  rm -rf ~/.tmux
+  193  rm -rf ~/.tmux.conf
+  194  nvim ~/.tmux.conf
+  195  tmux
+  196  %
+  197  exit
+  198  %
+  199  tmux
+  200  exit
+  201  mkdir ~/.tmux
+  202  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm\n
+  203  tmux
+  204  exit
+  205  tmux
+  206  exit
+  207  tmux
+  208  exit
+  209  tmux
+  210  tmux source ~/.tmux.conf\n
+  211  exit
+  212  rm -rf .tmux
+  213  rm -rf .tmux.conf
+  214  tmux new
+  215  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm\n
+  216  nvim ~/.tmux.conf
+  217  tmux source ~/.tmux.conf\n
+  218  nvim ~/.tmux.conf
+  219  brew install zsh
+  220  brew install oh-my-zsh
+  221  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\n\n
+  222  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\n\n
+  223  nvim ~/.zshrc
+  224  exec $SHELL
+  225  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k\n
+  226  exec $SHELL
+  227  cd Projects
+  228  ls -al 
+  229  cd go-learning
+  230  ls
+  231  cd jaeger-go-example
+  232  exit
+  233  tmux
+  234  cd Projects/go-learning
+  235  ls
+  236  cd jaeger-go-example
+  237  ls
+  238  nvim
+  239  cd Projects/go-learning
+  240  l
+  241  cd jaeger-go-example
+  242  clear
+  243  docker compose up 
+  244  curl -w ‘\n’ http://localhost:8081/ping
+  245  make stop
+  246  make start
+  247  make stop
+  248  cd Projects/go-learning/jaeger-go-example
+  249  make stop
+  250  cd ..
+  251  mkdir learning
+  252  mv go-learning learning/go
+  253  mkdir learning/elixir
+  254  cd learning/elixir
+  255  nvim 
+  256  brew install elixir
+  257  whereis elixir
+  258  mix
+  259  brew install elixir-ls
+  260  elixir-ls
+  261  exit
+  262  ps ax | grep elixir-ls
+  263  kill -9 9629
+  264  whereis elixir-ls
+  265  cd ../..
+  266  cd elixir
+  267  ls
+  268  cd hello-world
+  269  iex
+  270  nvim geometry.ex
+  271  nvim
+  272  nvim ../../.neovimrc/lua/jamescarr/lazy/lsp.lua
+  273  cd ~/.config/nvim
+  274  ag treesitter
+  275  nvim ../../.neovimrc/lua/jamescarr/lazy/lsp.lua
+  276  cd ..
+  277  cd Projects/.neovimrc
+  278  ag nvim-cmp
+  279  cd ../..
+  280  cd .neovimrc
+  281  diff . ~/.config/nvim
+  282  diff -R . ~/.config/nvim
+  283  diff -r . ~/.config/nvim
+  284  nvim lua/jamescarr/packer.lua
+  285  make install
+  286  ag harpoon
+  287  nvim lua/jamescarr/lazy/local.lua
+  288  make install
+  289  ag elixir_ls
+  290  nvim lua/jamescarr/lazy/lsp.lua
+  291  make install
+  292  nvim
+  293  git status
+  294  git commit -am "Add elixir support to lsp, remove Primeagen's special config"
+  295  git config --global --edit
+  296  git commit --amend --reset-author
+  297  git push origin main
+  298  cd ..
+  299  cd learning
+  300  cd elixir
+  301  nvim
+  302  l
+  303  mv ../geometry.ex .
+  304  iex geometry.ex
+  305  cd ~/Projects/.neovimrc
+  306  ls
+  307  ag treesitter
+  308  nvim lua/jamescarr/lazy/treesitter.lua
+  309  ag nvim-cmp
+  310  nvim lua/jamescarr/lazy/lsp.lua
+  311  make install
+  312  nvim hello-world/geometry.ex
+  313  ag "cmp"
+  314  nvim lua/jamescarr/lazy/lsp.lua
+  315  git diff
+  316  git config -am "More lsp cleanup"
+  317  git commit -am "More lsp cleanup"
+  318  git push origin main
+  319  gpg --list-secret-keys --keyid-format=long
+  320  git config --global user.signingkey 428BD558C8B2F8F6
+  321  git config --global commit.gpgsign true
+  322  if [ -r ~/.zshrc ]; then echo -e '\nexport GPG_TTY=$(tty)' >> ~/.zshrc; \\n  else echo -e '\nexport GPG_TTY=$(tty)' >> ~/.zprofile; fi
+  323  exec $SHELL
+  324  ls
+  325  nvim README.md
+  326  git commit -am "Updated readme"
+  327  git push origin main
+  328  git commit -am "Updated readme"
+  329  clear
+  330  ls
+  331  git status
+  332  git commit -am "Updated readme"
+  333  git push origin main
+  334  make install
+  335  cd -
+  336  cd hello-world
+  337  nvim geometry.ex
+  338  nvim
+  339  ag cmp.setup
+  340  nvim lua/jamescarr/lazy/lsp.lua
+  341  nvim
+  342  iex geometry.ex
+  343  mix 
+  344  cd ..
+  345  rm -rf hello-world
+  346  mix new hello-world
+  347  mix new hello_world
+  348  cd hello_world
+  349  mix test
+  350  nvim
+  351  mix
+  352  cd ..
+  353  cd helo
+  354  cd hello_world
+  355  mix
+  356  mix run
+  357  mix run -e "HelloWorld.hello()"
+  358  mix run -e "HelloWorld.run()"
+  359  cd ..
+  360  mix new todo
+  361  cd ../todo
+  362  cd ../learning/elixir/todo
+  363  iex -S mix
+  364  cd todo
+  365  ls
+  366  nvim
+  367  mix test
+  368  mix test\\nmix test
+  369  mix test
+  370  mix test\nmix test
+  371  mix test
+  372  iex -S mix
+  373  mix test
+  374  iex -S mix
+  375  iex -S mix lib/todo.ex
+  376  exit
+  377  iex
+  378  cd Projects/learning/elixir/todo
+  379  iex -S mix
+  380  ps ax | grep iex
+  381  kill -9 59591
+  382  iex -S mix
+  383  exit
+  384  iex -S mix
+  385  iex 
+  386  iex -S mix
+  387  git init
+  388  git status
+  389  git add README.md lib
+  390  git add mix.exs
+  391  lib add test
+  392  git add test
+  393  git ignore _build
+  394  brew install git-extras
+  395  git commit -am "part way through chapter 6"
+  396  iex -S mix
+  397  git commit -am "Modified todoserver to use ServerProcess"
+  398  git status
+  399  clear
+  400  git status
+  401  rm \;
+  402  cat .formatter.exs
+  403  git add -A
+  404  git commit -am "Extract key value to separate module"
+  405  iex -S mix
+  406  mix 
+  407  iex -S mix
+  408  git status
+  409  git commit -am "More conversion to GenServer"
+  410  mkdir -p lib/todo
+  411  iex -S mix
+  412  rm lib/todo.ex
+  413  iex -S mix
+  414  git add -A
+  415  git commit -am "Chapter 7 modularization"
+  416  iex -S mix
+  417  mix test
+  418  mv test/todo/cache_test.ex test/todo/cache_test.exs
+  419  mix test
+  420  mix deps.get
+  421  mix test.watch
+  422  cd Projects/learning/elixir
+  423  l
+  424  cd todo
+  425  git ignore persist
+  426  mix deps.get
+  427  it status
+  428  git status
+  429  git add lib/todo/*
+  430  git add *
+  431  git add -A
+  432  git commit -am "Add workers to handle persistence in a round robin fashion."
+  433  iex -S mix
+  434  git status
+  435  git commit -am "Modify database workers to clean up a double message being sent"
+  436  iex
+  437  iex -S mix
+  438  ls 
+  439  rm -rf persist/*
+  440  mix test
+  441  ls -al persist
+  442  mix test
+  443  ls -al persist
+  444  mix test
+  445  mix test.watch
+  446  cd Projects/learning/elixir/todo
+  447  ls
+  448  ls persist
+  449  exit
+  450  mix test
+  451  iex -S mix
+  452  mix test
+  453  cd Projects
+  454  cd .neovimrc
+  455  ls
+  456  nvim lua/jamescarr/packer.lua
+  457  cd Projects/.neovimrc
+  458  make install
+  459  nvim lua/jamescarr/packer.lua
+  460  make install
+  461  git clone https://github.com/no-such/repo.git
+  462  git clone https://github.com/nvim-tree/nvim-tree.git
+  463  nvim 
+  464  ag nvim-tree
+  465  ag faith
+  466  ag faiht
+  467  nvim go
+  468  ag go
+  469  nvim lua/jamescarr/packer.lua
+  470  make install
+  471  git commit -am "Add nvimtree"
+  472  vim 
+  473  nvim
+  474  vim 
+  475  nvim
+  476  git commit -am "Install nvim-tree and toggle by default."
+  477  gpg --version
+  478  echo 'export GPG_TTY=$(tty)' >> ~/.zshrc
+  479  exec $SHELL
+  480  git commit -am "Install nvim-tree and toggle by default."
+  481  GIT_TRACE=1 GIT_TRACE_PACKET=1 GIT_TRACE_PERFORMANCE=1  git commit -am "Install nvim-tree and toggle by default."
+  482  GIT_TRACE=1 GIT_TRACE_PACKET=1 GIT_TRACE_PERFORMANCE=1 git commit -am "Install nvim-tree and toggle by default."
+  483  gpg --list-secret-keys --keyid-format=long
+  484  gpg --list-secret-keys --keyid-format=short
+  485  gpg --status-fd=2 -bsau 428BD558C8B2F8F6
+  486  git config --global gpg.program gpg\n
+  487  gpg-connect-agent /bye\n
+  488  pinentry-program /usr/local/bin/pinentry-mac\n
+  489  brew install pinentry-mac
+  490  nvim ~/.gnupg/gpg-agent.conf
+  491  echo "pinentry-program /opt/homebrew/bin/pinentry-mac" >> ~/.gnupg/gpg-agent.conf
+  492  gpgconf --kill gpg-agent\ngpgconf --launch gpg-agent\n
+  493  exec $SHELL
+  494  GIT_TRACE=1 GIT_TRACE_PACKET=1 GIT_TRACE_PERFORMANCE=1 git commit -am "Install nvim-tree and toggle by default."
+  495  git status
+  496  git add -A
+  497  git commit --amend "Install nvim-tree and toggle it to open by default"
+  498  GIT_TRACE=1 GIT_TRACE_PACKET=1 GIT_TRACE_PERFORMANCE=1 git commit -am "Install nvim-tree and toggle by default."
+  499  git squash HEAD~2 "Install nvim-tree and toggle by default"
+  500  git push origin main
+  501  make install
+  502  nvim 
+  503  make install
+  504  nvim
+  505  GIT_TRACE=1 GIT_TRACE_PACKET=1 GIT_TRACE_PERFORMANCE=1 git commit -am "Install nvim-tree and toggle by default."
+  506  git squash HEAD~2 "Install nvim-tree and toggle by default"
+  507  git push origin main --force
+  508  nvim
+  509  clear
+  510  cd ..
+  511  ls
+  512  cd hello_world
+  513  ls
+  514  ls lib
+  515  cd -
+  516  cd todo
+  517  nvim
+  518  iex -S mix
+  519  cd ..
+  520  cd learning
+  521  cd erl
+  522  cd elixir
+  523  git clone https://github.com/sasa1977/elixir-in-action.git
+  524  cd elixir-in-action
+  525  ls
+  526  cd code_samples
+  527  ls
+  528  cd ch09
+  529  ls
+  530  cd pool_supervision
+  531  iex -S mix
+  532  git status
+  533  git add -A
+  534  git commit -am "Chapter 9"
+  535  rm lib/echo.ex
+  536  git commit -am "removed echo"
+  537  iex -S mix
+  538  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/cache.ex lib/todo
+  539  iex -S mix
+  540  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/system.ex lib/todo
+  541  iex -S mix
+  542  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/process_registry.ex lib/todo
+  543  iex -S mix
+  544  git status
+  545  git reset HEAD --hard
+  546  iex -S mix
+  547  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/server.ex lib/todo
+  548  iex -S mix
+  549  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/database_worker.ex lib/todo
+  550  iex -S mix
+  551  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/* lib/todo
+  552  iex -S mix
+  553  git reset HEAD --hard
+  554  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/system lib/todo
+  555  iex -S mix
+  556  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/system.ex lib/todo
+  557  iex -S mix
+  558  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/process_registry.ex lib/todo
+  559  ls lib
+  560  iex -S mix
+  561  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/cache lib/todo
+  562  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/cache.ex lib/todo
+  563  iex -S mix
+  564  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/database.ex lib/todo
+  565  iex -S mix
+  566  git reset HEAD --hard
+  567  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/database.ex lib/todo
+  568  iex -S mix
+  569  clear
+  570  git diff
+  571  git reset HEAD --hard
+  572  iex -S mix
+  573  git status
+  574  git commit -am "remove unneeded cast"
+  575  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/database.ex lib/todo
+  576  git diff
+  577  git reset HEAD --hard
+  578  iex -S mix
+  579  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/system.ex lib/todo
+  580  iex -S mix
+  581  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/process_registry.ex lib/todo
+  582  iex -S mix
+  583  cp ../elixir-in-action/code_samples/ch09/pool_supervision/lib/todo/* lib/todo
+  584  iex -S mix
+  585  git commit -am "Got Todo.System working propertly." 
+  586  iex -S mix
+  587  git reset HEAD --hard
+  588  git status
+  589  iex -S mix
+  590  git add -A
+  591  git commit -am "add logging config"
+  592  iex -S mix
+  593  rm lib/concurrency.ex
+  594  rm lib/keyvalue.ex
+  595  cat README.md
+  596  iex -S mix
+  597  git status
+  598  git add -a
+  599  git add -A
+  600  iex -S mix
+  601  git commit -am "Add some try / raise statements."
+  602  git remote add origin git@github.com:jamescarr/elixir-in-action.git\ngit push -u origin main
+  603  git checkout -b broken-impl
+  604  git commit -am "Example with incorrect childspec"
+  605  git push origin broken-impl
+  606  git checkout main
+  607  iex -S mix
+  608  git checkout broken-impl
+  609  iex -S mix
+  610  cd ../..
+  611  ls
+  612  cd ..
+  613  mkdir elixir
+  614  cd elixir
+  615  git clone git@github.com:jamescarr/broadway.git
+  616  cd broadway
+  617  clear
+  618  cd -
+  619  cd ..
+  620  cd learning/elixir
+  621  ls
+  622  cd todo
+  623  git reset HEAD --hard
+  624  git checkout main
+  625  iex -S mix
+  626  git commit -am "end of chapter 9"
+  627  git push origin main
+  628  iex -S mix
+  629  git commit -am "Convert Todo.Server from GenServer to Agent"
+  630  iex -S mix
+  631  mix run -e "Bench.run(KeyValue)"
+  632  mix
+  633  mix deps.get
+  634  mix run -e "Bench.run(KeyValue)"
+  635  mix deps.get
+  636  mix run -e "Bench.run(KeyValue)"
+  637  mix run -e "Benchee.run(KeyValue)"
+  638  mix run -e "Bench.run(KeyValue)"
+  639  mix deps.get
+  640  mix run -e "Bench.run(KeyValue)"
+  641  mix run -e "Mix.Tasks.Bench.run(KeyValue)"
+  642  mix run -e "Bench.run(KeyValue)"
+  643  cd ../learning/elixir
+  644  ls
+  645  cd elixir-in-action
+  646  ls
+  647  cd code_samples
+  648  ls
+  649  cd ch10
+  650  cd ../../ch10
+  651  mix run -e "Bench.run(KeyValue)"
+  652  l
+  653  cd key_value
+  654  ls
+  655  mix run -e "Bench.run(KeyValue)"
+  656  mix run -e "Bench.run(KeyValue, concurrency: 10000)"
+  657  nvim
+  658  iex -S mix
+  659  mix run -e "Bench.run(EtsKeyValue)"
+  660  mix run -e "Bench.run(EtsKeyValue, concurrency: 10000, num_updates: 100)"\n
+  661  iex -S mix
+  662  cd Projects/.neovimrc
+  663  ls
+  664  ll
+  665  nvim lua/jamescarr/lazy/init.lua
+  666  cd Projects/.neovimrc
+  667  make install
+  668  nvim lua/jamescarr/lazy/init.lua
+  669  nvim
+  670  git status
+  671  git commit -am "add nvim-tree dev icons"
+  672  git push origin main
+  673  cd ..
+  674  ls
+  675  cd elixir
+  676  ls
+  677  cd ..
+  678  cd learning
+  679  ls
+  680  cd elixir
+  681  ls
+  682  cd ../../.neovimrc
+  683  ls
+  684  git status
+  685  git add -A
+  686  git commit -am "elixir in action work so far"
+  687  git push orign main
+  688  git push origin main
+  689  cd ..
+  690  ls
+  691  mkdir learn-elixir
+  692  nvim
+  693  cd ../
+  694  ls
+  695  cd learn-elixir
+  696  git status
+  697  git init
+  698  git st
+  699  git add -A
+  700  git commit -am "Initial commit'
+  701  git commit -am "Initial commit"
+  702  git commit -am "Add blog application"
+  703  git status
+  704  git commit -am "Updated details about resources"
+  705  git pushgit remote add origin git@github.com:jamescarr/elixir-learning.git\ngit push -u origin main
+  706  git remote add origin git@github.com:jamescarr/elixir-learning.git\ngit push -u origin main
+  707  mix new task-processing
+  708  mix new task_processor
+  709  git status
+  710  git add -A
+  711  git commit -am "Add task processor"
+  712  git push origin main
+  713  cd todo
+  714  nvim
+  715  git commit -am "Add books section"
+  716  git push origin main
+  717  exit
+  718  cd Projects/elixir
+  719  ls
+  720  mix new hello_world --sup
+  721  iex
+  722  l
+  723  cd hello_world
+  724  iex -S mix
+  725  cd ../
+  726  ls
+  727  cd ..
+  728  cd todo
+  729  eix -S mix
+  730  iex -S mix
+  731  mix test
+  732  ls _build
+  733  ls _build/dev
+  734  MIX_ENV=prod mix compile
+  735  ls _build
+  736  mix deps.get
+  737  iex -S mix
+  738  brew install erlang
+  739  iex -S mix
+  740  brew install wxmac
+  741  brew install wxwidgets
+  742  erl -eval 'io:format("~p~n", [:code.lib_dir(wx)]).' -s init stop\n
+  743  brew uninstall erlang\nbrew install erlang --with-wxmac\n
+  744  brew uninstall erlang &&\nbrew install erlang --with-wxmac\n
+  745  brew uninstall erlang --ignore-dependencies &&\nbrew install erlang --with-wxmac\n
+  746  brew uninstall erlang --ignore-dependencies &&\nbrew install erlang --with-wxwidgets\n
+  747  \nbrew install erlang --with-wxwidgets\n
+  748  \nbrew install erlang \n
+  749  which wx-config && wx-config --version-full
+  750  iex -S mix
+  751  git status
+  752  git add -A
+  753  git commit -am "Package up the todo application as a proper OTP application"
+  754  git push origin main
+  755  git commit -am "Add lsp-lines to wrap lsp messages across multiple lines"
+  756  git push origin main
+  757  make install
+  758  git status
+  759  git ignore */.DS_Store
+  760  git ignore **/.DS_Store
+  761  nvim
+  762  mix deps.get
+  763  mix
+  764  iex -S mix
+  765  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Dentist"\n
+  766  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  767  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Dentist"\n
+  768  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  769  iex -S mix
+  770  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Dentist"\n
+  771  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  772  git status
+  773  git add -A
+  774  git commit -am "Add cowboy web handler"
+  775  git push origin main
+  776  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  777  iex -S mix
+  778  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Dentist"\n
+  779  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Oil+Change"\n
+  780  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  781  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Oil+Change"\n
+  782  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  783  git status
+  784  git add -A
+  785  git commit -am "add .DS_Store to gitignore"
+  786  git push origin main
+  787  iex -S mix
+  788  ls -al
+  789  ls persist
+  790  iex -S mix
+  791  git commit -am "Make the http port an persistence directory configurable"
+  792  git status
+  793  git add -A 
+  794  git commit -am "Make the http port an persistence directory configurable"
+  795  git squash HEAD~2 "Make the http port an persistence directory configurable"
+  796  git push -f origin main
+  797  iex -S mix
+  798  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  799  iex -S mix
+  800  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  801  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Oil+Change"\n
+  802  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  803  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Oil+Change"\n
+  804  iex -S mix
+  805  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Oil+Change"\n
+  806  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  807  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Oil+Change"\n
+  808  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  809  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Charity+Work"\n
+  810  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  811  iex -S mix
+  812  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  813  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Charity+Work"\n
+  814  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  815  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Charity"\n
+  816  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  817  iex -S mix
+  818  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  819  curl "http://localhost:5454/entries?list=bob&date=2023-12-2"\n
+  820  curl "http://localhost:5454/entries?list=bob&date=2023-12-02"\n
+  821  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  822  iex -S mix
+  823  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"\n
+  824  git status
+  825  git commit -am "Clean up defect causing Todo.Server process thrashing"
+  826  git push origin main
+  827  iex -S mix --sname node2
+  828  iex --sname node2
+  829  iex --sname node1@localhost
+  830  iex --sname node2@localhost
+  831  exit
+  832  iex --sname node3@localhost
+  833  nvim
+  834  make install
+  835  git status
+  836  git commit -am "Ignore node_modules and elixir build path"
+  837  git push origin main
+  838  nvim
+  839  make install
+  840  nvim
+  841  make install
+  842  nvim
+  843  git commit -am "add ignore patterns for elixir, node, golang and python projects"
+  844  git push origin main
+  845  iex --sname node2@localhost -S mix
+  846  iex --sname node1@localhost -S mix
+  847  iex --sname node2@localhost -S mix
+  848  iex --sname node2@localhost 
+  849  iex --sname node1@localhost 
+  850  iex --sname node3@localhost
+  851  iex --sname node2@localhost 
+  852  iex --sname node1@localhost 
+  853  exit
+  854  iex --sname node1@localhost 
+  855  iex --sname node2@localhost 
+  856  git commit -am "Enable clusterable Todo.Server process discovery"
+  857  git  push origin main
+  858  iex --sname node1@localhost -S mix 
+  859  TODO_HTTP_PORT=5555 iex --sname node2@localhost -S mix 
+  860  curl -d "" \\n    "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Hiking"
+  861  curl "http://localhost:5555/entries?list=bob&date=2023-12-19"
+  862  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"
+  863  iex --sname node1@localhost -S mix 
+  864  TODO_HTTP_PORT=5555 iex --sname node2@localhost -S mix 
+  865  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"
+  866  curl "http://localhost:5555/entries?list=bob&date=2023-12-19"
+  867  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"
+  868  curl "http://localhost:5555/entries?list=bob&date=2023-12-19"
+  869  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"
+  870  curl "http://localhost:5555/entries?list=bob&date=2023-12-19"
+  871  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"
+  872  curl "http://localhost:5555/entries?list=bob&date=2023-12-19"
+  873  git status
+  874  git commit -am "Make Todo.Server clustered and live on one node, replicate all database writes"
+  875  git push origin main
+  876  iex --sname node1@localhost -S mix 
+  877  TODO_HTTP_PORT=5555 iex --sname node2@localhost -S mix 
+  878  cd Projects/learning/elixir/todo
+  879  TODO_HTTP_PORT=6666 iex --sname node3@localhost -S mix 
+  880  iex --sname node1@localhost -S mix 
+  881  iex --erl '-kernel inet_dist_listen_min 10000' --erl '-kernel inet_dist_listen_max 10100' --sname node1@localhost -S mix 
+  882  epmd -names
+  883  mix run --no-halt
+  884  mix release
+  885  _build/dev/rel/todo/bin/todo remote
+  886  mix release
+  887  RELEASE_NODE="todo@localhost" _build/prod/rel/todo/bin/todo daemon
+  888  exit
+  889  RELEASE_NODE="todo@localhost" _build/prod/rel/todo/bin/todo stop
+  890  cat _build/prod/rel/todo/tmp/log/erlang.log.1
+  891  _build/prod/rel/todo/bin/todo
+  892  ls -1 _build/prod/rel/todo/lib
+  893  git diff
+  894  git commit -am "default release to prod"
+  895  git push origin main
+  896  RELEASE_NODE="todo@localhost" _build/prod/rel/todo/bin/todo start_iex
+  897  docker build
+  898  docker build .
+  899  docker clean
+  900  mkdir todo_release
+  901  mv Dockerfile todo_release
+  902  rm -rf todo_release
+  903  git add -A
+  904  git commit -am "add dockerfile for build and release"
+  905  make build
+  906  erl --version
+  907  erl -version
+  908  erl -v
+  909  make install
+  910  make build
+  911  git add -A
+  912  git commit -am "Add a Makefile, correct the versions in Dockerfile"
+  913  git push origin main
+  914  make
+  915  make run
+  916  git commit -am "Rename targets to be docker specific"
+  917  git push origin main
+  918  make run_docker
+  919  curl -d "" \\n  "http://localhost:5454/add_entry?list=bob&date=2023-12-19&title=Dentist"\n
+  920  curl "http://localhost:5454/entries?list=bob&date=2023-12-19"
+  921  make run_docker
+  922  make
+  923  make test_entries list=bob date=2023-12-19
+  924  make test_add_entry list=bob date=2023-12-19 title=Dentist
+  925  make test_entries list=bob date=2023-12-19
+  926  git status
+  927  git commit -am "add test curl commands to makefile"
+  928  git push origin main
+  929  iex
+  930  make local_daemon
+  931  iex --hidden --sname observer@localhost --cookie todo
+  932  ps ax 
+  933  iex --hidden --sname observer@localhost --cookie todo
+  934  make stop
+  935  make local_daemon_stop
+  936  ps ax
+  937  make local_daemon
+  938  _build/prod/rel/todo/erts-13.0/bin/to_erl _build/prod/rel/todo/tmp/pipe/
+  939  make local_daemon_attach
+  940  make local_daemon_stop
+  941  git status
+  942  git diff
+  943  git commit -am "Additional tasks in Makefile and some mix.exs cleanup"
+  944  git push origin main
+  945  cd ..
+  946  mix archive.install hex phx_new
+  947  phx.new
+  948  echo ' export PATH="$PATH:$HOME/.mix/escripts"' >> ~/.zshrc
+  949  exec $SHELL
+  950  phx.new
+  951  mix phx.new hello-phx
+  952  mix phx.new hello_phx
+  953  l
+  954  cd hello_phx
+  955  l
+  956  nvim mix.exs
+  957  cd ..
+  958  cd hello_phx
+  959  nvim
+  960  cd ..
+  961  ls
+  962  git clone git@github.com:jamescarr/jamescarr.github.io.git
+  963  cd jamescarr.github.io
+  964  ls
+  965  cd jamescarr.github.io
+  966  nvim
+  967  make
+  968  make new_post title="The Pivot" description="An update on my current pivot from Engineering Leadership to Indie Hacker."
+  969  brew install hugo
+  970  hugo server
+  971  hugo serve
+  972  git submodule init
+  973  git submodule pull
+  974  make submodule
+  975  hugo serve
+  976  make local
+  977  git status
+  978  git add -A
+  979  git commit -am "Add a makefile to better manage the blog and a new draft on 'The Pivot'"
+  980  git push origin main
+  981  xit
+  982  exit
+  983  cd ..
+  984  ls
+  985  cd learn-elixir
+  986  ls
+  987  cd learn-elixir
+  988  mkdir phoenix-programming-live-view
+  989  cd phoenix-programming-live-view
+  990  nvim
+  991  cd phoenix-programming-live-view
+  992  l
+  993  mkdir ch01
+  994  cd ch01
+  995  mix phx.new
+  996  mix phx.new pento
+  997  cd pento
+  998  cd ../learn-elixir/phoenix-programming-live-view/ch01
+  999  cd pento
+ 1000  ls
+ 1001  docker-compose up
+ 1002  mix ecto.create
+ 1003  mix phx.server
+ 1004  ls deps
+ 1005  iex -S mix 
+ 1006  cd Projects/learning/elixir/learn-elixir
+ 1007  l
+ 1008  cd phoenix-programming-live-view/ch01
+ 1009  ls
+ 1010  cd pento/
+ 1011  iex -S mix phx.server
+ 1012  git status
+ 1013  cd ..
+ 1014  ls
+ 1015  cd ..
+ 1016  ls
+ 1017  rm -rf hello_world
+ 1018  git add -A
+ 1019  git commit -am "Added programming phoenix live view exercises"
+ 1020  git push origin main
+ 1021  iex -S mix
+ 1022  iex
+ 1023  git status
+ 1024  git commit -am "Working guessing game"
+ 1025  git push origin main
+ 1026  cd ..
+ 1027  cd .neovimrc
+ 1028  nvim lua/jamescarr/lazy/lsp.lua
+ 1029  mix phx.gen
+ 1030  cd phoenix-programming-live-view
+ 1031  l
+ 1032  cd ch01
+ 1033  mix phx.gen
+ 1034  l
+ 1035  cd pento
+ 1036  mix phx.gen
+ 1037  mix phx.gen.auth
+ 1038  mix phx.gen.auth Accounts User users
+ 1039  mix deps.get
+ 1040  mix ecto.migrate
+ 1041  mix test
+ 1042  iex -S mix phx.server
+ 1043  nvim
+ 1044  ag require_authenticated_user
+ 1045  nvim
+ 1046  ag require_auth
+ 1047  ag redirect_
+ 1048  ag 'scope \"\/"
+ 1049  ag 'scope \"\/"'
+ 1050  ag 'pipe_through \['
+ 1051  ag 'pipe_through ['
+ 1052  ag 'pipe_through \['
+ 1053  ag 'pipe_through '
+ 1054  ag live_session
+ 1055  git status
+ 1056  git diff lib/pento_web/user_auth.e
+ 1057  git diff lib/pento_web/user_auth.ex
+ 1058  mix phx.gen.auth Accounts User users
+ 1059  mix ecto.migrate
+ 1060  mix ecto.migrate --help
+ 1061  mix ecto
+ 1062  mix ecto.drop
+ 1063  mix ecto.migrate
+ 1064  mix ecto
+ 1065  mix ecto.create
+ 1066  mix ecto.migrate
+ 1067  iex -S mix phx.server
+ 1068  git reset HEAD --hard
+ 1069  ls priv/repo/migrations
+ 1070  rm priv/repo/migrations/20240730175324_create_users_auth_tables.exs
+ 1071  mix phx.auth.gen
+ 1072  mix phx.gen.auth Accounts User users
+ 1073  git reset HEAD --hard
+ 1074  git status
+ 1075  rm "lib/pento/accounts.ex\n        lib/pento/accounts/\n        lib/pento_web/controllers/user_session_controller.ex\n        lib/pento_web/live/user_confirmation_instructions_live.ex\n        lib/pento_web/live/user_confirmation_live.ex\n        lib/pento_web/live/user_forgot_password_live.ex\n        lib/pento_web/live/user_login_live.ex\n        lib/pento_web/live/user_registration_live.ex\n        lib/pento_web/live/user_reset_password_live.ex\n        lib/pento_web/live/user_settings_live.ex\n        lib/pento_web/user_auth.ex\n        priv/repo/migrations/20240730142327_create_users_auth_tables.exs\n        test/pento/\n        test/pento_web/controllers/user_session_controller_test.exs\n        test/pento_web/live/\n        test/pento_web/user_auth_test.exs\n        test/support/fixtures/"
+ 1076  nvim remove.sh
+ 1077  chmod +x remove.sh
+ 1078  ./remove.sh
+ 1079  mix phx.gen.auth
+ 1080  git status
+ 1081  rm -rf remove.sh
+ 1082  git status
+ 1083  mix phx.gen.auth Accounts User users
+ 1084  mix ecto.migrate
+ 1085  mix deps.get
+ 1086  mix ecto.migrate
+ 1087  git status
+ 1088  git add -A
+ 1089  git commit -am "Added user auth to the mix"
+ 1090  git push origin main
+ 1091  \n
+ 1092  git commit -am "Make the WrongLive endpoints auth protected"
+ 1093  git push origin main
+ 1094  git diff
+ 1095  git commit -am "set root layout for live session routes"
+ 1096  git push origin main
+ 1097  git diff
+ 1098  git commit -am "Small refractoring, display user session detail on the guess game"
+ 1099  git push origin main
+ 1100  mix phx.gen
+ 1101  brew install direnv
+ 1102  direnv allow
+ 1103  direnv allow .
+ 1104  ls
+ 1105  ls -al
+ 1106  nvim ~/.zshrc
+ 1107  exec $SHELL
+ 1108  direnv allow .
+ 1109  echo $MAILGUN_DOMAIN
+ 1110  direnv allow .
+ 1111  echo $MAILGUN_DOMAIN
+ 1112  iex -S mix phx.server
+ 1113  elixir deps.get
+ 1114  ag Mailer.deliver(email
+ 1115  ag "Mailer.deliver(email"
+ 1116  ag "Mailer.deliver\(email"
+ 1117  elixir deps.get
+ 1118  mix deps.get
+ 1119  iex -S mix phx.server
+ 1120  mix deps.get
+ 1121  iex -S mix phx.server
+ 1122  mix deps.get
+ 1123  iex -S mix phx.server
+ 1124  mix deps.get
+ 1125  iex -S mix phx.server
+ 1126  mix deps.get
+ 1127  iex -S mix phx.server
+ 1128  ag plug
+ 1129  iex -S mix phx.server
+ 1130  mix hex.search multipart
+ 1131  mix hex.search plug
+ 1132  mix deps.get
+ 1133  iex -S mix phx.server
+ 1134  exec $SHELL
+ 1135  iex -S mix phx.server
+ 1136  nvim
+ 1137  iex -S mix phx.server
+ 1138  exec $SHELL
+ 1139  echo $MAILGUN_API
+ 1140  echo $MAILGUN_API_KEY
+ 1141  direnv allow .
+ 1142  iex -S mix phx.server
+ 1143  nvim
+ 1144  ag Mailer
+ 1145  iex -S mix phx.server
+ 1146  nvim .envrc
+ 1147  direnv allow .
+ 1148  iex -S mix phx.server
+ 1149  \ngit status
+ 1150  git ignore .envrc
+ 1151  cp .envrc .envrc.example
+ 1152  nvim .envrc.example
+ 1153  git status
+ 1154  rm ../../notes.md
+ 1155  git add -A
+ 1156  git commit -am "Add mailgun support... with a logger
+ 1157  git commit -am "Add mailgun support... with a logger\!"
+ 1158  git push origin main
+ 1159  git tag ch2-email-sending
+ 1160  git push --tags
+ 1161  ls
+ 1162  git status
+ 1163  git commit -am "move from address to constant"
+ 1164  git push origin main
+ 1165  mix phx.gen
+ 1166  mix ecto.gen.migration alter
+ 1167  mix ecto.migrate
+ 1168  iex -S mix phx.server
+ 1169  mix ecto.gen.migration alter
+ 1170  mix ecto.gen.migration 
+ 1171  mix ecto.gen.migration user
+ 1172  mix ecto
+ 1173  mix ecto.migrate
+ 1174  mix ecto.rollback
+ 1175  mix ecto.migrate
+ 1176  mix ecto.rollback
+ 1177  mix ecto.migrate
+ 1178  mix ecto.rollback
+ 1179  mix ecto.migrate
+ 1180  ag Email
+ 1181  git status
+ 1182  git add -A
+ 1183  git commit -am "Added a custom username field, redirect index page for logged in user"
+ 1184  git push origin main
+ 1185  mix phx.gen.live
+ 1186  exit
+ 1187  clear
+ 1188  mix phx.gen.live Accounts User users username:string
+ 1189  mix phx.gen.live Accounts User users email:email password:password username:string
+ 1190  clear
+ 1191  git reset HEAD --hard
+ 1192  git status
+ 1193  rm -rf lib/pento_web/live/user_live
+ 1194  rm         priv/repo/migrations/20240731192452_create_users.exs
+ 1195  rm test/pento_web/live/user_live_test.ex
+ 1196  rm test/pento_web/live/user_live_test.exs
+ 1197  clear
+ 1198  git status
+ 1199  mix phx.gen
+ 1200  mix phx.gen.live
+ 1201  mix phx.gen.live Accounts User users email:string username:string hashed_password:string confirmed_at:utc_datetime\n
+ 1202  git diff
+ 1203  git status
+ 1204  iex -S mix phx.server
+ 1205  git status
+ 1206  git add -A
+ 1207  git commit -am "Add routes for live views"
+ 1208  git push origin main
+ 1209  mix phx.gen.live Catalog Product products name:string \\ndescription:string unit_price:float sku:integer:unique
+ 1210  mix test
+ 1211  mix ecto migrate
+ 1212  nvim
+ 1213  mix test
+ 1214  ag changest
+ 1215  ag changset
+ 1216  ag changeset
+ 1217  mix test
+ 1218  cd ..
+ 1219  rm -rf pento
+ 1220  mix phx.new pento
+ 1221  mix phx.gen.auth Account User users username:string:unique
+ 1222  cd pento
+ 1223  mix phx.gen.auth Account User users username:string:unique
+ 1224  mix phx.gen.auth Accounts User users 
+ 1225  mix ecto migrate
+ 1226  mix ecto.migrate
+ 1227  mix deps.get
+ 1228  mix phx.gen.live Catalog Product products name:string \\ndescription:string unit_price:float sku:integer:unique
+ 1229  mix ecto.migrate
+ 1230  docker-compose up
+ 1231  ls
+ 1232  cd ../pento
+ 1233  ls
+ 1234  l
+ 1235  cd ch01/pento
+ 1236  ls
+ 1237  nvim
+ 1238  docker-compose up
+ 1239  mix ecto.migrate
+ 1240  mix ecto
+ 1241  mix ecto.create
+ 1242  mix ecto.migrate
+ 1243  iex -S mix phx.server
+ 1244  mix test
+ 1245  git status
+ 1246  git add -A
+ 1247  git commit -am "Chapter 3 exercises"
+ 1248  git push origin main
+ 1249  iex -S mix phx.server
+ 1250  mix run priv/repo/seeds.exs
+ 1251  iex -S mix phx.server
+ 1252  mix test
+ 1253  mix test\n
+ 1254  git status
+ 1255  git add -A
+ 1256  git commit -am "Product catalog tutorial"
+ 1257  git push origin main
+ 1258  mix test
+ 1259  iex -S mix phx.server
+ 1260  exit
+ 1261  mix run priv/repo/seeds.exs
+ 1262  iex -S mix phx.server
+ 1263  mix phx.gen.live FAQ Question questions title:string body:text votes:integer
+ 1264  mix phx.gen.schema Questions.Answer answers body:string question_id:references:questions votes:integer
+ 1265  mix ecto.migrate
+ 1266  mix test
+ 1267  OA
+ 1268  mix test
+ 1269  ix test
+ 1270  mix test
+ 1271  git status
+ 1272  git add -A
+ 1273  git commit -am "Add questions and answers boilerplate"
+ 1274  git push origin main
+ 1275  iex -S mix phx.server
+ 1276  mix test
+ 1277  git commit -am "modified to make tests pass with default routes, default votes to zero"
+ 1278  git push origin main
+ 1279  docker-compose up -d
+ 1280  iex -S mix phx.server
+ 1281  \n
+ 1282  git status
+ 1283  git commit -am "Start adding answers to the list"
+ 1284  git push origin main
+ 1285  git commit -am "Misread the task, going to come back to this. The task was to really create FAQs with the question and answer as fields."
+ 1286  git push origin main
+ 1287  iex -S mix 
+ 1288  nvim
+ 1289  git status
+ 1290  git add -A
+ 1291  git commit -am "Add autotag plugin"
+ 1292  make install
+ 1293  cd ../.neovimrc
+ 1294  ls
+ 1295  nvim
+ 1296  make install
+ 1297  git log
+ 1298  git commit -am "Fix plugin naming"
+ 1299  git push orign main
+ 1300  git push origin main
+ 1301  nvim
+ 1302  mv lib/pento_web/promo_live.ex lib/pento_web/live
+ 1303  git status
+ 1304  git add -A
+ 1305  git commit -am "Add a promo code intake form"
+ 1306  git push origin main
+ 1307  gti status
+ 1308  git status
+ 1309  git commit -am "Recipient is emailed, however there is a weird issue with PromoLive not handling an event post-submit"
+ 1310  mix ecto.migrate add_image_to_products
+ 1311  mix ect.gen
+ 1312  mix ecto.gen
+ 1313  mix ecto.gen.migration add_images_to_products
+ 1314  mix ecto.migrate
+ 1315  git status
+ 1316  git ignore  priv/static/images/*
+ 1317  git add -A
+ 1318  git commit -am "Support product image uploads"
+ 1319  git push origin main
+ 1320  cd ../jamescarr.github.io
+ 1321  nvim
+ 1322  d ../jamescarr.github.io
+ 1323  cd ../jamescarr.github.io
+ 1324  mv ~/Desktop/family-cambodia.jpg static/images
+ 1325  hugo serve
+ 1326  git add -A
+ 1327  git commit -am "The Pivot: From Engineering Leadership to Indie Hacking"
+ 1328  git push origin main
+ 1329  git commit -am "Some minor grammatical fixes"
+ 1330  git push origin main
+ 1331  curl https://mise.run | sh
+ 1332  echo "eval \"\$(/Users/jamescarr/.local/bin/mise activate zsh)\"" >> "/Users/jamescarr/.zshrc"
+ 1333  exec $SHELL
+ 1334  mise --version
+ 1335  mise 
+ 1336  mise ls-remote elixir
+ 1337  mise ls-remote erlang
+ 1338  mise
+ 1339  mise ls-remote erlang
+ 1340  mise install erlang@latest
+ 1341  mise install erlixir@latest
+ 1342  mise install elixir@latest
+ 1343  mise
+ 1344  nvim .mise.toml
+ 1345  touch .mise.toml
+ 1346  cat direnv
+ 1347  cat .direnv
+ 1348  mise set TEST=test
+ 1349  mise trust
+ 1350  echo $TEST
+ 1351  mise ls elixir
+ 1352  mise use elixir@latest
+ 1353  elixir --version
+ 1354  whereis elixir
+ 1355  mise set elixir@1.17.2
+ 1356  mise set elixir 1.17.2
+ 1357  mise set --help
+ 1358  mise
+ 1359  mise config --help
+ 1360  nvim .mise.toml
+ 1361  git status
+ 1362  git add -A
+ 1363  git commit -am "fix promo_live and add .mise.toml for manageing elixir"
+ 1364  git push origin main
+ 1365  mise
+ 1366  mise ls erlang
+ 1367  mise set erlang 27.0.1
+ 1368  cat .mise.toml
+ 1369  echo 'erlang = "27.0.1" >> .mise.toml
+ 1370  echo 'erlang = "27.0.1"' >> .mise.toml
+ 1371  cd ../.neovimrc
+ 1372  nvim
+ 1373  cd ../.neovimrc
+ 1374  git status
+ 1375  make install
+ 1376  nvim
+ 1377  mix phx.gen.live 
+ 1378  iex -S mix phx.server
+ 1379  mix deps.compile
+ 1380  mix phx.gen.live 
+ 1381  git status
+ 1382  git commit -am "Some formatting and a small refactoring of email logic to UserNotifier"
+ 1383  git push origin main
+ 1384  \ngt
+ 1385  git status
+ 1386  git commit -am "Add snippets and telescope integration with go to reference"
+ 1387  git push origin main
+ 1388  cd Projects
+ 1389  ls
+ 1390  cd elixir
+ 1391  ls
+ 1392  mkdir opensource
+ 1393  mv broadway opensource
+ 1394  cd opensource
+ 1395  git clone git@github.com:jamescarr/phoenix.git
+ 1396  cd phoenix/
+ 1397  mix
+ 1398  mix deps.get
+ 1399  mix test
+ 1400  ag upload
+ 1401  ag image
+ 1402  git diff
+ 1403  git commit -am "Slow down uploads and add a cancel upload button."
+ 1404  git push origin main
+ 1405  git add -A
+ 1406  git status
+ 1407  git commit -am "New search live endpoint"
+ 1408  git push origin main
+ 1409  aws
+ 1410  brew install awscli
+ 1411  brew install --cask aws-vault
+ 1412  aws-vault add pento-dev
+ 1413  aws-vault add pento-prod
+ 1414  aws-vault login pento-dev
+ 1415  aws-vault --help
+ 1416  aws-vault list
+ 1417  aws-vault remove pento-dev
+ 1418  aws-vault remove pento-prod
+ 1419  aws-vault add pento-dev --help
+ 1420  aws-vault add pento-dev --region
+ 1421  echo """[profile default]\nregion = us-east-2""" >>> ~/.aws/credentials
+ 1422  nvim ~/.aws/config
+ 1423  aws-vault add pento-dev
+ 1424  aws-vault login pento-dev
+ 1425  nvim ~/.aws/config
+ 1426  aws-vault exec pento-dev
+ 1427  aws s3 ls
+ 1428  aws-vault exec tutorial-s3-user -- aws s3 ls s3://tutorial-pento-files\n\n
+ 1429  aws s3 ls s3://tutorial-pento-files\n\n
+ 1430  aws-vault login pento-prod
+ 1431  aws-vault login pento-proder
+ 1432  aws-vault add pento-prod
+ 1433  aws-vault reset
+ 1434  exit
+ 1435  aws-vault login pento-dev
+ 1436  Copysecurity list-keychains
+ 1437  security list-keychains
+ 1438  security set-keychain-password ~/Library/Keychains/aws-vault.keychain-db
+ 1439  aws s3 ls s3://tutorial-pento-files\n\n
+ 1440  aws login pento-dev
+ 1441  aws-vault login pento-dev
+ 1442  aws-vault exec pento-dev -- aws s3 ls
+ 1443  aws-vault exec pento-dev -- aws s3 ls s3://tutorial-pento-files
+ 1444  aws-vault exec pento-dev -- aws s3 cp ./docker-compose.yml s3://tutorial-pento-files
+ 1445  aws-vault exec pento-dev -- aws s3 ls s3://tutorial-pento-files
+ 1446  aws-vault exec pento-dev -- mix -S iex
+ 1447  aws-vault exec pento-dev -- iex -S mix
+ 1448  mix deps.get
+ 1449  make
+ 1450  1
+ 1451  make
+ 1452  cd .
+ 1453  cd ..
+ 1454  cd ch01
+ 1455  ls
+ 1456  cd pento
+ 1457  ls
+ 1458  make
+ 1459  make run
+ 1460  mise set S3_UPLOADS_BUCKET tutorial-pento-files
+ 1461  mise set S3_UPLOADS_BUCKET="tutorial-pento-files"
+ 1462  nvim
+ 1463  exec $SHELL
+ 1464  make run
+ 1465  aws-vault exec pento-dev -- aws s3 ls s3://tutorial-pento-files
+ 1466  mise set AWS_REGION=us-east-2
+ 1467  make run
+ 1468  mise set AWS_REGION=us-east-2
+ 1469  make run
+ 1470  aws-vault exec pento-dev -- aws s3 ls s3://tutorial-pento-files
+ 1471  make run
+ 1472  aws-vault exec pento-dev -- aws s3 ls s3://tutorial-pento-files
+ 1473  make run
+ 1474  aws-vault exec pento-dev -- aws s3 ls s3://tutorial-pento-files
+ 1475  make run
+ 1476  aws-vault exec pento-dev -- echo $AWS_ACCESS_KEY_ID
+ 1477  aws-vault exec pento-dev -- echo $AWS_ACCESS_KEY
+ 1478  env
+ 1479  env | grep AWS
+ 1480  aws-vault exec pento-dev -- env | grep AWS
+ 1481  aws-vault
+ 1482  aws-vault remove pento-dev
+ 1483  aws-vault add pento-dev
+ 1484  aws-vault exec pento-dev -- env | grep AWS
+ 1485  aws-vault exec pento-dev -- aws s3 ls 
+ 1486  aws-vault exec pento-dev -- aws s3 ls s3://tutorial-pento-files
+ 1487  aws-vault exec pento-dev -- aws s3 ls
+ 1488  make run
+ 1489  aws-vault exec pento-dev -- aws s3 ls
+ 1490  aws-vault exec pento-dev -- echo $AWS_REGION
+ 1491  make run
+ 1492  aws-vault exec pento-dev -- echo $AWS_REGION
+ 1493  make run
+ 1494  \taws-vault exec pento-dev -- aws s3 ls 
+ 1495  \taws-vault exec pento-dev -- aws s3 ls tutorial-pento-files
+ 1496  aws-vault exec pento-dev -- env
+ 1497  make run
+ 1498  aws-vault exec pento-dev -- env | grep AWS_SESS
+ 1499  aws-vault exec pento-dev -- env | grep AWS
+ 1500  make run
+ 1501  mix deps.get
+ 1502  make run
+ 1503  git status
+ 1504  git add -A
+ 1505  git commit -am "Add makefile, fix configuration to store files in s3."
+ 1506  git push origin main
+ 1507  \taws-vault exec pento-dev -- aws s3 ls tutorial-pento-files
+ 1508  aws-vault exec pento-dev -- aws s3api get-bucket-location --bucket tutorial-pento-dev
+ 1509  aws-vault exec pento-dev -- aws s3api get-bucket-location --bucket tutorial-pento-files
+ 1510  ls /var/folders/y3/npq3kj5j5vs3spzhltt79c_m0000gn/T/plug-1723-qUPn/live_view_upload-1723137123-786484444223-
+ 1511  make run
+ 1512  \taws-vault exec pento-dev -- aws s3 ls tutorial-pento-files
+ 1513  \taws-vault exec pento-dev -- aws s3 ls tutorial-pento-files/images
+ 1514  \taws-vault exec pento-dev -- aws s3 ls tutorial-pento-files/images/
+ 1515  ag "images/"
+ 1516  \taws-vault exec pento-dev -- aws s3 ls tutorial-pento-files/images/
+ 1517  make run
+ 1518  git status
+ 1519  git add -A
+ 1520  git commit -am "Add support for persisting to and retrieving from s3"
+ 1521  git push origin main
+ 1522  git diff
+ 1523  \n
+ 1524  git status
+ 1525  git diff
+ 1526  git commit -am "Remove an IO.puts"
+ 1527  git push origin main
+ 1528  cd ..
+ 1529  ls
+ 1530  mv pento ..
+ 1531  cd ..
+ 1532  rm -rf ch01
+ 1533  ls
+ 1534  mkdir ch05
+ 1535  mv ch05/ ch06
+ 1536  cd ch06
+ 1537  mix phx.new pento
+ 1538  cd ..
+ 1539  ld
+ 1540  cd phoenix-programming-live-view
+ 1541  l
+ 1542  mkdir ch01-ch05
+ 1543  mv pento/ ch01-ch05
+ 1544  cd ch06
+ 1545  cd pento
+ 1546  ls
+ 1547  cd pento
+ 1548  ls
+ 1549  mix ecto.create
+ 1550  mix phx.gen.auth
+ 1551  mix phx.gen.auth Accounts User users
+ 1552  mix deps.get
+ 1553  mix ecto.migrate
+ 1554  exec $SHELL
+ 1555  mise trust
+ 1556  ls
+ 1557  cd ..
+ 1558  rm -rf ch06
+ 1559  ls
+ 1560  mv ch01-ch05/pento .
+ 1561  rm -rf ch01-ch05
+ 1562  ls
+ 1563  cd ../..
+ 1564  nvim
+ 1565  cd phoenix-programming-live-view
+ 1566  cd pento
+ 1567  mise trust
+ 1568  ls
+ 1569  cd pento
+ 1570  ls
+ 1571  cd ../..
+ 1572  cd pento
+ 1573  ls
+ 1574  nvim
+ 1575  make install
+ 1576  mix phx.gen.context Survey Demographic demographics gender:string \\nyear_of_birth:integer user_id:references:users:unique
+ 1577  mix ecto.migrate
+ 1578  git status
+ 1579  git add -A
+ 1580  git commit -am "move pento out of ch01 directory, create survey context"
+ 1581  git push origin main
+ 1582  mix phx.gen.context Survey Rating ratings stars:integer \ 
+ 1583  mix phx.gen.context Survey Rating ratings stars:integer \\nuser_id:references:users product_id:references:products
+ 1584  mix ecto.migrate
+ 1585  mix ecto.gen.migration make_ratings_unique
+ 1586  make install
+ 1587  git commit -am "Add keymapping to find file in nvim-tree\n"
+ 1588  git push origin main
+ 1589  nvim
+ 1590  git commit -am "add migration to make user ratings unique on products"
+ 1591  git push origin main
+ 1592  mix ecto.migrate
+ 1593  git add -A
+ 1594  git commit -am "Add migrations for the new ratings and demographics table"
+ 1595  gfit push origin main
+ 1596  git push origin main
+ 1597  mix ecto.migrate
+ 1598  mix test
+ 1599  mix ecto.migrate
+ 1600  git status
+ 1601  git commit -am "updated models and fixed unit tests"
+ 1602  git push origin main
+ 1603  aws-vault exec pento-dev -- iex -S mix
+ 1604  make install
+ 1605  nvim
+ 1606  make install
+ 1607  nvim
+ 1608  make install
+ 1609  nvim
+ 1610  git add -A
+ 1611  git commit -am "Setup statusline with treesitter integration"
+ 1612  git push origin main
+ 1613  nvim
+ 1614  brew install flyctl
+ 1615  cd ..
+ 1616  cd elixir
+ 1617  ..
+ 1618  cd learning
+ 1619  cd elixir/
+ 1620  cd learn-elixir
+ 1621  ls
+ 1622  mkdir petals
+ 1623  cd petals
+ 1624  mix phx.new --template petal
+ 1625  mix phx.new notifications_manager --help
+ 1626  mix phx.new
+ 1627  git clone https://github.com/petalframework/petal_boilerplate.git notification_manager
+ 1628  cd notification_manager
+ 1629  ls
+ 1630  mise install
+ 1631  rm -rf .git
+ 1632  git init
+ 1633  git status
+ 1634  rm -rf .git
+ 1635  git status
+ 1636  mix deps.get
+ 1637  mix ecto.create
+ 1638  nvim mix.exs
+ 1639  mix test
+ 1640  git add -A
+ 1641  git commit -am "move pento, create demographic by user"
+ 1642  git push origin main
+ 1643  nvim
+ 1644  git commit -am "build all ecto bits for this chapter"
+ 1645  git push origin main
+ 1646  git status
+ 1647  git add -A
+ 1648  git commit -am "Add custom queries for ratings and products"
+ 1649  git push origin main
+ 1650  make run
+ 1651  git sttus
+ 1652  git status
+ 1653  git commit -am "modify root and app links, up to page 191"
+ 1654  git push origin main
+ 1655  ls
+ 1656  mix deps.get
+ 1657  mix phx.serve
+ 1658  it add -A
+ 1659  git add -A
+ 1660  git commit -am "Scaffolding for surveys"
+ 1661  git push origin main
+ 1662  mix deps.get
+ 1663  make run
+ 1664  git add -A
+ 1665  git ststus
+ 1666  git commit -am "Using components with heex templates"
+ 1667  git push origni main
+ 1668  git push origin main
+ 1669  cd ..
+ 1670  ls
+ 1671  cd ..
+ 1672  cd elixir
+ 1673  ls
+ 1674  cd opensource
+ 1675  ls
+ 1676  git clone git@github.com:jamescarr/ecto.git
+ 1677  ls
+ 1678  cd ecto
+ 1679  ls
+ 1680  nvim
+ 1681  git status
+ 1682  git add -A
+ 1683  git commit -am "Display demographics"
+ 1684  git push origin main
+ 1685  git commit -am "Handle case when @demographic is present"
+ 1686  git push origin main
+ 1687  git commit -am "Use CoreComponents.table to render demographic details"
+ 1688  git push origin main
+ 1689  git status
+ 1690  mix phx.gen.test PentoWeb.SurveyLive Component
+ 1691  mix test
+ 1692  git status
+ 1693  git add -A 
+ 1694  git commit -am "Add unit test for components"
+ 1695  git push origin main
+ 1696  mix test
+ 1697  git status
+ 1698  got add -A
+ 1699  got commit -am "Add form component for demographics"
+ 1700  git commit -am "Add form component for demographics"
+ 1701  git push origin main
+ 1702  nvim
+ 1703  make install
+ 1704  git add -A
+ 1705  git commit -am "Cheatsheet + bufferline"
+ 1706  git push origin main
+ 1707  nvim
+ 1708  git status
+ 1709  git add -A
+ 1710  git commit -am "Ratings plugged into live view."
+ 1711  git push origin main
+ 1712  git status
+ 1713  mkdir images
+ 1714  git commit -am "Add some screenshots to the readme"
+ 1715  git push origin main
+ 1716  git status
+ 1717  git commit -am "Get validation errors to display for custom input type"
+ 1718  git push origin main
+ 1719  mix ecto.gen.migration capture_education_demographics
+ 1720  mix ecto.migrate
+ 1721  ag inspect
+ 1722  git status
+ 1723  git add -A 
+ 1724  git commit -am "Add education to demographics"
+ 1725  git push origin main
+ 1726  make install
+ 1727  git status
+ 1728  git commit -am "Only display the last 3 buffers"
+ 1729  git push origin main
+ 1730  git status
+ 1731  git diff
+ 1732  git reset HEAD --hard
+ 1733  nvim
+ 1734  make install
+ 1735  nvim
+ 1736  make install
+ 1737  nvim
+ 1738  make install
+ 1739  nvim
+ 1740  make install
+ 1741  git commit -am "limit to only 5 recent buffers"
+ 1742  git push origin main
+ 1743  git commit -am "Update readme to include fuzzy search"
+ 1744  git push origin main
+ 1745  make install
+ 1746  xit
+ 1747  exit
+ 1748  nvim
+ 1749  ag myself
+ 1750  make run
+ 1751  %
+ 1752  git status
+ 1753  git add -A
+ 1754  git commit -am "Collapsable component... using pure client side js"
+ 1755  git push origin main
+ 1756  cd ..
+ 1757  cd d ..
+ 1758  cd jam
+ 1759  cd opensource
+ 1760  cd ..
+ 1761  ls
+ 1762  cd ..
+ 1763  ls
+ 1764  cd jamescarr.github.io
+ 1765  ls
+ 1766  make
+ 1767  make new_post title="Managing Development Environments with Mise" description="Using mise to manage development environments spanning multiple versions and env variables"
+ 1768  nvim ~/.tmux.conf
+ 1769  exit
+ 1770  nvim
+ 1771  mise --help
+ 1772  mise config --help
+ 1773  cd ..
+ 1774  mkdir foo
+ 1775  cd foo
+ 1776  mise generate
+ 1777  mise new
+ 1778  mise generate --help 
+ 1779  mise --help
+ 1780  mise conifg generate
+ 1781  mise config generate
+ 1782  mise settings set experimental true
+ 1783  mise config generate
+ 1784  ls -al
+ 1785  nvim .mise.toml
+ 1786  mise use erlang=latest
+ 1787  mise use erlang latest
+ 1788  mise --help
+ 1789  mise list erlang
+ 1790  mise list elixir
+ 1791  mise list-remote elixir
+ 1792  mise --help
+ 1793  mise set elixir main
+ 1794  ls  -al
+ 1795  mise configuration generate
+ 1796  mise cfg generate
+ 1797  cat ~/Projects/learning/elixir/learn-elixir/phoenix-programming-live-view/pento/.mise.toml
+ 1798  nvim .mise.toml
+ 1799  .
+ 1800  elixir -v
+ 1801  nvim .mise.toml
+ 1802  mise list-remote elixir
+ 1803  nvim .mise.toml
+ 1804  cd ..
+ 1805  cd foo
+ 1806  python --version
+ 1807  nvim .mise.toml
+ 1808  cd ..
+ 1809  cd foo
+ 1810  ls
+ 1811  %
+ 1812  nvim .mise.toml
+ 1813  mise install
+ 1814  python --version
+ 1815  python -v
+ 1816  mise trust
+ 1817  python --version
+ 1818  elixir --version
+ 1819  pyenv
+ 1820  elixir --version
+ 1821  ix
+ 1822  mix
+ 1823  mise tasks
+ 1824  mix --version
+ 1825  mix phx.new .
+ 1826  mix archive.install hex phx_new
+ 1827  mix phx.new .
+ 1828  mix ecto.create
+ 1829  mix ecto.migrate
+ 1830  iex -S mix phx.server
+ 1831  ag "Build rich"
+ 1832  iex -S mix phx.server
+ 1833  mise list-versions elixir
+ 1834  mise list elixir
+ 1835  mise remove elixir 1.16.2
+ 1836  cd ..
+ 1837  cd foo
+ 1838  mise erlang --version
+ 1839  mise list erlang
+ 1840  mise list-remote erlang
+ 1841  cd ../
+ 1842  cd foo
+ 1843  mise list-remote erlang
+ 1844  mise list-remote elixir
+ 1845  mise list elixir
+ 1846  cd ..
+ 1847  cd foo
+ 1848  cd ../
+ 1849  cd foo
+ 1850  mise install
+ 1851  erlang --version
+ 1852  erl --version
+ 1853  elxir -v
+ 1854  erl -v
+ 1855  erl --help
+ 1856  erl -h
+ 1857  mise remove
+ 1858  mise uninstall
+ 1859  mise uninstall elixir@1.6.3 erlang@2.6.3
+ 1860  mise uninstall elixir@1.6.2
+ 1861  mise uninstall elixir@1.16.2
+ 1862  mise uninstall erlang@26.2.3
+ 1863  cd ..
+ 1864  mise uninstall erlang@26.2.3
+ 1865  cd foo
+ 1866  mise install
+ 1867  elixir --version
+ 1868  mise install
+ 1869  elxir --version
+ 1870  elixir --version
+ 1871  iex -S mix phx.server
+ 1872  cd //
+ 1873  cd -
+ 1874  mise install
+ 1875  mise use
+ 1876  mise use erlang@main
+ 1877  erl --version
+ 1878  elixir --version
+ 1879  mise remove elixir=1.16.2
+ 1880  mise install
+ 1881  mise remove elixir 1.16.2
+ 1882  mise install
+ 1883  elixir --version
+ 1884  hugo serve
+ 1885  iex -S mix phx.server
+ 1886  cd ../
+ 1887  cd foo
+ 1888  ls
+ 1889  echo $SIMPLE_ENV_VAR
+ 1890  iex -S mix phx.server
+ 1891  git add -A
+ 1892  git commit -am "Added post about mise for managing local dev environments"
+ 1893  git push origin main
+ 1894  make run
+ 1895  make
+ 1896  make local
+ 1897  cd ..
+ 1898  rm -rf foo
+ 1899  exit
+ 1900  iex -S mix phx.server
+ 1901  git status
+ 1902  git add -A
+ 1903  git commit -am "Adding an admin section"
+ 1904  git push origin main
+ 1905  make
+ 1906  git commit -am "Updated the readme and push"
+ 1907  git push origin main
+ 1908  git add -A
+ 1909  git status
+ 1910  git commit -am "Building the survey results dashboard"
+ 1911  git push origin main 
+ 1912  mix deps.get
+ 1913  iex -S mix phx.server
+ 1914  mix run priv/repo/rating_seed.exs
+ 1915  cd ..
+ 1916  cd .neovimrc
+ 1917  l
+ 1918  snvim
+ 1919  nvim
+ 1920  make install
+ 1921  nvim
+ 1922  ag "25 to 25"
+ 1923  ag "25 to 35"
+ 1924  mix run priv/repo/rating_seed.exs
+ 1925  %
+ 1926  mix run priv/repo/rating_seed.exs
+ 1927  git status
+ 1928  git add -A
+ 1929  git commit -am "Fix rating seed to include education, show basic statistics dashboard"
+ 1930  git push origin main
+ 1931  git commit -am "Handle empty product ratings case"
+ 1932  git push origin main
+ 1933  it status
+ 1934  git status
+ 1935  git add -A
+ 1936  git commit -am "Use code injection to provide bar char functions"
+ 1937  git push origin main
+ 1938  ag gender
+ 1939  git status
+ 1940  git commit -am "Support gendering of demographic results"
+ 1941  git push origin main
+ 1942  git status
+ 1943  git commit -am "Use phoenix pubsub to pass messages on demographic submitted"
+ 1944  git push origin main
+ 1945  git commit -am "fixed defect where filter defaulted to 'all' all the time"
+ 1946  git push origin main
+ 1947  make install
+ 1948  nvim
+ 1949  iex -S mix phx.server
+ 1950  git add -A
+ 1951  git commit -am "Get presence setup and functioning"
+ 1952  git push origin main
+ 1953  git diff
+ 1954  git commit -am "subscribe to user activity events"
+ 1955  git push origin main
+ 1956  git add -A
+ 1957  git commit -am "Added code to show the current survey"
+ 1958  git push origin main
+ 1959  git status
+ 1960  git diff
+ 1961  git commit -am "minor clean up, got survey activity events working"
+ 1962  git push origin main
+ 1963  git commit -am "Handles presence relay flawlessly"
+ 1964  git push origin main
+ 1965  cd ..
+ 1966  cd learning
+ 1967  ls
+ 1968  cd elixir
+ 1969  l
+ 1970  git status
+ 1971  got doff
+ 1972  git diff
+ 1973  git add -A
+ 1974  git commit -am "Toggle comment with one command."
+ 1975  git push origin main
+ 1976  cd ..
+ 1977  cd learning
+ 1978  cd elixir
+ 1979  ls
+ 1980  cd learn-elixir
+ 1981  ls
+ 1982  mkdir saas
+ 1983  cd saas
+ 1984  mix phx.new .
+ 1985  nvim
+ 1986  cd ../
+ 1987  cd learning/elixir/learn-elixir
+ 1988  cd saas
+ 1989  mix deps.get
+ 1990  git init
+ 1991  git commit -am "initial project creation + ueberauth for google"
+ 1992  git add -A
+ 1993  git commit -am "initial project creation + ueberauth for google"
+ 1994  mix phx.gen
+ 1995  mix phx.gen.auth
+ 1996  mix ecto.migrate
+ 1997  docker --help
+ 1998  docker ps
+ 1999  ls
+ 2000  mix ecto.create
+ 2001  mix ecto.migrate
+ 2002  mix phx.gen.auth Accounts User users\n
+ 2003  mix deps.get
+ 2004  mix ecto.migrate
+ 2005  mix ecto.gen.migration add_google_id_to_users
+ 2006  mix ecto.migrate
+ 2007  iex -S mix phx.server
+ 2008  git ignore .mise.toml
+ 2009  mise 
+ 2010  mise trust
+ 2011  iex -S mix phx.server
+ 2012  mix ecto.gen.migration make_hashed_password_nullable
+ 2013  mix ecto.migrate
+ 2014  iex -S mix phx.server
+ 2015  git status
+ 2016  git add -A
+ 2017  git commit -am "Working google auth"
+ 2018  git push origin main
+ 2019  cd ..
+ 2020  ls
+ 2021  git add -A
+ 2022  rm -rf saas/.git
+ 2023  git add -A
+ 2024  git diff
+ 2025  git status
+ 2026  git commit -am 
+ 2027  git commit -am "Add new project (saas) that demonstrates google auth"
+ 2028  git push origin main
+ 2029  mix phx.new --help
+ 2030  mix phx.new
+ 2031  mix phx.new --umbrella
+ 2032  l
+ 2033  mix phx.new --umbrella
+ 2034  cd ..
+ 2035  ls
+ 2036  cd ..
+ 2037  ls
+ 2038  cd op
+ 2039  cd elixir
+ 2040  l
+ 2041  cd opensource
+ 2042  ls
+ 2043  cd phoenix
+ 2044  ls
+ 2045  cd ../../../
+ 2046  cd ../elixir/opensource
+ 2047  ls
+ 2048  cd phoenix
+ 2049  nvim
+ 2050  cd ..
+ 2051  mix phx.new ankusa --umbrella
+ 2052  cd ankusa_umbrella
+ 2053  ls
+ 2054  mix deps.get
+ 2055  mix ecto.create
+ 2056  git init
+ 2057  git add -A
+ 2058  git commit -am "Initial commit, fresh phx.new install. Let's build this\!"
+ 2059  git push origin main
+ 2060  iex -S mix phx.server
+ 2061  ag Peace of mind from prototype to production.\n\n
+ 2062  ag "Peace of mind from prototype to production."
+ 2063  xit
+ 2064  exit
+ 2065  iex -S mix phx.server
+ 2066  git reset HEAD --hard
+ 2067  cd ../
+ 2068  cd ..
+ 2069  cd ankusa_umbrella
+ 2070  ls
+ 2071  nvim
+ 2072  mix phx.gen.auth Accounts User users\n
+ 2073  l
+ 2074  cd apps
+ 2075  ls
+ 2076  cd ankusa
+ 2077  ls
+ 2078  cd ..
+ 2079  rm -rf ankusa_umbrella
+ 2080  mix phx.new ankusa
+ 2081  cd ankusa
+ 2082  nvim
+ 2083  cd ../
+ 2084  cd um
+ 2085  cd ankusa
+ 2086  nvim
+ 2087  mix phx.gen.auth Accounts User users\n
+ 2088  mix ecto.create
+ 2089  mix deps.get
+ 2090  mix ecto.create
+ 2091  mix ecto.migrate
+ 2092  ake run
+ 2093  make run
+ 2094  cd ../ankusa
+ 2095  git init
+ 2096  git add -A
+ 2097  git commit -am "Initial commit. Let's fucking go\!\n"
+ 2098  git remote add origin git@github.com:jamescarr/ankusa.git\ngit push -u origin main
+ 2099  fly launch
+ 2100  ag 1.7.14
+ 2101  ag Github
+ 2102  ag elixirphoenix
+ 2103  mv logo.svg priv/static/images/
+ 2104  fly launch
+ 2105  fly 
+ 2106  fly deploy
+ 2107  cp w
+ 2108  cp priv/static/images/logo-with-name.svg priv/static/images/logo.svg
+ 2109  git add -A
+ 2110  git commit -am "Add ankusa logo and remove phoenix artifacts"
+ 2111  git push origin main
+ 2112  fly deploy
+ 2113  fly certs add ankusa.io
+ 2114  it status
+ 2115  git status
+ 2116  git commit -am "Modify prod.exs to use the ankusa domain"
+ 2117  git push origin main
+ 2118  fly deploy
+ 2119  make run
+ 2120  git commit -am "set ankusa.io domain"
+ 2121  git push origin main
+ 2122  fly deploy
+ 2123  git status
+ 2124  git commit -am "Modify fly to use akusa domain, playing around with logo"
+ 2125  git push origin main
+ 2126  fly deploy 
+ 2127  git status
+ 2128  git add -A
+ 2129  git commit -am "have the "start scheduling" page go to registration\n"
+ 2130  git push origin main
+ 2131  mix phx.gen.controller Healthcheck index
+ 2132  mix phx.gen
+ 2133  git add -A
+ 2134  git commit -am "Add a healthcheck controller"
+ 2135  git push origin main
+ 2136  fly deploy
+ 2137  mix ecto.gen.migration add_google_auth
+ 2138  mix ecto migrate
+ 2139  mix deps.get
+ 2140  make sync_mise
+ 2141  mix deps.get
+ 2142  make sync_mise
+ 2143  mix
+ 2144  mix ankusa
+ 2145  mix help
+ 2146  mix help | grep config
+ 2147  mix co mpile
+ 2148  mix compile
+ 2149  mix help | grep config
+ 2150  mix compile
+ 2151  mix help | grep config
+ 2152  mkdir lib/mix/tasks/ankusa
+ 2153  mix compile
+ 2154  mix help | grep config
+ 2155  mix ankusa.mise
+ 2156  ls
+ 2157  cp .mise.toml.example .mise.toml
+ 2158  git ignore mise.toml
+ 2159  mise trust
+ 2160  ls
+ 2161  nvim learn-elixir/saas/.mise.toml
+ 2162  mix deps.get
+ 2163  mix compile
+ 2164  OA
+ 2165  mix compile
+ 2166  ls
+ 2167  cd learn-elixir
+ 2168  ls
+ 2169  mix compile
+ 2170  make run
+ 2171  mix ecto.migrate
+ 2172  make run
+ 2173  mix phx.gen.live
+ 2174  mix phx.gen.html
+ 2175  mix phx.gen.live ScheduledHooks Webhook webhooks name:string, url:string, headers:map payload:text cron:string
+ 2176  mix phx.gen.live ScheduledHooks Webhook webhooks name:string url:string, headers:map payload:text cron:string 
+ 2177  mix phx.gen.live ScheduledHooks Webhook webhooks name:string url:string accepts:string headers:map payload:text cron:string 
+ 2178  mix ecto.migrate
+ 2179  git status
+ 2180  git add -A
+ 2181  git commit -am "Google login works locally, started scaffolding for webhooks dashboard."
+ 2182  git push origin main
+ 2183  nvim saas/ls
+ 2184  cd saas
+ 2185  ls
+ 2186  nvim
+ 2187  git status
+ 2188  git commit -am "Google auth works for new and returning visitors"
+ 2189  git status
+ 2190  git push origin main
+ 2191  git status
+ 2192  git commit -am "cleanup and make register and login pages look the same"
+ 2193  git push origin main
+ 2194  fly deploy
+ 2195  mix deps.compile
+ 2196  fly deploy 
+ 2197  ag import_config
+ 2198  git status
+ 2199  make run
+ 2200  git status
+ 2201  git commit -am "move uberauth config to runtime"
+ 2202  git push origin 
+ 2203  gly deploy
+ 2204  fly deploy
+ 2205  git commit -am "provider needs to be configured at compile time"
+ 2206  git push origin 
+ 2207  fly deploy
+ 2208  brew install imagemagick
+ 2209  convert priv/static/images/logo.svg logo.png
+ 2210  make run
+ 2211  git status
+ 2212  mv logo.png priv/static/images
+ 2213  git add -A
+ 2214  git commit -am "Added privacy policy and terms of service"
+ 2215  git push origin main
+ 2216  git commit -am "Added privacy policy and terms of service"
+ 2217  git add -A
+ 2218  git commit -am "Added privacy policy and terms of service"
+ 2219  gpg-agent --help
+ 2220  gpg-agent 
+ 2221  git commit -am "Added privacy policy and terms of service"
+ 2222  ps ax | grep gpg
+ 2223  kill -9 21065
+ 2224  kill -9 31065
+ 2225  ps ax | grep gpg
+ 2226  gpg-agent --daemon
+ 2227  ps ax | grep gpg
+ 2228  git commit -am "Added privacy policy and terms of service"
+ 2229  git config --global user.signingkey
+ 2230  gpg --list-secret-keys --keyid-format LONG
+ 2231  echo "test" | gpg --clearsign
+ 2232  brew install pinetry
+ 2233  brew install pinentry
+ 2234  echo "test" | gpg --clearsign
+ 2235  which gpg
+ 2236  nvim ~/.gnupg/gpg-agent.conf
+ 2237  whereis pinetry
+ 2238  pinentry
+ 2239  pinentry --help
+ 2240  whereis pinetry-curses
+ 2241  whereis pinetry\
+ 2242  whereis pinetry
+ 2243  echo "test" | gpg --clearsign
+ 2244  brew reinstall pinentry
+ 2245  /opt/homebrew/Cellar/pinentry/1.3.1_1/bin/pinentry
+ 2246  nvim ~/.gnupg/gpg-agent.conf
+ 2247  /opt/homebrew/bin/pinentry-mac
+ 2248  /opt/homebrew/bin/pinentry-curses
+ 2249  brew reinstall pinentry-mac libassuan
+ 2250  echo "test" | gpg --clearsign
+ 2251  git commit -am "Added privacy policy and terms of service"
+ 2252  git push origin main
+ 2253  fly deploy
+ 2254  ag react
+ 2255  cd ../
+ 2256  cd elixir
+ 2257  ls
+ 2258  cd ..
+ 2259  cd elixir
+ 2260  ls
+ 2261  mix 
+ 2262  mix new ace-component
+ 2263  mix new ace_component
+ 2264  cd ace_component
+ 2265  ls
+ 2266  mix test
+ 2267  cd ace_component
+ 2268  ls
+ 2269  nvim mix.exs
+ 2270  mix deps.get
+ 2271  git status
+ 2272  git add -A
+ 2273  git status
+ 2274  git init
+ 2275  git status
+ 2276  git add -A
+ 2277  git commit -am "initial commit"
+ 2278  git remote add origin git@github.com:jamescarr/ace_phoenix.git\ngit push -u origin main
+ 2279  mix hex.build
+ 2280  mix hex publish
+ 2281  mix hex.user register
+ 2282  mix hex publish
+ 2283  mix hex.publish
+ 2284  mix deps.get
+ 2285  cd ..
+ 2286  mv ace_component ace_phoenix
+ 2287  cd ace_phoenix
+ 2288  mix hex.publish
+ 2289  git status
+ 2290  git commit -am "Change name to correct name"
+ 2291  git push origin main
+ 2292  mix deps.get
+ 2293  make run
+ 2294  cd ..
+ 2295  cd ace_phoenix
+ 2296  ls
+ 2297  cd ..
+ 2298  cd ace_phoenix
+ 2299  nvim
+ 2300  git add -A
+ 2301  git commit -am "Update slightly to include how to vedndor dependencies"
+ 2302  git push origin main
+ 2303  mix hex publish
+ 2304  mix hex.publish
+ 2305  git add -A
+ 2306  git commit -am "Add MIT License"
+ 2307  git push origin main
+ 2308  mix hex publish
+ 2309  mix hex.publish
+ 2310  mv priv/static/ assets
+ 2311  ls priv
+ 2312  rm -rf priv
+ 2313  ls
+ 2314  make run
+ 2315  mix deps.get
+ 2316  make run
+ 2317  git status
+ 2318  git add -A
+ 2319  git commit -am "Add ace editor to webhook editor"
+ 2320  git push origin main
+ 2321  mix ecto
+ 2322  mix ecto.gen
+ 2323  mix ecto.
+ 2324  mix ecto
+ 2325  mix ecto.gen.migration webhook_fields
+ 2326  cd ..
+ 2327  cd .
+ 2328  cd ..
+ 2329  mkdir spike
+ 2330  cd spike
+ 2331  nvim index.html
+ 2332  open index.html
+ 2333  nvim
+ 2334  open index.html
+ 2335  nvim
+ 2336  vim docker-compose.yml
+ 2337  nvim docker-compose.yml
+ 2338  docker-compose up
+ 2339  nvim TrustReviewDashboard.jsx
+ 2340  mix ecto.migrate
+ 2341  git status
+ 2342  git add -A
+ 2343  git commit -am "rename accepts to content_type, add method"
+ 2344  git push origin main
+ 2345  iex -S mix phx.server
+ 2346  node
+ 2347  iex -S mix phx.server
+ 2348  ls
+ 2349  rm -rf *
+ 2350  cd ..
+ 2351  ls
+ 2352  cd learning
+ 2353  ls
+ 2354  cd elixir
+ 2355  ls
+ 2356  cd learn-elixir
+ 2357  l
+ 2358  mix phx.new dynamic-inputs
+ 2359  mix phx.new dynamic_inputs
+ 2360  mix phx.gen.live Engine Webhook webhooks name:string url:string content_type:string headers:map payload:text
+ 2361  cd dynamic_inputs
+ 2362  mix phx.gen.live Engine Webhook webhooks name:string url:string content_type:string headers:map payload:text
+ 2363  mix ecto.create
+ 2364  mix ecto.migrate
+ 2365  git status
+ 2366  git add -A
+ 2367  git commit -am 'New dynamic_inputs project'
+ 2368  git push origin main
+ 2369  nvim
+ 2370  mix ecto.migrate
+ 2371  mix phx.gen.live Engine Webhook webhooks name:string url:string content_type:string headers:map payload:text
+ 2372  mix ecto.migrate
+ 2373  mix ecto.create
+ 2374  mix ecto.migrate
+ 2375  mix ecto.create
+ 2376  mix ecto.migrate
+ 2377  mix ecto.create
+ 2378  mix ecto.migrate
+ 2379  cd priv/repo/migrations
+ 2380  ls
+ 2381  rm 20240820005640_create_webhooks.exs
+ 2382  cd ..
+ 2383  mix ecto.migrate
+ 2384  cd ../..
+ 2385  mix ecto.migrate
+ 2386  nvim
+ 2387  iex -S mix phx.server
+ 2388  git status
+ 2389  git add -A
+ 2390  git commit -am "Basic CRUD interface for model"
+ 2391  git push origin main
+ 2392  iex -S mix phx.server
+ 2393  cd ..
+ 2394  rm -rf dynamic_inputs
+ 2395  git commit -am "doing this over"
+ 2396  git push origin main 
+ 2397  mix phx.new dynamic_inputs
+ 2398  ls
+ 2399  cd dynamic_inputs
+ 2400  nvim 
+ 2401  mix phx.gen.live Marketing MailingList mailing_lists title:string
+ 2402  cd ..
+ 2403  cd dynamic_inputs
+ 2404  ls
+ 2405  mix phx.gen.live Marketing MailingList mailing_lists title:string
+ 2406  mix ecto.create
+ 2407  mix ecto.migrate
+ 2408  iex -S mix phx.server
+ 2409  rm -rf _build
+ 2410  mix deps.get
+ 2411  iex -S mix phx.server
+ 2412  git add -A
+ 2413  git commit -am "basic install and live route creation"
+ 2414  git push origin main
+ 2415  mix ecto
+ 2416  mix ecto.gen.migration add_emails
+ 2417  mix ecto.migrate
+ 2418  git add -A
+ 2419  git commit -am "Embedded schema works now."
+ 2420  git push origin main
+ 2421  git tag mailing-list-embeds
+ 2422  git push origin main --tags
+ 2423  git status
+ 2424  git commit -am "Make the form more compact"
+ 2425  git push origin main
+ 2426  cd ..
+ 2427  cd jamescarr.github.io
+ 2428  nvim
+ 2429  xit
+ 2430  exit
+ 2431  make 
+ 2432  make new_post title="Dynamic Key/Value Pair Inputs in Phoenix LiveView Forms" description="How to use native Phoenix LiveView and Ecto features to enable forms with dynamic key/value input needs."
+ 2433  git tag
+ 2434  git checkout mailing-list-embeds
+ 2435  iex -S mix phx.server
+ 2436  git checkout HEAD~1
+ 2437  git checkout main
+ 2438  git checkout mailing-list-embeds
+ 2439  git checkout main
+ 2440  mv ~/Downloads/dynamic-inputs-blog-post.md content/posts/2024-08-19-dynamic-keyvalue-pair-inputs-in-phoenix-liveview-forms.md
+ 2441  make run
+ 2442  make
+ 2443  make local
+ 2444  git add -A
+ 2445  git commit -am "Added post on dynamic inputs"
+ 2446  git push origin main
+ 2447  mv ~/Downloads/improved-blog-post.md content/posts/2024-07-29-the-pivot.md
+ 2448  git commit -am "Clean up grammar and spelling"
+ 2449  git push origin main
+ 2450  nvim
+ 2451  ag emails_drop
+ 2452  mix ecto
+ 2453  mix ecto.gen.migration headers_to_jsonb
+ 2454  mix ecto.migrate
+ 2455  iex -S mix phx.server
+ 2456  mix deps.get
+ 2457  make run
+ 2458  git status
+ 2459  git add -A
+ 2460  git commit -am "Get webhooks management working flawlessly, dynamic header input"
+ 2461  git push origin main
+ 2462  fly deploy 
+ 2463  git commit -am "Ace Editor is back\! Had to remove it for a bit while trying to get `inputs_for` to work right"
+ 2464  git commit -am "Ace Editor returns"
+ 2465  fly deploy 
+ 2466  mix ecto.gen.migration add_enable_webhook_toggle
+ 2467  mix ecto.migrate
+ 2468  git push origin main
+ 2469  git status
+ 2470  git add -A
+ 2471  git commit -am "Create on and off toggles"
+ 2472  ggit push origin main
+ 2473  git push origin main
+ 2474  fly deploy
+ 2475  git checkout -b oban-webhook-processor
+ 2476  mix ecto.gen.migration add_jobs_table
+ 2477  mix ecto
+ 2478  mix deps.get
+ 2479  mix ecto
+ 2480  mix ecto.gen.migration add_oban_jobs_table
+ 2481  mix ecto.migrate
+ 2482  make run
+ 2483  mix ecto.migrate
+ 2484  mix ecto.gen.migration add_oban_jobs_table_update
+ 2485  mix ecto.migrate
+ 2486  git add -A
+ 2487  git commit -am "first stab at oban job scheduler"
+ 2488  iex -S mix phx.server
+ 2489  g
+ 2490  git add -A 
+ 2491  git commit -am "
+ 2492  git commit -am "Oban works
+ 2493  git commit -am "Oban works\!"
+ 2494  git push origin main
+ 2495  mix deps.get
+ 2496  iex -S mix phx.server
+ 2497  make run
+ 2498  mix deps.get
+ 2499  make run
+ 2500  mix deps.get
+ 2501  git reset HEAD --hard
+ 2502  mix install
+ 2503  mix deps.get
+ 2504  iex -S mix phx.server
+ 2505  mix deps.get
+ 2506  iex -S mix phx.server
+ 2507  git status
+ 2508  git commit -am "Webhooks actually fire now, and we log the hook"
+ 2509  git push origin main
+ 2510  git push origin oban-webhook-processor
+ 2511  iex -S mix phx.server
+ 2512  git status
+ 2513  git add -A
+ 2514  git commit -am "Fully execute webhooks given the cron pattern, log outcome."
+ 2515  iex -S mix phx.server
+ 2516  \n
+ 2517  git status
+ 2518  git add -A
+ 2519  git commit -am "http requests work, we log the request, response and error."
+ 2520  ag Blog
+ 2521  iex -S mix phx.server
+ 2522  mix phx.gen.live Billing PricingPlan pricing_plans \\n  name:string \\n  description:text \\n  price:decimal \\n  interval:string \\n  webhook_limit:integer \\n  data_retention_days:integer \\n  support_level:string \\n  is_active:boolean
+ 2523  mix ecto.migrate
+ 2524  mix ecto.gen.migration add_plan_fields
+ 2525  miox run priv/repo/seeds.exs
+ 2526  mix run priv/repo/seeds.exs
+ 2527  git status
+ 2528  git add -A
+ 2529  git commit -am "Added features and pricing plan pages"
+ 2530  git push origin main
+ 2531  git push origin oban-webhook-processor
+ 2532  fly deploy
+ 2533  git checkout main
+ 2534  git pull --rebase origin main
+ 2535  iex -S mix phx.server
+ 2536  ag require_auth
+ 2537  git status
+ 2538  git add -A
+ 2539  git commit -am "Reject users that are not james.r.carr@gmail.com"
+ 2540  git push origin main
+ 2541  fly deploy 
+ 2542  git diff
+ 2543  git reset HEAD --hard
+ 2544  cd ..
+ 2545  mix phx.new admin_site_demo
+ 2546  cd ..
+ 2547  l
+ 2548  git clone https://github.com/tfwright/live_admin.git
+ 2549  cd live_admin
+ 2550  nvim docker-compose.yml
+ 2551  docker-compose up
+ 2552  cd ..
+ 2553  ls
+ 2554  cd admin_site_demo
+ 2555  ls
+ 2556  cd ..
+ 2557  ls
+ 2558  cd live_admin
+ 2559  ls
+ 2560  nvim docker-compose.yml
+ 2561  docker-compose up
+ 2562  docker-compose --help
+ 2563  docker-compose restart
+ 2564  make run
+ 2565  cd ..
+ 2566  mix phx.new backpex_demo
+ 2567  cd ..
+ 2568  cd elixir
+ 2569  mix phx.new trust_amend
+ 2570  cd trust_amend
+ 2571  mix ecto.create
+ 2572  mix ecto.migrate
+ 2573  mix phx.gen.auth Accounts User users\n
+ 2574  mix deps.get
+ 2575  mix ecto.migrate
+ 2576  nvim
+ 2577  cd ..
+ 2578  ls
+ 2579  rm -rf live_admin
+ 2580  cd trust_amend
+ 2581  mix deps.get
+ 2582  cd assets && npm install alpinejs
+ 2583  cd ..
+ 2584  cd elixir
+ 2585  ls
+ 2586  git clone git@github.com:jamescarr/backpex.git
+ 2587  cd backpex
+ 2588  ag resource_actions
+ 2589  cd ..
+ 2590  mix compile
+ 2591  cd ..
+ 2592  cd learning/elixir/trust_amend
+ 2593  mix deps.get
+ 2594  iex -S mix phx.server
+ 2595  mix compile
+ 2596  cd assets
+ 2597  npm i -D daisyui@latest
+ 2598  iex -S mix phx.server
+ 2599  ag ThemeSelectorPlug 
+ 2600  git --tags
+ 2601  git tag
+ 2602  git pull origin main --tags
+ 2603  git pull origin master --tags
+ 2604  git checkout 0.6.0
+ 2605  git checkout --tag 0.6.0
+ 2606  d .. 
+ 2607  cd ..
+ 2608  rm -rf backpex
+ 2609  git clone https://github.com/naymspace/backpex.git
+ 2610  git pull --tags
+ 2611  cd backpex
+ 2612  git pull --tags
+ 2613  git tag
+ 2614  git checkout 0.6.0
+ 2615  ag ThemeSele
+ 2616  ag ThemeSelectorPlug 
+ 2617  git checkout main
+ 2618  ag ThemeSelectorPlug 
+ 2619  ag ThemeSelector
+ 2620  cd ..
+ 2621  mix ecto.gen.migration add_user_fields
+ 2622  mix ecto.migrate
+ 2623  git status
+ 2624  git add -A
+ 2625  git commit -am "Initial commit. Let's build this thing\!"
+ 2626  git init
+ 2627  git add -A
+ 2628  git commit -am "Initial commit. Let's build this thing\!"
+ 2629  mix phx.gen.live Trustees Trustee trustees name:string email:string phone:string last_update:date
+ 2630  mix ecto.migrate
+ 2631  mix ecto.gen.migration correct_avatar
+ 2632  mix ecto.migrate
+ 2633  git ad -A
+ 2634  git add -A
+ 2635  git commit -am "Users with additional attributes"
+ 2636  mix phx.gen.live Trusts Trust trusts \\n  name:string \\n  creation_date:date \\n  last_updated:date \\n  trustor_id:references:trustors \\n  trustee_id:references:trustees \\n  status:string\n
+ 2637  mix ecto.migrate
+ 2638  mix phx.gen.live Trusts Trustor trustors \\n  name:string \\n  contact_information:string \\n  date_of_birth:date \\n  address:string \\n  identification_number:string\n
+ 2639  mix phx.gen.live Trusts Trustee trustees \\n  name:string \\n  contact_information:string \\n  address:string\n
+ 2640  mix phx.gen.live Trusts Beneficiary beneficiaries \\n  name:string \\n  contact_information:string \\n  date_of_birth:date \\n  address:string \\n  relationship_to_trustor:string \\n  beneficiary_type:string\n
+ 2641  mix phx.gen.live Trusts Amendment amendments \\n  trust_id:references:trusts \\n  amendment_date:date \\n  amendment_reason:string \\n  amendment_details:text \\n  approved_by_trustee:boolean \\n  effective_date:date\n
+ 2642  mix phx.gen.live Trusts BeneficiaryUpdate beneficiary_updates \\n  amendment_id:references:amendments \\n  beneficiary_id:references:beneficiaries \\n  old_allocation_percentage:float \\n  new_allocation_percentage:float \\n  change_type:string \\n  notes:text\n
+ 2643  mix phx.gen.live Trusts Document documents \\n  trust_id:references:trusts \\n  amendment_id:references:amendments \\n  document_type:string \\n  file_path:string \\n  created_date:date \\n  last_modified_date:date\n
+ 2644  mix ecto.migrate
+ 2645  cd priv/repo/migrations
+ 2646  mv 20240822152809_create_trustors.exs 20240822152700_create_trustors.exs
+ 2647  mix ecto.migrate
+ 2648  cd ../..
+ 2649  cd ..
+ 2650  mix ecto.migrate
+ 2651  git add -A
+ 2652  git commit -am "Generated trusts, trustees and trustors"
+ 2653  mix phx.gen.live Trusts TrustLive Trust trusts \\n  name:string \\n  creation_date:date \\n  last_updated:date \\n  trustor_id:references:trustors \\n  trustee_id:references:trustees \\n  status:string\n
+ 2654  iex -S mix phx.server
+ 2655  mix ecto
+ 2656  mix run priv/repo/seeds.exs
+ 2657  ps ax | grep glance
+ 2658  cd ~/Downloads
+ 2659  ./GlanceGuest
+ 2660  ./GlanceGuest.app
+ 2661  ls
+ 2662  cd ..
+ 2663  mkdir trust-spike
+ 2664  cd trust-spike
+ 2665  nvim index.html
+ 2666  cd ..
+ 2667  cd jamescarr
+ 2668  cd Projects
+ 2669  cd elixir
+ 2670  ls
+ 2671  cd ..
+ 2672  cd learning
+ 2673  ls
+ 2674  cd elixir
+ 2675  ls
+ 2676  cd trust-spike
+ 2677  open index.html
+ 2678  cd ..
+ 2679  rm -rf backpex
+ 2680  git clone git@github.com:jamescarr/backpex.git
+ 2681  cd backpex
+ 2682  git remote add upstream https://github.com/naymspace/backpex.git
+ 2683  git pull --rebase upstream develop
+ 2684  nvim
+ 2685  cd ..
+ 2686  cd elixir
+ 2687  cd backpex
+ 2688  ag backpex/item-actions.html\n
+ 2689  nvim
+ 2690  git checkout -b fix-install-guide-theme-example
+ 2691  git commit -am "Fix misplaced bracket in installation instructions"
+ 2692  git push origin fix-install-guide-theme-example
+ 2693  vim
+ 2694  nvim
+ 2695  cd ..
+ 2696  cd trust_amend
+ 2697  ls
+ 2698  nvim 
+ 2699  git commit -am "Fix misplaced bracket in installation instructions"
+ 2700  git squash HEAD~2 "Fix misplaced bracket in installation instructions"
+ 2701  git push origin fix-install-guide-theme-example
+ 2702  git push origin fix-install-guide-theme-example --force
+ 2703  git commit -am "Fix misplaced bracket in installation instructions"
+ 2704  git squash HEAD~2 "Fix misplaced bracket in installation instructions"
+ 2705  git push origin fix-install-guide-theme-example --force
+ 2706  cd ..
+ 2707  ls
+ 2708  cd ../jamescarr.github.io
+ 2709  ls
+ 2710  nvim CNAME
+ 2711  git commit -am "add blog.james-carr.org domain"
+ 2712  git push origin main
+ 2713  cd ..
+ 2714  nvim README.md
+ 2715  cd ..
+ 2716  nvim README.md
+ 2717  cd ..
+ 2718  git status
+ 2719  git commit -am "update readme"
+ 2720  make new_post title="Dreams of Death" decription="A recent dream about experiencing death and my thoughts about it"
+ 2721  make new_post title="Dreams of Death" description="A recent dream about experiencing death and my thoughts about it"
+ 2722  git add -A
+ 2723  git commit -am "new draft about death dreams"
+ 2724  git push origin main
+ 2725  nvim CNAME
+ 2726  cd ../..
+ 2727  cd jamescarr.github.io
+ 2728  ag www.james-ca
+ 2729  git commit -am "UPDATE Cname"
+ 2730  it commit -am "Update CNAME"
+ 2731  git commit -am "Update CNAME"
+ 2732  git push origin main
+ 2733  cd ..
+ 2734  rm -rf trust_amend
+ 2735  exit
+ 2736  cd ..
+ 2737  rm -rf trust-spike
+ 2738  cd ~/Projects/.neovimrc
+ 2739  ls
+ 2740  nvim lua/jamescarr/lazy/lsp.lua
+ 2741  cd ~/Projects/.neovimrc
+ 2742  ag javascript
+ 2743  make install
+ 2744  nvim
+ 2745  ag softtab
+ 2746  nvim
+ 2747  make install
+ 2748  nvim
+ 2749  git commit -am "set tabwidth to 2"
+ 2750  git status
+ 2751  git push origin main
+ 2752  cd ..
+ 2753  cd elixir
+ 2754  ls
+ 2755  mix phx.new trust_amend
+ 2756  cd trust_amend
+ 2757  mix deps.get
+ 2758  cd ../..
+ 2759  mkdir others
+ 2760  cd others
+ 2761  git clone https://github.com/opslane/opslane.git
+ 2762  ls
+ 2763  s
+ 2764  cd 
+ 2765  git status
+ 2766  git commit -am "Remove blog link"
+ 2767  git git push orgin main
+ 2768  git push origin main
+ 2769  fly deploy
+ 2770  make new_post title="Around the Web" description="A handly list of resources and tools I've come across this week."
+ 2771  rm content/posts/2024-08-2*
+ 2772  mix ecto.gen.migration add_role_to_users\n\n
+ 2773  mix ecto.migrate
+ 2774  git commit -am "add role field for users, we will use this later for admins"
+ 2775  git push origin main
+ 2776  git status
+ 2777  git add -A
+ 2778  git commit -am "add role field for users, we will use this later for admins"
+ 2779  git squash HEAD~2 "add role field for users, we will use this later for admins"
+ 2780  git push origin main --force
+ 2781  mix deps.get
+ 2782  make run
+ 2783  nvim
+ 2784  cd assets && npm install alpinejs
+ 2785  npm i -D daisyui@latest
+ 2786  make run
+ 2787  cd ..
+ 2788  ls
+ 2789  cd backpex
+ 2790  ls
+ 2791  cd ..
+ 2792  cd .
+ 2793  cd ..
+ 2794  cd learning
+ 2795  ls
+ 2796  cd elixir
+ 2797  ls
+ 2798  cd backpex_demo
+ 2799  ls
+ 2800  nvim
+ 2801  cd ..
+ 2802  ls
+ 2803  cd learn-elixir
+ 2804  ls
+ 2805  cd admin_site_demo
+ 2806  ls
+ 2807  nvim
+ 2808  ../.,.
+ 2809  cd ../..
+ 2810  ls
+ 2811  cd ..
+ 2812  cd elixir
+ 2813  ls
+ 2814  ag backpex resource_actions
+ 2815  ag resource_actions backpex
+ 2816  make run
+ 2817  mix deps.get
+ 2818  cd ..
+ 2819  mix deps.get
+ 2820  make run
+ 2821  ag Acc.User
+ 2822  nvim
+ 2823  exit
+ 2824  c d..
+ 2825  cd ..
+ 2826  cd ~
+ 2827  ls
+ 2828  cd Projects
+ 2829  ls
+ 2830  cd learning
+ 2831  ls
+ 2832  cd elixir
+ 2833  ls
+ 2834  ls backpex_demo
+ 2835  cd backpex_demo
+ 2836  ls
+ 2837  nvim 
+ 2838  cd ~/Projects
+ 2839  ag admin.html.heex
+ 2840  ls
+ 2841  ls spike
+ 2842  cd learning
+ 2843  ls
+ 2844  cd elixir
+ 2845  ls
+ 2846  cd backpex_demo
+ 2847  ls
+ 2848  ag admin
+ 2849  cd ..
+ 2850  git status
+ 2851  mix ecto.gen.migration make_users_admin\n\n
+ 2852  rm priv/repo/migrations/20240827042958_make_users_admin.exs
+ 2853  git status
+ 2854  git add -A
+ 2855  git commit -am "Working (yet unprotectedadmin panel to view users and webhooks"
+ 2856  git commit -am 'Working (yet unprotectedadmin panel to view users and webhooks'
+ 2857  git push origin main
+ 2858  git status
+ 2859  git commit -am "Added all the fields for webhooks"
+ 2860  git push origin main
+ 2861  git status
+ 2862  git commit -am "Clean up webhook and user admin models to display proper fields"
+ 2863  mix ecto.gen.migration remove_plan_from_role\n\n
+ 2864  mix ecto.migrate
+ 2865  git add -A 
+ 2866  git commit -am "Don't include plan details in the user role, only normal and admin."
+ 2867  git push origin main
+ 2868  cd ..
+ 2869  cd elixir
+ 2870  cd backpex
+ 2871  git checkout develo
+ 2872  git pull upstream develop
+ 2873  mix test
+ 2874  mix deps.get
+ 2875  mix test
+ 2876  git checkout develo
+ 2877  git checkout develop
+ 2878  git pull --rebase origin develop
+ 2879  git pull --rebase upstream develop
+ 2880  git status
+ 2881  git push origin develop
+ 2882  cd ..
+ 2883  cd elixir/backpex
+ 2884  nvim
+ 2885  mix test
+ 2886  :w
+ 2887  mix test
+ 2888  Copymix test test/backpex/fields/currency_test.exs
+ 2889  mix test test/backpex/fields/currency_test.exs
+ 2890  mix test
+ 2891  mix ecto.gen.migration make_price_int\n\n
+ 2892  mix ecto.migrate
+ 2893  git status
+ 2894  git add -A
+ 2895  git commit -am "Added plans to the admin panel"
+ 2896  git status
+ 2897  git commit -am "only allow admin roles to the admin section."
+ 2898  git push origin main
+ 2899  ag Money
+ 2900  ag "%Money"
+ 2901  git commit -am "Fix pricing page"
+ 2902  git push origin main
+ 2903  mix deps.get
+ 2904  make run
+ 2905  mix deps.get
+ 2906  make run
+ 2907  cd ..
+ 2908  ls
+ 2909  cd elixir
+ 2910  cd backpex
+ 2911  cd demo
+ 2912  git status
+ 2913  git commit -am "Add petal compontents to project"
+ 2914  git push origin main
+ 2915  git status
+ 2916  make new_post title="Phoenix Admin With Backpex" description="A look into building admin views in Phoenix with Backpex\!"
+ 2917  git status
+ 2918  cd admin_site_demo
+ 2919  ls
+ 2920  cd ..
+ 2921  rm -rf admin_site_demo
+ 2922  mix phx.new admin_site_demo
+ 2923  cd admin_site_demo
+ 2924  cd ..
+ 2925  git add -A
+ 2926  git commit -am "mix phx.new admin_site_demo"
+ 2927  git push origin main
+ 2928  cd assets && npm install alpinejs\n
+ 2929  cd admin_site_demo/
+ 2930  cd assets && npm install alpinejs\n
+ 2931  cd ..
+ 2932  cd assets && npm install alpinejs\n
+ 2933  npm i -D daisyui@latest
+ 2934  cd ..
+ 2935  nvim
+ 2936  git reset HEAD --hard
+ 2937  git status
+ 2938  rm -rf ../test/backpex/fields/
+ 2939  git status
+ 2940  gfit add -A
+ 2941  git commit -am "Add backpex prerequisites"
+ 2942  cd ..
+ 2943  cd admin_site_demo
+ 2944  clear
+ 2945  mix deps.get
+ 2946  mix phx.gen.schema Blog.Post blog_posts title:string views:integer
+ 2947  mix ecto.create
+ 2948  mix ecto.migrate
+ 2949  mix deps.get
+ 2950  git add -A 
+ 2951  git commit -am " Completed initial run of installation steps before viewing the site"
+ 2952  cd ..
+ 2953  cd admin_site_demo
+ 2954  git push origin main'
+ 2955  git push origin main
+ 2956  iex -S mix phx.server
+ 2957  mix deps.get
+ 2958  cd assets
+ 2959  npm install alpinejs
+ 2960  npm i -D daisyui@latest
+ 2961  \n
+ 2962  git status
+ 2963  git commit -am "Get site displaying correctly, neglected to import daisyui plugin"
+ 2964  git push origin main
+ 2965  git status
+ 2966  git commit -am "changes to root and admin layouts"
+ 2967  git push origin main
+ 2968  iex -S mix phx.server
+ 2969  cd ..
+ 2970  rm -rf admin_site_demo
+ 2971  cd ..
+ 2972  git commit -am "Lets just wipe ths out and try again"
+ 2973  git push origin main
+ 2974  mix phx.new admin_site_demo
+ 2975  cd admin_site_demo
+ 2976  nvim
+ 2977  cd admin_site_demo
+ 2978  mix deps.get
+ 2979  iex -S mix phx.server
+ 2980  cd ../admin_site_demo
+ 2981  iex -S mix phx.server
+ 2982  cd assets && npm install alpinejs
+ 2983  npm i -D daisyui@latest
+ 2984  mix phx.gen.schema Blog.Post blog_posts title:string views:integer\n
+ 2985  cd ..
+ 2986  mix phx.gen.schema Blog.Post blog_posts title:string views:integer\n
+ 2987  mix ecto.migrate
+ 2988  mix ecto.create
+ 2989  mix ecto.migrate
+ 2990  iex -S mix phx.server
+ 2991  mix deps.get
+ 2992  git status
+ 2993  git add -A
+ 2994  git commit -am "Initial working setup for Backpex"
+ 2995  git push origin main
+ 2996  git status\
+ 2997  git commit -am "Completed install instructions"
+ 2998  git push orign main
+ 2999  git push origin main
+ 3000  git status
+ 3001  hugo serve
+ 3002  git add -A
+ 3003  git commit -am "publish backpex post"
+ 3004  git push origin main
+ 3005  git commit -am "change the title"
+ 3006  git push origin main
+ 3007  git commit -am "fix typo"
+ 3008  git push origin main
+ 3009  git commit -am "Grammar fix" 
+ 3010  git push origin main
+ 3011  iex -S mix phx.server
+ 3012  mix deps.get
+ 3013  iex -S mix phx.server
+ 3014  mix phx
+ 3015  iex -S mix phx.server
+ 3016  mix deps.get
+ 3017  mix deps.clean --all
+ 3018  rm -rf _build
+ 3019  mix deps.get
+ 3020  mix compile
+ 3021  iex -S mix phx.server
+ 3022  iex deps.get
+ 3023  mix deps.get
+ 3024  iex -S mix phx.server
+ 3025  git status
+ 3026  git commit -am "Clean up broken form inputs"
+ 3027  git push origin main
+ 3028  fly deploy
+ 3029  cd ..
+ 3030  cd elixir
+ 3031  ls
+ 3032  rm -rf trust_amend
+ 3033  mix phx.new trust_amend
+ 3034  cd trust_amend
+ 3035  mix phx.gen.auth Accounts User users
+ 3036  cd ..
+ 3037  mix phx.new lumina_health
+ 3038  cd lumina_health
+ 3039  nvim
+ 3040  cd ..
+ 3041  cd elixir
+ 3042  cd lumina_health
+ 3043  mix deps.get
+ 3044  mix phx.gen.auth Accounts User users role:enum:patient:caregiver
+ 3045  mix phx.gen.auth Accounts User users 
+ 3046  mix ecto.create
+ 3047  mix deps.get
+ 3048  mix ecto.create
+ 3049  mix ecto.migrate
+ 3050  mix phx.gen
+ 3051  mix phx.gen.context
+ 3052  # Create Users table\nmix phx.gen.context Accounts User users email:string password_hash:string role:string\n\n# Create Patients table with relationship to Users\nmix phx.gen.context Patients Patient patients first_name:string last_name:string date_of_birth:date user_id:references:users\n\n# Create OASIS document table\nmix phx.gen.context OasisDocuments OasisDocument oasis_documents patient_id:references:patients assessment_date:date completed_by:string\n\n# Create tables for different sections of OASIS\nmix phx.gen.context OasisDocuments PatientHistory patient_histories oasis_document_id:references:oasis_documents living_situation:string\n\nmix phx.gen.context OasisDocuments ClinicalAssessment clinical_assessments oasis_document_id:references:oasis_documents pain_assessment:text cognitive_status:string\n\nmix phx.gen.context OasisDocuments FunctionalStatus functional_statuses oasis_document_id:references:oasis_documents adl_score:integer iadl_score:integer\n\nmix phx.gen.context OasisDocuments MedicationManagement medication_managements oasis_document_id:references:oasis_documents medication_list:text allergies:text\n\nmix phx.gen.context OasisDocuments CareПлан care_plans oasis_document_id:references:oasis_documents goals:text interventions:text
+ 3053  cd ..
+ 3054  rm -rf lumina_health
+ 3055  mix phx.new lucent_health
+ 3056  cd lucent_health
+ 3057  mix phx.gen.auth Accounts User users 
+ 3058  mix phx.gen.context Patients Patient patients first_name:string last_name:string date_of_birth:date user_id:references:users\n
+ 3059  mix deps.get
+ 3060  mix ecto.create
+ 3061  mix ecto.migrate
+ 3062  ^[[200~mix phx.gen.context Patients Patient patients first_name:string last_name:string date_of_birth:date user_id:references:users
+ 3063  mix phx.gen.context Patients Patient patients first_name:string last_name:string date_of_birth:date user_id:references:users
+ 3064  mix ecto.migrate
+ 3065  mix phx.gen.context OasisDocuments OasisDocument oasis_documents patient_id:references:patients assessment_date:date completed_by:string\n
+ 3066  mix phx.gen.context Patients Patient patients user_id:references:users medical_record_number:string gender:string address:string city:string state:string zip:string phone:string emergency_contact:string emergency_contact_phone:string\n
+ 3067  mix phx.gen.context Patients Patient patients user_id:references:users first_name:string last_name:string date_of_birth:date medical_record_number:string gender:string address:string city:string state:string zip:string phone:string emergency_contact:string emergency_contact_phone:string\n
+ 3068  mix ecto.migrate
+ 3069  mix ecto.create
+ 3070  mix ecto.migrate
+ 3071  rm priv/repo/migrations/20240830121506_create_patients.exs 
+ 3072  mix ecto.migrate
+ 3073  rm priv/repo/migrations/20240830121524_create_oasis_documents.exs
+ 3074  mix phx.gen.context OasisDocuments OasisDocument oasis_documents patient_id:references:patients assessment_date:date completed_by:references:users assessment_type:string episode_timing:string\n
+ 3075  mix phx.gen.context OasisDocuments PatientHistory patient_histories oasis_document_id:references:oasis_documents living_situation:string prior_inpatient_facility:string inpatient_discharge_date:date prior_functioning_adl:string prior_functioning_iadl:string overall_health_status:string\n
+ 3076  mix phx.gen.context OasisDocuments ClinicalAssessment clinical_assessments oasis_document_id:references:oasis_documents pain_assessment:text pain_severity:integer pain_frequency:string cognitive_status:string memory_deficit:boolean verbal_disruption:boolean physical_aggression:boolean disruptive_behavior:boolean\n
+ 3077  mix phx.gen.context OasisDocuments VitalSign vital_signs oasis_document_id:references:oasis_documents temperature:float pulse:integer respiratory_rate:integer blood_pressure_systolic:integer blood_pressure_diastolic:integer oxygen_saturation:float weight:float height:float\n
+ 3078  mix phx.gen.context OasisDocuments FunctionalStatus functional_statuses oasis_document_id:references:oasis_documents grooming:integer dressing_upper_body:integer dressing_lower_body:integer bathing:integer toilet_transferring:integer toileting_hygiene:integer transferring:integer ambulation:integer eating:integer\n
+ 3079  \tmix phx.gen.context OasisDocuments MedicationManagement medication_managements oasis_document_id:references:oasis_documents drug_regimen_review:boolean medication_follow_up_required:boolean medication_intervention_required:boolean\n
+ 3080  mix ecto.migrate
+ 3081  cd ..
+ 3082  cd lucent_health
+ 3083  nvim
+ 3084  mix deps.get
+ 3085  mix run priv/repo/seeds.exs
+ 3086  mix phx.gen.context OasisDocuments Medication medications medication_management_id:references:medication_managements name:string dosage:string frequency:string route:string\n
+ 3087  mix phx.gen.context OasisDocuments CarePlan care_plans oasis_document_id:references:oasis_documents primary_diagnosis:string other_diagnoses:text prognosis:string\n
+ 3088  mix phx.gen.context OasisDocuments Goal goals care_plan_id:references:care_plans description:text target_date:date\n
+ 3089  mix phx.gen.context OasisDocuments Intervention interventions care_plan_id:references:care_plans description:text frequency:string duration:string\n
+ 3090  mix run priv/repo/seeds.exs
+ 3091  iex -S mix phx.server
+ 3092  mix ecto.migrate
+ 3093  iex -S mix phx.server
+ 3094  cd ..
+ 3095  rm -rf lucent_health
+ 3096  cp -R ~/Projects/learning/elixir/learn-elixir/admin_site_demo .
+ 3097  nvim Makefile
+ 3098  make 
+ 3099  make new_admin project_name=lumina_health
+ 3100  ls
+ 3101  cd lumina_health
+ 3102  ls
+ 3103  nvim lib/lumina_health/application.ex
+ 3104  cd ..
+ 3105  rm -rf lumina_health
+ 3106  nvim Makefile
+ 3107  make new_admin project_name=lumina_health
+ 3108  cd admin_site_demo
+ 3109  ls
+ 3110  rm priv/repo/migrations/20240828022008_create_blog_posts.exs
+ 3111  cd ..
+ 3112  mv lumina_health/priv/repo/migrations/20240828022008_create_blog_posts.exs admin_site_demo/priv/repo/migrations
+ 3113  cd admin_site_demo
+ 3114  rm priv/repo/migrations/*
+ 3115  rm -rf lib/admin_site_demo/blog
+ 3116  rm lib/admin_site_demo_web/live/post_live.ex
+ 3117  cd ..
+ 3118  cd admin_site_demo
+ 3119  nvim
+ 3120  git init
+ 3121  git add -A
+ 3122  git commit -am "Admin site template"
+ 3123  mix phx.gen.auth Accounts User users 
+ 3124  git statu
+ 3125  git add -A
+ 3126  git commit -am "add authentication"
+ 3127  exit
+ 3128  xit
+ 3129  exit
+ 3130  cd ~/Projects/elixir/admin_site_demo
+ 3131  mix phx.gen.auth Accounts User users 
+ 3132  mix deps.get
+ 3133  iex -S mix phx.server
+ 3134  mix phx.gen.auth Accounts User users 
+ 3135  mix ecto.create && mix ecto.migrate
+ 3136  cd ..
+ 3137  cd elixir
+ 3138  ls
+ 3139  cd admin_site_demo
+ 3140  cd ../../...
+ 3141  cd ../../
+ 3142  cd ../..
+ 3143  cd elixir/admin_site_demo
+ 3144  nvim
+ 3145  mix ecto.create && mix ecto.migrate
+ 3146  iex -S mix phx.server
+ 3147  git status
+ 3148  git add -A
+ 3149  git commit -am "Working admin site with a single user"
+ 3150  git commit --amend -m "Working admin site with live view for the users resource"
+ 3151  git checkout -b has_many_exploration
+ 3152  mix phx.gen
+ 3153  mix phx.gen.context Notes Entry entries \\n  title:string \\n  text:text \\n  type:enum:personal:work:study:health:finance \\n  is_pinned:boolean \\n  created_at:utc_datetime \\n  updated_at:utc_datetime
+ 3154  mix ecto.migrate
+ 3155  git status
+ 3156  rm -rf  lib/admin_site_demo/notes.e
+ 3157  rm -rf  lib/admin_site_demo/notes.ex
+ 3158  rm -rf lib/admin_site_demo/notes
+ 3159  rm priv/repo/migrations/20240830162302_create_entries.ex
+ 3160  rm test/admin_site_demo/notes_test.ex
+ 3161  rm  test/support/fixtures/notes_fixtures.e
+ 3162  rm  test/support/fixtures/notes_fixtures.ex
+ 3163  rm test/admin_site_demo/notes_test.exs
+ 3164  rm priv/repo/migrations/20240830162302_create_entries.exs
+ 3165  git checkout main
+ 3166  git commit -am "Users shows up on sidebar again"
+ 3167  git checkout -b has-many-example
+ 3168  mix phx.gen.context Notes NoteEntry note_entries title:string type:enum:personal:work:study:idea text:text pinned:boolean due_date:date tags:array:string user_id:references:users
+ 3169  mix ecto.migrate
+ 3170  git add -A
+ 3171  git commit -am "Add notes"
+ 3172  \n\n
+ 3173  git add
+ 3174  git add -A
+ 3175  git commit -am "Added note resource type"
+ 3176  iex -S mix phx.server
+ 3177  cd ..
+ 3178  cd backpex
+ 3179  ls
+ 3180  git pull --rebase upstream develop
+ 3181  git push origin develop
+ 3182  cd demo
+ 3183  ls
+ 3184  mix ecto.create
+ 3185  mix deps.get
+ 3186  mix ecto.create
+ 3187  nvim config/runtime.exs
+ 3188  mise set SECRET_KEY_BASE foobarbaz
+ 3189  nvim .mise.toml
+ 3190  mise trust
+ 3191  mix ecto.create
+ 3192  nvim config/runtime.exs
+ 3193  mix compile
+ 3194  mix ecto.create
+ 3195  mise trust
+ 3196  mix ecto.create
+ 3197  mise trust
+ 3198  mix ecto.create
+ 3199  mix ecto.migrate
+ 3200  iex -S mix phx.server
+ 3201  mix run priv/repo/seeds.exs
+ 3202  iex -S mix phx.server
+ 3203  ag Downloading
+ 3204  ag tailwind
+ 3205  cd assets
+ 3206  npm install
+ 3207  cd ..
+ 3208  iex -S mix phx.server
+ 3209  mise trust
+ 3210  iex -S mix phx.server
+ 3211  \n
+ 3212  nvim
+ 3213  cd ../..
+ 3214  cd ..
+ 3215  cd learning
+ 3216  cd elixir
+ 3217  cd learn-elixir
+ 3218  ls
+ 3219  mix phx.new roll_dice
+ 3220  git add -A
+ 3221  git commit -am "New project for otel learning"
+ 3222  git push origin main
+ 3223  cd roll_dice
+ 3224  nvim
+ 3225  mix deps.get
+ 3226  iex -S mix phx.server
+ 3227  mix ecto.create
+ 3228  mix ecto.migrate
+ 3229  iex -S mix phx.server
+ 3230  mix deps.get
+ 3231  iex -S mix phx.server
+ 3232  mix deps.get
+ 3233  iex -S mix phx.server
+ 3234  rm -rf _build
+ 3235  iex -S mix phx.server
+ 3236  mix deps.get
+ 3237  iex -S mix phx.server
+ 3238  mix hex.outdated
+ 3239  mix deps
+ 3240  mix deps.clean
+ 3241  mix deps.clean --all
+ 3242  mix deps.get
+ 3243  git status
+ 3244  git commit -am "Setup additional otel pieces"
+ 3245  git push origin main
+ 3246  main deps.get
+ 3247  mix deps.get
+ 3248  iex -S mix phx.server
+ 3249  git add -A
+ 3250  git commit -am "Trying to get otel to work"
+ 3251  git commit -am "Update readme"
+ 3252  git push origin main
+ 3253  cd ..
+ 3254  ls
+ 3255  cd -
+ 3256  \n
+ 3257  iex -S mix phx.server
+ 3258  cd ..
+ 3259  cd elixir
+ 3260  ls
+ 3261  cd opensource
+ 3262  ls
+ 3263  git clone git@github.com:jamescarr/opentelemetry-erlang-contrib.git
+ 3264  cd opentelemetry-erlang-contrib
+ 3265  ls
+ 3266  cd examples
+ 3267  ls
+ 3268  cd basic_phoenix_ecto
+ 3269  ls
+ 3270  nvim mix.exs
+ 3271  iex -S mix phx.server
+ 3272  exit
+ 3273  nvim
+ 3274  mix deps.get
+ 3275  exit
+ 3276  cd ..
+ 3277  ls
+ 3278  rm -rf trust_amend lumina_health
+ 3279  cd ../learning/elixir/learn-elixir/roll_dice
+ 3280  git diff
+ 3281  mix deps.get
+ 3282  iex -S mix phx.server
+ 3283  cd ~/Projects/elixir
+ 3284  ls
+ 3285  mix phx.new trust_amend
+ 3286  cd trust_amend
+ 3287  nvim README.md
+ 3288  mix phx.gen.auth
+ 3289  mix phx.gen.auth Accounts User user 
+ 3290  mix ecto.create && mix ecto.migrate
+ 3291  l
+ 3292  mix deps.get
+ 3293  mix phx.gen
+ 3294  mix phx.gen.context Trusts Trust trusts name:string created_at:utc_datetime \\n  --no-schema \\n  --no-context \\n&& mix phx.gen.context Trusts Beneficiary beneficiaries full_name:string date_of_birth:date relationship:string type:string share_percentage:decimal specific_amount:decimal distribution_terms:string trust_id:references:trusts \\n&& mix phx.gen.context Trusts BeneficiaryRestriction beneficiary_restrictions type:string details:map beneficiary_id:references:beneficiaries \\n&& mix phx.gen.context Trusts SpendthriftProvision spendthrift_provisions enabled:boolean details:string beneficiary_id:references:beneficiaries \
+ 3295  mix phx.gen.context Trusts Trust trusts name:string created_at:utc_datetime \\n  --no-schema \\n  --no-context \\n&& mix phx.gen.context Trusts Beneficiary beneficiaries full_name:string date_of_birth:date relationship:string type:string share_percentage:decimal specific_amount:decimal distribution_terms:string trust_id:references:trusts \\n&& mix phx.gen.context Trusts BeneficiaryRestriction beneficiary_restrictions type:string details:map beneficiary_id:references:beneficiaries \\n&& mix phx.gen.context Trusts SpendthriftProvision spendthrift_provisions enabled:boolean details:string beneficiary_id:references:beneficiaries \\n&& mix phx.gen.context Trusts Amendment amendments description:string changes:map trust_id:references:trusts
+ 3296  d ..
+ 3297  cd ..
+ 3298  rm -rf trust_amend
+ 3299  cd ..
+ 3300  mix phx.new trust_amend
+ 3301  cd trust_amend
+ 3302  git init
+ 3303  git add -A
+ 3304  git commit -am "Time to make a few million."
+ 3305  nvim
+ 3306  mix phx.gen.auth Accounts User user 
+ 3307  cd trust_amend
+ 3308  mix phx.gen.auth Accounts User user 
+ 3309  mix deps.get
+ 3310  mix ecto.create && mix ecto.migrate
+ 3311  git add -A
+ 3312  git commit -am "Added user authentication system"
+ 3313  mix ecto.gen.migration add_role_to_users
+ 3314  mix ecto.migrate
+ 3315  cd ../..
+ 3316  cd jamescarr.github.io
+ 3317  ls
+ 3318  nvim
+ 3319  d ../..
+ 3320  cd ../..
+ 3321  cd jamescarr.github.io
+ 3322  hugo serve
+ 3323  git commit -am "Add youtube videos to contact page"
+ 3324  git push orign main
+ 3325  git push origin main
+ 3326  git diff
+ 3327  git commit -am "Preparing for the history"
+ 3328  git push origin main
+ 3329  exit
+ 3330  xit
+ 3331  exit
+ 3332  xcit
+ 3333  exit
+ 3334  exity
+ 3335  exit
+ 3336  tmux
+ 3337  cd Projects
+ 3338  ls
+ 3339  cd elixir
+ 3340  ls
+ 3341  cd trust_amend
+ 3342  ls
+ 3343  git status
+ 3344  git add -A
+ 3345  git log
+ 3346  git commit -am "F"
+ 3347  git squash HEAD~2 "Added user authentication syystem"
+ 3348  nvim
+ 3349  mix ecto.migrate
+ 3350  mix deps.get
+ 3351  mix ecto.migrate
+ 3352  cd assets && npm install alpinejs
+ 3353  npm i -D daisyui@latest
+ 3354  git status
+ 3355  git add -A
+ 3356  git commit -am "added admin site."
+ 3357  cd ..
+ 3358  mix deps.get
+ 3359  iex -S mix phx.server
+ 3360  git status
+ 3361  git commit -am "Basic admin panel with stubbed out sections"
+ 3362  git remote add origin git@github.com:jamescarr/trust-amend.git\ngit push -u origin main
+ 3363  mv ~/Documents/trustamend.png priv/static/images/logo.png
+ 3364  git add -A
+ 3365  git commit -am "Updated admin page to use the new logo"
+ 3366  git push origin main
+ 3367  mix phx.gen.live Trusts Trust trusts name:string type:string created_at:date path:string 
+ 3368  mix ecto.migrate
+ 3369  mix phx.gen.live Trusts Beneficiary beneficiaries \\n  trust_id:references:trusts \\n  full_name:string \\n  date_of_birth:date \\n  ssn:string \\n  relationship:string \\n  share_percentage:decimal \\n  distribution_type:string \\n  contact_info:map \\n  address:text \\n  email:string \\n  phone:string \\n  contingent:boolean \\n  special_needs:boolean \\n  notes:text \\n  status:string
+ 3370  git status
+ 3371  git add -A
+ 3372  git commit -am "Added trusts"
+ 3373  mix phx.gen.live Trusts Beneficiary beneficiaries \\n  trust_id:references:trusts \\n  full_name:string \\n  date_of_birth:date \\n  ssn:string \\n  relationship:string \\n  share_percentage:decimal \\n  distribution_type:string \\n  contact_info:map \\n  address:text \\n  email:string \\n  phone:string \\n  contingent:boolean \\n  special_needs:boolean \\n  notes:text \\n  status:string
+ 3374  mix ecto.migrate
+ 3375  git add -A
+ 3376  git commit -am "Added beneficiaries"
+ 3377  mix test
+ 3378  mix ecto.gen.migration update_beneficiary_schema
+ 3379  mix migrate
+ 3380  mix ecto.migrate
+ 3381  iex -S mix phx.server
+ 3382  mix ecto.gen.migration embed_address_in_beneficiary_schema
+ 3383  mix ecto.migrate
+ 3384  mix ecto.gen.migration drop_addresses_table
+ 3385  rm priv/repo/migrations/20240904145504_drop_addresses_table.exs
+ 3386  cd ..
+ 3387  cd learning
+ 3388  cd elixir
+ 3389  lx
+ 3390  cd learn-elixir
+ 3391  ls
+ 3392  cd dynamic_inputs
+ 3393  ls
+ 3394  nvim 
+ 3395  git add -A
+ 3396  git commit -am "intitial cut, one page modal for benficiary addition"
+ 3397  git commit -am "Remove the masked ssn input"
+ 3398  git push origin main
+ 3399  cd ../...
+ 3400  cd ../..
+ 3401  ls
+ 3402  cd jamescarr.github.io
+ 3403  ls
+ 3404  nvim content/schedule.md
+ 3405  git commit -am "Added supermanager episode"
+ 3406  git push origin main
+ 3407  clear
+ 3408  ls -al 
+ 3409  stty reset
+ 3410  stty reset; clear
+ 3411  exit
+ 3412  stty reset
+ 3413  stty 
+ 3414  d Projects
+ 3415  cd Projects
+ 3416  ls
+ 3417  cd elixir/trust_amend
+ 3418  ls
+ 3419  git status
+ 3420  git diff
+ 3421  git commit -am "Make this a multi-page form"
+ 3422  git push origin main
+ 3423  tmux
+ 3424  iex -S mix phx.server
+ 3425  nvim 
+ 3426  exit
+ 3427  cd ..
+ 3428  mkdir php
+ 3429  cd php
+ 3430  mise use php@latest\n
+ 3431  brew install sodium
+ 3432  brew install libsodium
+ 3433  mise list-remote php\n
+ 3434  mise use php@8.3.11
+ 3435  brew install bison
+ 3436  mise use php@8.3.11
+ 3437  brew install re2c
+ 3438  mise use php@8.3.11
+ 3439  brew instl gdlib
+ 3440  brew install gdlib
+ 3441  mise use php@8.3.11
+ 3442  brew install gdlib
+ 3443  brew in stall glib gdl glibc
+ 3444  brew install glib gdl glibc
+ 3445  mise use php@8.3.11
+ 3446  brew install libpng jpeg freetype libjpeg webp autoconf
+ 3447  echo """\nexport LDFLAGS="-L/opt/homebrew/opt/jpeg/lib"\n  export CPPFLAGS="-I/opt/homebrew/opt/jpeg/include"\n""" >>> ~/.zshrc
+ 3448  echo """\nexport LDFLAGS="-L/opt/homebrew/opt/jpeg/lib"\n  export CPPFLAGS="-I/opt/homebrew/opt/jpeg/include"\n""" >> ~/.zshrc
+ 3449  echo 'export PATH="/opt/homebrew/opt/jpeg/bin:$PATH"' >> ~/.zshrc
+ 3450  exec $SHELL
+ 3451  mise use php@8.3.11
+ 3452  nvim ~/.zshrc
+ 3453  exec $SHELL
+ 3454  mise use php@8.3.11
+ 3455  env
+ 3456  brew install libgd
+ 3457  mise use php@8.3.11
+ 3458  brew install iconv
+ 3459  brew install libiconv
+ 3460  mise use php@8.3.11
+ 3461  brew install oniguruma
+ 3462  mise use php@8.3.11
+ 3463  brew install libzip
+ 3464  mise use php@8.3.11
+ 3465  brew install m4
+ 3466  xcode-select --install\n
+ 3467  echo 'export PATH="/opt/homebrew/opt/m4/bin:$PATH"' >> ~/.zshrc
+ 3468  exec $SHELL
+ 3469  mise use php@8.3.11
+ 3470  brew install autoconf automake bison re2c\n\n
+ 3471  mise use php@8.3.11
+ 3472  brew install openssl
+ 3473  echo '''PHP_CONFIGURE_OPTIONS = "--with-openssl=/opt/homebrew/opt/openssl@3 --with-openssl-dir=/opt/homebrew/opt/openssl@3"\n''' >> ~/.zshrc
+ 3474  exec $SHELL
+ 3475  mise use php@8.3.11
+ 3476  nvim ~/.zshrc
+ 3477  exec $SHELL
+ 3478  mise use php@8.3.11\
+ 3479  mise use php@8.3.11
+ 3480  php --help
+ 3481  brew install php
+ 3482  brew remove php
+ 3483  brew install apr apr-util argon2 aspell libssh2 rtmpdump curl freetds krb5 libpq openldap tidy-html5 
+ 3484  php --help
+ 3485  mise use php@8.3.11
+ 3486  brew install php
+ 3487  mkdir trust-amend
+ 3488  cd trust-amend
+ 3489  mise use php@latest
+ 3490  mise use composer@latest
+ 3491  \nphp -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+ 3492  php -r "if (hash_file('sha384', 'composer-setup.php') === 'dac665fdc30fdd8ec78b38b9800061b4150413ff2e3b6f88543c636f7cd84f6db9189d43a81e5503cda447da73c7e5b6') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"\n
+ 3493  php composer-setup.php\n
+ 3494  php -r "unlink('composer-setup.php');"\n
+ 3495  sudo mv composer.phar /usr/local/bin/composer\n
+ 3496  composer
+ 3497  cd ..
+ 3498  rm -rf trust-amend
+ 3499  composer create-project laravel/laravel trust-amend
+ 3500  cd trust-amend
+ 3501  nvim mise.toml
+ 3502  composer require doctrine/dbal\n\n
+ 3503  mise trust
+ 3504  composer require doctrine/dbal\n\n
+ 3505  php artisan config:clear\n\n
+ 3506  php artisan migrate\n
+ 3507  composer require laravel/breeze --dev\n\n
+ 3508  php artisan breeze:install\n
+ 3509  npm install
+ 3510  npm run dev
+ 3511  php artisan migrate
+ 3512  php artisan test
+ 3513  exit
+ 3514  npm dev
+ 3515  npm run dev
+ 3516  php artisan migrate\n\n
+ 3517  php artisan make:middleware CheckRole\n
+ 3518  ag routeMiddle
+ 3519  ls
+ 3520  ag iddleware
+ 3521  ag auth.basic
+ 3522  ag auth
+ 3523  php artisan migrate
+ 3524  php artisan make:controller ClientController\n
+ 3525  php artisan make:controller LawyerController\n
+ 3526  php artisan make:controller AdminController\n\n
+ 3527  composer require tcg/voyager\n\n
+ 3528  composer require tcg/voyager dev-1.6-l10\n
+ 3529  ag AttemptToAuthenticate
+ 3530  ag RedirectAuth
+ 3531  ag Features
+ 3532  ag limiters
+ 3533  l
+ 3534  composer require laravel/fortify\n\n
+ 3535  php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"\n\n
+ 3536  php artisan --version\n
+ 3537  make run
+ 3538  cd /Users/jamescarr/Projects/php/trust-amend && php artisan serve
+ 3539  cd /Users/jamescarr/Projects/php/trust-amend && npm run dev
+ 3540  composer install concurrently
+ 3541  make run
+ 3542  cd /Users/jamescarr/Projects/php/trust-amend && php artisan serve
+ 3543  cd /Users/jamescarr/Projects/php/trust-amend && npm run dev
+ 3544  npm install --save-dev concurrently
+ 3545  make run
+ 3546  cd /Users/jamescarr/Projects/php/trust-amend && php artisan serve
+ 3547  cd /Users/jamescarr/Projects/php/trust-amend && npm run dev
+ 3548  concrrently
+ 3549  ls node_modules/.bin/concurrently
+ 3550  export PATH="$PATH:./bin"
+ 3551  concurrently
+ 3552  export PATH="$PATH:./node_modules/bin"
+ 3553  concurrently
+ 3554  export PATH="$PATH:$pwd/node_modules/bin"
+ 3555  $pwd
+ 3556  pwd
+ 3557  export PATH="$PATH:$(pwd)/node_modules/bin"
+ 3558  concurrently
+ 3559  /Users/jamescarr/Projects/php/trust-amend/node_modules/.bin/concurrently 
+ 3560  export PATH="$PATH:/Users/jamescarr/Projects/php/trust-amend/node_modules/.bin"
+ 3561  concurrently
+ 3562  make run
+ 3563  php artisan make:seeder CreateUsersSeeder\n\n
+ 3564  php artisan db:seed
+ 3565  php artisan migrate:fresh --seed\n
+ 3566  php artisan db:seed --class=CreateUsersSeeder\n\n\n
+ 3567  php artisan migrate:fresh --seed\n
+ 3568  php artisan db:seed --class=CreateUsersSeeder\n\n\n
+ 3569  php artisan migrate:fresh --seed\n
+ 3570  php artisan db:seed --class=CreateUsersSeeder\n\n\n
+ 3571  git add -A
+ 3572  git init 
+ 3573  php artisan admin:install
+ 3574  composer require filament/filament:"^3.2" -W\n
+ 3575  php artisan filament:install --panels\n\n
+ 3576  php artisan make:filament-user\n\n
+ 3577  php artisan make:filament-resource User\n
+ 3578  php artisan make:model Trust -m\n
+ 3579  php artisan make:model Trustee -m\n
+ 3580  php artisan make:model Beneficiary -m\n
+ 3581  git add -A
+ 3582  git commit -am "Initial commit"
+ 3583  git log
+ 3584  git commit --amend -m "Initial Commit. Time to make $$$"
+ 3585  git remote add origin git@github.com:jamescarr/trust_amend.git\ngit push -u origin main
+ 3586  php artisan make:controller TrustController\nphp artisan make:controller TrusteeController\nphp artisan make:controller BeneficiaryController
+ 3587  php artisan make:component WizardLayout\nphp artisan make:component WizardStep\nphp artisan make:component SummaryCard
+ 3588  cd ..
+ 3589  composer create-project laravel/laravel trust-amend-2
+ 3590  l
+ 3591  rm -rf trust-amend-2
+ 3592  php artisan make:view client.dashboard\nphp artisan make:view client.trust.summary\nphp artisan make:view client.trust.change_trustee\nphp artisan make:view client.trust.modify_beneficiary
+ 3593  cd trust-amend
+ 3594  php artisan make:view client.dashboard\nphp artisan make:view client.trust.summary\nphp artisan make:view client.trust.change_trustee\nphp artisan make:view client.trust.modify_beneficiary
+ 3595  git status
+ 3596  git add -A
+ 3597  git commit -am "Add views for trusts"
+ 3598  php artisan
+ 3599  php artisan | grep migr
+ 3600  php artisan make:migration create_trust
+ 3601  php artisan make:migration create_trustee
+ 3602  php artisan make:migration create_beneficiary 
+ 3603  php artisan migrate:fresh --seed\n
+ 3604  php artisan db:seed --class=CreateUsersSeeder\n\n\n
+ 3605  php artisan make:seeder TrustSeeder\n
+ 3606  php artisan migrate:fresh --seed\n
+ 3607  ag trusts
+ 3608  rm 2024_09_05_180250_create_trusts_table
+ 3609  php artisan migrate:fresh --seed\n
+ 3610  git add -A
+ 3611  git commit -am "add trust details."
+ 3612  npm install vue@3\n
+ 3613  make run
+ 3614  npm install @vitejs/plugin-vue
+ 3615  make run
+ 3616  git status
+ 3617  git commit -am "Got the beneficiary update controller working"
+ 3618  git add -A
+ 3619  git commit -am "add trust templates"
+ 3620  php artisan make:filament-wizard BeneficiaryTrustWizard\n
+ 3621  composer require filament/filament\n
+ 3622  php artisan make:filament-wizard BeneficiaryTrustWizard\n
+ 3623  php artisan | grep fil
+ 3624  php artisan make:livewire BeneficiaryTrustWizard
+ 3625  nvim
+ 3626  [200~php artisan make:livewire BeneficiaryList
+ 3627  ~php artisan make:livewire BeneficiaryList\n
+ 3628  php artisan make:livewire BeneficiaryList\n
+ 3629  cd ..
+ 3630  cd elixir
+ 3631  cd trust_amend
+ 3632  ls
+ 3633  iex -S mix phx.server
+ 3634  cd ~/Desktop/2023\ Carrsom\ Properties
+ 3635  ls
+ 3636  magick mogrify -format png *.avif *.webp\n
+ 3637  ls
+ 3638  rm *avif *webp
+ 3639  ls
+ 3640  cd ..
+ 3641  cd ~/Downloads
+ 3642  ls
+ 3643  nvim 2023-p-and-l.csv
+ 3644  cd ../Projects
+ 3645  ls
+ 3646  mix escript.install hex hex_serve\n\n
+ 3647  mkdir local_hex_repo
+ 3648  cd local_hex_repo
+ 3649  mix escript.install hex hex_serve\n\n
+ 3650  mkdir ~/hex_cache\n\n
+ 3651  export HEX_CACHE=~/hex_cache\n
+ 3652  mix hex.package fetch hex_serve
+ 3653  clear
+ 3654  exit
+ 3655  cd ..
+ 3656  cd elixir
+ 3657  cd ankusa
+ 3658  ls
+ 3659  nvim
+ 3660  make
+ 3661  make run
+ 3662  cd ..
+ 3663  cd le
+ 3664  cd learning
+ 3665  cd elixir
+ 3666  l
+ 3667  cd learn-elixir
+ 3668  cd admin_site_demo
+ 3669  ls
+ 3670  nvim
+ 3671  iex -S mix phx.server
+ 3672  xit
+ 3673  exit
+ 3674  cd ,,
+ 3675  cd ~/notes
+ 3676  cd ..
+ 3677  ls
+ 3678  cd dynamic_inputs
+ 3679  ls
+ 3680  iex -S mix phx.server
+ 3681  cd ~/notes
+ 3682  mkdir ~/notes
+ 3683  cd ~/notes
+ 3684  nvim 2024-23-11.md
+ 3685  cd ..
+ 3686  ls
+ 3687  cd ..
+ 3688  cd jamescarr
+ 3689  cd Projects
+ 3690  ls
+ 3691  cd learning/elixir/learn-elixir
+ 3692  ls
+ 3693  git status
+ 3694  git diff
+ 3695  git commit -am "add otel"
+ 3696  git push origin main
+ 3697  cd ..
+ 3698  c d .
+ 3699  cd ..
+ 3700  cd elixir
+ 3701  l
+ 3702  cd ..
+ 3703  composer create-project laravel/laravel adl-manager
+ 3704  cd adl-manager
+ 3705  composer require laravel/pgsql-database-driver
+ 3706  nvim .env
+ 3707  tmux
+ 3708  cd Projects
+ 3709  ls
+ 3710  cd adl-manager
+ 3711  ls
+ 3712  nvim .env
+ 3713  tmux
+ 3714  cd Projects
+ 3715  ls
+ 3716  cd adl-manager
+ 3717  nvim .env
+ 3718  composer require laravel/jetstream
+ 3719  php artisan jetstream:install livewire\n\n
+ 3720  npm install\n
+ 3721  npm run dev\n\n
+ 3722  php artisan migrate\n\n
+ 3723  php artisan serve\n
+ 3724  exit
+ 3725  php artisan serve\n
+ 3726  nvim
+ 3727  php artisan make:model ADL -mc
+ 3728  php artisan make:request StoreADLRequest\n
+ 3729  php artisan make:view adls.index\n
+ 3730  php artisan make:view adls.create\n
+ 3731  php artisan make:view adls.edit\n
+ 3732  php artisan migrate\n\n
+ 3733  php artisan migrate
+ 3734  nvim ~/.zshrc
+ 3735  exec $SHELL
+ 3736  nvim ~/.zshrc
+ 3737  exec $SHELL
+ 3738  exit
+ 3739  tmux
+ 3740  cd Projects
+ 3741  ls
+ 3742  cd adl-manager
+ 3743  nvim 
+ 3744  tmux
+ 3745  cd Projects
+ 3746  lc
+ 3747  ld
+ 3748  ls
+ 3749  rm -rf adl-manager
+ 3750  composer create-project laravel/laravel adl-manager
+ 3751  nvim
+ 3752  cd adl-manager
+ 3753  nvim 
+ 3754  cd Projects/adl-manager
+ 3755  l
+ 3756  cd ~/Projects/.neovimrc
+ 3757  ag doten 
+ 3758  ag dotenv
+ 3759  ag env
+ 3760  nvim lua/jamescarr/lazy/cloak.lua
+ 3761  cd ../adl-manager
+ 3762  php artisan ui bootstrap --auth\n
+ 3763  composer require laravel/ui\n
+ 3764  php artisan ui bootstrap --auth\n
+ 3765  npm install && npm run dev\n
+ 3766  exit
+ 3767  composer require laravel/socialite
+ 3768  php artisan make:migration add_google_id_to_users_table\n
+ 3769  php artisan migrate\n
+ 3770  composer require laravel/postgres-driver\n\n
+ 3771  cd ..
+ 3772  rm -rf adl-manager
+ 3773  composer create-project --prefer-dist laravel/laravel adl-manager
+ 3774  cd adl-manager
+ 3775  composer require laravel/postgres-driver\n\n
+ 3776  mise list php
+ 3777  mise list
+ 3778  mise install php
+ 3779  nvim ~/Projects/learning/elixir/learn-elixir/dynamic_inputs
+ 3780  nvim
+ 3781  psql -U postgres
+ 3782  cd ~/Projects/learning
+ 3783  ls
+ 3784  cd elixir
+ 3785  ls
+ 3786  cd learn-elixir
+ 3787  ls
+ 3788  cd phoenix-programming-live-view
+ 3789  ls
+ 3790  cd pento
+ 3791  ls
+ 3792  docker compose up 
+ 3793  cd adl-manager
+ 3794  composer require spatie/laravel-permission\n
+ 3795  php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"\n
+ 3796  php artisan migrate\n
+ 3797  php artisan tinker\n
+ 3798  cd ..
+ 3799  rm -rf adl-manager
+ 3800  cd ..
+ 3801  laravel new adl-manager --jet
+ 3802  composer create-project --prefer-dist --jet laravel/laravel adl-manager
+ 3803  composer create-project laravel/laravel adl-manager --jet
+ 3804  composer create-project laravel/laravel --help
+ 3805  composer create-project laravel/laravel adl-manager
+ 3806  cd adl-manager
+ 3807  composer require laravel/jetstream
+ 3808  php artisan jetstream:install livewire --teams
+ 3809  nvim .env
+ 3810  php artisan migrate\n
+ 3811  cd adl-manager
+ 3812  php artisan migrate\n
+ 3813  git init
+ 3814  git status
+ 3815  git add -A
+ 3816  git commit -am "Initial commit"
+ 3817  php artisan serve\n
+ 3818  cd ..
+ 3819  cd adl-manager
+ 3820  ls
+ 3821  composer require spatie/laravel-permission\n
+ 3822  php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"\n
+ 3823  php artisan migrate\n
+ 3824  php artisan db:seed\n
+ 3825  git commit -am "Administrator user created"
+ 3826  git status
+ 3827  git add -A
+ 3828  git commit -am "Default jestream tables"
+ 3829  php artisan make:middleware EnsureUserIsAdmin\n
+ 3830  ag outeMiddle
+ 3831  [200~php artisan make:controller UserController --resource
+ 3832  php artisan make:controller UserController --resource
+ 3833  php artisan make:policy UserPolicy --model=User\n
+ 3834  php artisan jetstream:install livewire/inertia
+ 3835  vf ..
+ 3836  cd ..
+ 3837  rm -rf adl-manager
+ 3838  cd ..
+ 3839  rm -rf adl-manager
+ 3840  composer create-project laravel/laravel adl-manager 
+ 3841  cd adl-manager
+ 3842  composer require laravel/jetstream
+ 3843  php artisan jetstream:install livewire/inertia
+ 3844  composer require filament/filament\n
+ 3845  php artisan make:filament-resource User\n
+ 3846  composer require spatie/laravel-permission\n
+ 3847  php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"\n
+ 3848  php artisan migrate\n
+ 3849  cd adl-manager
+ 3850  nvim
+ 3851  php artisan migrate\n
+ 3852  composer create-project laravel/laravel demo
+ 3853  cd ..
+ 3854  rm -rf adl-manager
+ 3855  composer create-project laravel/laravel demo
+ 3856  cd demo
+ 3857  composer require intertajs/inertia-laravel
+ 3858  vim
+ 3859  nvim
+ 3860  \ncd ..
+ 3861  l
+ 3862  cd demo
+ 3863  ls
+ 3864  php artisan key:generate\n
+ 3865  cd ..
+ 3866  rm -rf demo
+ 3867  mix phx.new adl_manager
+ 3868  l
+ 3869  rm -rf adl_manager
+ 3870  composer create-project laravel/laravel adl_manager
+ 3871  cd adl_manager
+ 3872  nvim
+ 3873  cd ..
+ 3874  ls
+ 3875  cd adl_manager
+ 3876  ls
+ 3877  php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"\n
+ 3878  composer require laravel/jetstream
+ 3879  php artisan make:controller UserController --resource
+ 3880  php artisan make:seeder RoleSeeder\n
+ 3881  php artisan db:seed --class=RoleSeeder\n
+ 3882  php artisan serve\n
+ 3883  cd ..
+ 3884  cd adl_manager
+ 3885  php artisan serve\n
+ 3886  cd ..
+ 3887  rm -rf adl_manager
+ 3888  cd ../adl_manager
+ 3889  rm -rf adl_manager
+ 3890  composer create-project laravel/laravel adl_manager
+ 3891  cd adl_manager
+ 3892  nvim
+ 3893  git init
+ 3894  cd ../adl_manager
+ 3895  git init
+ 3896  git add -A
+ 3897  git commit -am "Initial Commit"
+ 3898  php artisan serve\n
+ 3899  composer require laravel/jetstream
+ 3900  git add -A
+ 3901  git commit -am "require jetstream"
+ 3902  php artisan jetstream:install livewire/inertia
+ 3903  php artisan jetstream:install livewire
+ 3904  git status
+ 3905  git add -A
+ 3906  git commit -am "jetstream:install livewire"
+ 3907  composer require spatie/laravel-permission\n
+ 3908  git add -A
+ 3909  git commit -am "Spatie for user roles"
+ 3910  php artisan vendor:publish --provider="Spatie\Permission\PermissionServiceProvider"\n
+ 3911  git status
+ 3912  git add -A
+ 3913  git commit -am "Create permissions table"
+ 3914  php artisan migrate\n
+ 3915  php artisan make:seeder RoleSeeder\n
+ 3916  php artisan tinker\n
+ 3917  php artisan migrate\n
+ 3918  php artisan db:seed --class=RoleSeeder\n
+ 3919  git status
+ 3920  git add -A
+ 3921  git commit -am "Added a seeder for seeding roles"
+ 3922  [200~php artisan make:controller Admin/UserController --resource
+ 3923  ~php artisan make:controller Admin/UserController --resource
+ 3924  php artisan make:controller Admin/UserController --resource
+ 3925  git status
+ 3926  git add -A
+ 3927  git commit -am "Added admin controller"
+ 3928  composer require filament/filament\n
+ 3929  php artisan make:filament-resource User\n
+ 3930  php artisan filament:install --panels\n\n
+ 3931  php artisan make:filament-resource User\n
+ 3932  php artisan migrate\n
+ 3933  php artisan make:seeder AdminUserSeeder\n
+ 3934  make setup
+ 3935  make
+ 3936  git status
+ 3937  git add -A
+ 3938  git commit -am "users working"
+ 3939  make 
+ 3940  make reset
+ 3941  git reset HEAD --hard
+ 3942  make reset
+ 3943  git status
+ 3944  git add -A
+ 3945  git commit -am "Verified `make reset` works and provides a fresh database"
+ 3946  make reset
+ 3947  git status
+ 3948  git diff
+ 3949  git commit -am "Add one non-admin user"
+ 3950  make reset
+ 3951  git commit -am "Clean up code for creating admin and non-admin users"
+ 3952  git remote add origin git@github.com:jamescarr/adl-manager.git\ngit push -u origin main
+ 3953  ag iddleware
+ 3954  ag iddlewareAl
+ 3955  ~php artisan cache:clear\n
+ 3956  php artisan cache:clear\n
+ 3957  php artisan config:clear
+ 3958  php artisan route:clear
+ 3959  php artisan cache:clear\n
+ 3960  php artisan config:clear
+ 3961  php artisan route:clear
+ 3962  git status
+ 3963  git diff
+ 3964  git commit -am "Add role check to middleware. \n"
+ 3965  git status
+ 3966  git add -A
+ 3967  git commit -am "Only users with the admin role can view or edit users"
+ 3968  git push origin main
+ 3969  git checkout -b feat-add-adls
+ 3970  cd ..
+ 3971  ls
+ 3972  php artisan make:model Patient -mcr\nphp artisan make:model AdlType -mcr\nphp artisan make:model AdlRecord -mcr
+ 3973  php artisan make:migration add_adl_fields\n
+ 3974  composer require owen-it/laravel-auditing\n
+ 3975  php artisan vendor:publish --provider "OwenIt\Auditing\AuditingServiceProvider" --tag="config"\n
+ 3976  php artisan make:migration add_adl_types\n
+ 3977  git add -A
+ 3978  php artisan migrate\n
+ 3979  ag CreateAdlRecordsTable
+ 3980  php artisan migrate\n
+ 3981  make reset
+ 3982  ag adl_records
+ 3983  make reset
+ 3984  php artisan make:migration add_patient\n
+ 3985  make reset
+ 3986  php artisan route:clear
+ 3987  php artisan cache:clear\n
+ 3988  make reset
+ 3989  git diff
+ 3990  php artisan migrate:reset\n
+ 3991  php artisan migrate\n
+ 3992  php artisan make:migration add_adl_type\n
+ 3993  php artisan make:migration add_adl_record\n
+ 3994  make reset
+ 3995  git status
+ 3996  git add -A
+ 3997  git commit -am "Add patients, ADL records, etc."
+ 3998  git push origin main
+ 3999  git push origin feat-add-adls
+ 4000  php artisan make:filament-resource Patient\nphp artisan make:filament-resource AdlType\nphp artisan make:filament-resource AdlRecord
+ 4001  php artisan make:filament-page Dashboard\n
+ 4002  ag RecentAdlRecord
+ 4003  ag RecentA
+ 4004  ag RecentAdlRecords
+ 4005  ag filament.widgets.recent-adl-records
+ 4006  ag recent-adl-records
+ 4007  git status
+ 4008  git add
+ 4009  git add -A
+ 4010  git commit -am "add dashboard for adding ADL entries"
+ 4011  git push origin main
+ 4012  php artisan optimize:clear\n
+ 4013  php artisan make:filament-page Dashboard\n
+ 4014  git push origin feat-add-adls
+ 4015  git status
+ 4016  git add -A
+ 4017  git commit -am "Add some whidgets"
+ 4018  git push origin feat-add-adls
+ 4019  php artisan serve\n
+ 4020  git checkout main
+ 4021  php artisan serve\n
+ 4022  php artisan optimize:clear\n
+ 4023  git commit -am "Clean up code for creating admin and non-admin users"
+ 4024  make reset
+ 4025  git status
+ 4026  composer install
+ 4027  rm -rf vendor/filament
+ 4028  composer install
+ 4029  make reset
+ 4030  php artisan serve\n
+ 4031  git checkout spike-add-adl
+ 4032  php artisan make:model AdlEntry -mcr\n
+ 4033  make new_migration
+ 4034  php artisan make:migration adl_entries
+ 4035  php artisan migrate\n
+ 4036  php artisan make:model Patient -m\n
+ 4037  php artisan migrate
+ 4038  [200~mkdir -p resources/views/adl-entries
+ 4039  mkdir -p resources/views/adl-entries\n
+ 4040  touch resources/views/adl-entries/index.blade.php\n
+ 4041  touch resources/views/adl-entries/create.blade.php\n
+ 4042  git add -A
+ 4043  git commit -am "working commit"
+ 4044  php artisan make:filament-resource AdlEntry\n
+ 4045  mix archive.install hex phx_new\n
+ 4046  mix phx.new adl_tracker --live\n
+ 4047  cd adl_tracker
+ 4048  mix ecto.create
+ 4049  mix deps.get\n
+ 4050  mix phx.server\n
+ 4051  exit
+ 4052  ^[[200~mix phx.gen.auth Accounts User users
+ 4053  mix phx.gen.auth Accounts User users\n
+ 4054  mix deps.gwt
+ 4055  mix deps.get
+ 4056  mix ecto.migrate
+ 4057  nvim
+ 4058  mix phx.gen.context Accounts Team teams name:string\n
+ 4059  mix ecto.migrate
+ 4060  mix phx.gen.context Accounts TeamMembership team_memberships user_id:references:users team_id:references:teams\n
+ 4061  mix ecto.migrate
+ 4062  mix phx.gen.context Patients Patient patients name:string dob:date\n
+ 4063  mic ecto.migrate
+ 4064  mix ecto.migrate
+ 4065  mix phx.gen.context Logs AdlEntry adl_entries user_id:references:users patient_id:references:patients activity:string notes:text\n
+ 4066  pfpfix ecto.migrate
+ 4067  mix ecto.migrate
+ 4068  git init
+ 4069  git add -A
+ 4070  git commit -am "Initial commit"
+ 4071  iex -S mix phx.server
+ 4072  mix ecto.migrate
+ 4073  git add -A
+ 4074  git commit -am "add ADLs"
+ 4075  mix ecto.gen.migration add_team_id_to_patients\n
+ 4076  mix ecto.migrate\n
+ 4077  mix run priv/repo/seeds.exs\n
+ 4078  git add -A
+ 4079  git commit -am "Add live view for ADL"
+ 4080  cd ..
+ 4081  cd elixir
+ 4082  cd ob
+ 4083  ls
+ 4084  cd opensource
+ 4085  ls
+ 4086  cd broadway
+ 4087  ls
+ 4088  nvim
+ 4089  cd ~/Projects/elixir/opensource/broadway
+ 4090  git pull --rebase origin main
+ 4091  git pull --rebase upstream main
+ 4092  git add upstream https://github.com/dashbitco/broadway.git
+ 4093  git remote add upstream https://github.com/dashbitco/broadway.git
+ 4094  git pull --rebase upstream main
+ 4095  git push origin main
+ 4096  mix deps.get
+ 4097  mix
+ 4098  git reset HEAD --hard
+ 4099  git reset HEAD~1
+ 4100  git reset HEAD
+ 4101  git reset HEAD --hard
+ 4102  git diff
+ 4103  git status
+ 4104  php artisan serve\n
+ 4105  cd ../../..
+ 4106  ls
+ 4107  cd jamescarr.github.io
+ 4108  ls
+ 4109  make
+ 4110  cd ..
+ 4111  ls
+ 4112  cd elixir
+ 4113  ls
+ 4114  cd opensource
+ 4115  ls
+ 4116  cd broadway
+ 4117  ls
+ 4118  nvim
+ 4119  cd ../../..
+ 4120  cd jamescarr.github.io
+ 4121  ls
+ 4122  make new_post name="Exploring Ash Framework" description="devlog exploring the ash framework"
+ 4123  cd ~/Projects/learning/elixir
+ 4124  ls
+ 4125  mix archive.install hex phx_new
+ 4126  \tmix phx.new my_ash_phoenix_app
+ 4127  cd ~/Projects/learning/elixir/my_ash_phoenix_app
+ 4128  nvim
+ 4129  mix hex.info 
+ 4130  mix hex.info ash
+ 4131  mix hex.info --help
+ 4132  mix hex.info help
+ 4133  mix hex.help
+ 4134  mix hex
+ 4135  mix hex.info picosat_elixir | grep "{"
+ 4136  mix hex.info picosat_elixir | grep "Config"
+ 4137  cd ../
+ 4138  mkdir zsh-elixir-functions
+ 4139  cd zsh-elixir-functions
+ 4140  nvim add-mix-dep.zsh
+ 4141  chmod a+x add-mix-dep.zsh
+ 4142  vim readme.md
+ 4143  nvim readme.md
+ 4144  vim readme.md
+ 4145  git init 
+ 4146  git add -A
+ 4147  git commit -am "Initial commit"
+ 4148  git push origin main
+ 4149  ggit remote add origin git@github.com:jamescarr/add-mix-dep.git\ngit push -u origin main
+ 4150  git remote add origin git@github.com:jamescarr/add-mix-dep.git\ngit push -u origin main
+ 4151  nvim readme.md
+ 4152  git commit -am "update readme with install instructions"
+ 4153  git push origin main
+ 4154  cp add_hex_dependency.zsh ~/add-mix-dep
+ 4155  cp add-mix-dep.zsh ~/add-mix-dep
+ 4156  chmod +x ~/add-mix-dep
+ 4157  echo $PATH
+ 4158  export PATH="$HOME:$PATH"
+ 4159  echo 'export PATH="$HOME:$PATH"' >> ~/.zshrc
+ 4160  exec zsh
+ 4161  add-mix-dep picostat_elixir
+ 4162  add-mix-dep :picostat_elixir
+ 4163  mix hex.info picosat_elixir | grep "Config"
+ 4164  add-mix-dep picostat_elixir
+ 4165  add-mix-dep picostat_elixir --debug
+ 4166  mix hex.info picosat_elixir | grep "Config"
+ 4167  mix hex.info ash_postgres | grep Config
+ 4168  mix hex.info ash_phoenix | grep Config
+ 4169  mix deps.get
+ 4170  cd my_ash_phoenix_app
+ 4171  mix deps.get
+ 4172  mix ash
+ 4173  mix ash.setup
+ 4174  mix ash.codegen initial_migration
+ 4175  mix ash.migrate
+ 4176  iex -S mix phx.server
+ 4177  mix igniter.install ash_graphql\n\n
+ 4178  cd ..
+ 4179  ls
+ 4180  mix new amqp-proxy-example
+ 4181  mix new amqp_proxy_example
+ 4182  cd amqp_proxy_example
+ 4183  ls
+ 4184  nvim
+ 4185  mix deps.get
+ 4186  docker-compose up
+ 4187  docker-compose destroy
+ 4188  docker-compose rm
+ 4189  docker-compose up
+ 4190  docker rm 012ff203dd6abda57b9f511b5cda7b8e9df859c1e0860fe1f9e74581b887524d
+ 4191  docker-compose up
+ 4192  docker-compose rm
+ 4193  docker-compose up
+ 4194  exit
+ 4195  elixir consumer.exs
+ 4196  elixir lib/consumer.exs
+ 4197  elixir lib/publisher.exs
+ 4198  mix hex.info amqp
+ 4199  mix hex.info uuid | grep Config
+ 4200  mix deps.get
+ 4201  touch lib/amqp_test/{consumer,publisher,publisher_starter}.ex
+ 4202  mix deps.get
+ 4203  mix consume
+ 4204  mix publish --count 500
+ 4205  mix publish --count 5
+ 4206  mix publish --count 10
+ 4207  mix publish --count 100
+ 4208  mix publish --count 100 --interval 2
+ 4209  mix publish --count 100 --interval 1
+ 4210  mix consume
+ 4211  mix publish --count 100 --interval 1
+ 4212  mix publish --count 100 --interval 2000
+ 4213  mix compile
+ 4214  mix publish --count 100 --interval 2000
+ 4215  cd ~/Projects
+ 4216  mkdir bank_statement_parser
+ 4217  cd bank_statement_parser
+ 4218  nvim 
+ 4219  poetry
+ 4220  mise install python@3
+ 4221  mise use
+ 4222  mise use python@3
+ 4223  python --version
+ 4224  pip install pipx
+ 4225  pipinstall --upgrade pip
+ 4226  pip install --upgrade pip
+ 4227  pipx install poetry
+ 4228  poetry install
+ 4229  poetry run 
+ 4230  poetry run bank-statement-analyzer
+ 4231  poetry install
+ 4232  brew install libomp\n\n
+ 4233  xcode-select --install
+ 4234  poetry install
+ 4235  pix install pandas
+ 4236  pipx install pandas
+ 4237  pipx install pandas --incude-depas
+ 4238  pipx install pandas --incude-deps
+ 4239  pipx install pandas --include-deps
+ 4240  poetry run bank-statement-analyzer
+ 4241  poetry install pandas --include-deps
+ 4242  poetry install
+ 4243  poetry run bank-statement-analyzer
+ 4244  poetry run bank-statement-analyzer --help
+ 4245  poetry run bank-statement-analyzer --pdf-dir ~/Desktop/2023\ Taxes\ Starfish/James/ --output-file james.xslx
+ 4246  poetry run bank-statement-analyzer --pdf_dir ~/Desktop/2023\ Taxes\ Starfish/James/ --output_file james.xslx
+ 4247  xit
+ 4248  eixt
+ 4249  exit
+ 4250  iex -S mix phx.server
+ 4251  mix deps.get
+ 4252  iex -S mix phx.server
+ 4253  ls
+ 4254  ls amqp_proxy
+ 4255  mv amqp_proxy/config.yaml amqp_proxy/config.ini
+ 4256  nvim 
+ 4257  cd ..
+ 4258  cd learning/elixir
+ 4259  ls
+ 4260  cd learn-elixir
+ 4261  ls
+ 4262  mix new hello_supervisor --module HelloSupervisor
+ 4263  cd hello_supervisor
+ 4264  ls
+ 4265  nvim lib/hello_supervisor/worker.ex
+ 4266  mkdir lib/hello_supervisor
+ 4267  mix compile
+ 4268  iex -S mix
+ 4269  exit
+ 4270  git add -A
+ 4271  git commit -am "Simple GenServer supervisor example printing a message on an interval from 5 different processes"
+ 4272  git push origin main
+ 4273  iex -S mix
+ 4274  cd ..
+ 4275  iex
+ 4276  mix deps.get
+ 4277  iex -S mix
+ 4278  ls
+ 4279  git status
+ 4280  iex -S mix
+ 4281  git add -A 
+ 4282  git commit -am "have processes print at random intervals between 500 and 5000 miliseconds."
+ 4283  git push origin main
+ 4284  iex
+ 4285  cd ..
+ 4286  cd jamescarr.github.io
+ 4287  ls
+ 4288  git pull --rebase origin main
+ 4289  make
+ 4290  nvim
+ 4291  d ..
+ 4292  cd jam
+ 4293  cd ..
+ 4294  cd jma
+ 4295  cd jamescarr.github.io
+ 4296  exit
+ 4297  cd ..
+ 4298  cd jamescarr.github.io
+ 4299  ls
+ 4300  make new_post title="Elixir Basics: Multi-Process Interval Timer" description="Today on Elixir Basics I'll do a quick demo of how to write a multi-process interval timer in elixir"
+ 4301  iex -S mix
+ 4302  clear
+ 4303  iex -S mix
+ 4304  mix
+ 4305  mix run
+ 4306  mix run -e "HelloSupervisor.start_link()"
+ 4307  mix run -e "HelloSupervisor.start_link"
+ 4308  mix run -e "HelloSupervisor.start"
+ 4309  mix run -e "HelloSupervisor.start/2"
+ 4310  hugo server
+ 4311  git status
+ 4312  git add -A
+ 4313  git commit -am "Add a new post about intervals with GenServer"
+ 4314  git push origin main
+ 4315  git commit -am "Add a new post about intervals with GenServer"
+ 4316  git push origin main
+ 4317  git commit -am "empty commit to kick github workflow back off"
+ 4318  git push origin main
+ 4319  ag "I'm James Carr"
+ 4320  git commit -am "Display posts on the landing page"
+ 4321  git push origin main
+ 4322  git co -b 
+ 4323  git checkout -b update-landing-page
+ 4324  git push origin update-landing-page
+ 4325  git checkout main
+ 4326  git commit -am "Display 10 most recent posts"
+ 4327  git push origin main
+ 4328  git commit -am "Remove the UUID import"
+ 4329  git push origin main
+ 4330  cd ../elixir/ankusa
+ 4331  ls
+ 4332  cp ~/Downloads/calendar-cog.svg priv/static/images/logo.svg
+ 4333  git commit -am "replace logo with gear and cog"
+ 4334  git push origin main
+ 4335  fly deploy
+ 4336  cd -
+ 4337  hugo serve
+ 4338  git commit -am "Fix a typo"
+ 4339  git push origin main
+ 4340  git status
+ 4341  git diff
+ 4342  git commit -am "Capitalize a log message"
+ 4343  git push orign main
+ 4344  git push origin main
+ 4345  cd ../..
+ 4346  cd ../
+ 4347  mkdir ai
+ 4348  cd ai
+ 4349  git clone https://github.com/huggingface/chat-ui.git
+ 4350  cd chat-ui
+ 4351  brew install llama.cpp
+ 4352  llama-server --hf-repo microsoft/Phi-3-mini-4k-instruct-gguf --hf-file Phi-3-mini-4k-instruct-q4.gguf -c 4096\n
+ 4353  ls
+ 4354  nvim .env.local
+ 4355  cd ../../..
+ 4356  ls
+ 4357  cd ai
+ 4358  ls
+ 4359  cd chat-ui
+ 4360  nvim 
+ 4361  exit
+ 4362  docker run -d -p 27017:27017 --name mongo-chatui mongo:latest
+ 4363  npm install\n
+ 4364  docker ps
+ 4365  npm run dev -- --open\n
+ 4366  nvim 
+ 4367  npm run dev -- --open\n
+ 4368  llama-cli \\n  --hf-repo "microsoft/Phi-3-mini-4k-instruct-gguf" \\n  --hf-file Phi-3-mini-4k-instruct-fp16.gguf \\n  -p "You are a helpful assistant" \\n  --conversation
+ 4369  npm run dev -- --open\n
+ 4370  pip install huggingface-hub>=0.17.1\n\n
+ 4371  pip install huggingface-hub\n\n
+ 4372  huggingface-cli login\n\n
+ 4373  exit
+ 4374  eexit
+ 4375  exit
+ 4376  mix deps.get
+ 4377  iex -S mix phx.server
+ 4378  mix ash.migrate
+ 4379  mix test
+ 4380  mv test/my_ash_phoenix_app_web/tweets/action_invocation_test.ex test/my_ash_phoenix_app_web/tweets/action_invocation_test.exs
+ 4381  cd test
+ 4382  mkdir my_ash_phoenix_app
+ 4383  mv my_ash_phoenix_app_web/tweets my_ash_phoenix_app
+ 4384  nvim
+ 4385  cd ..
+ 4386  mix test
+ 4387  cd ..
+ 4388  cd elixir
+ 4389  cd my_ash_phoenix_app
+ 4390  mix test
+ 4391  git status
+ 4392  git init
+ 4393  git add -A
+ 4394  git commit -am "Initial commit"
+ 4395  rm -rf .git
+ 4396  cd ..
+ 4397  mv my_ash_phoenix_app learn-elixir
+ 4398  cd learn-elixir
+ 4399  git add -A
+ 4400  git commit -am "Added a simple phoenix+ash framework example"
+ 4401  git push origin main
+ 4402  cd ..
+ 4403  cd my_ash_phoenix_app
+ 4404  ls
+ 4405  nvim
+ 4406  git checkout -b amqp-publisher
+ 4407  cd task_processor
+ 4408  ls
+ 4409  cat mix.exs
+ 4410  cd ..
+ 4411  ls
+ 4412  cp hello_supervisor amqp_supervisor
+ 4413  cp -R hello_supervisor amqp_supervisor
+ 4414  cd ..
+ 4415  cd amqp_supervisor
+ 4416  nvim
+ 4417  mix deps.get
+ 4418  ls
+ 4419  cd amqp_supervisor/
+ 4420  mix deps.get
+ 4421  cp ~/Projects/amqp_proxy_example/docker-compose.yaml .
+ 4422  cd ..
+ 4423  cd amqp_supervisor
+ 4424  docker-compsoe up
+ 4425  docker-compose up
+ 4426  docker-compose rm
+ 4427  docker-compose up
+ 4428  iex -S mix
+ 4429  mix test
+ 4430  mix deps.get
+ 4431  iex -S mix
+ 4432  git status
+ 4433  git add -A
+ 4434  git commit -am "Evolving our Hello Supervisor example to use AMQP publishing"
+ 4435  git push origin main
+ 4436  git push orign amqp-publisher
+ 4437  git push origin amqp-publisher
+ 4438  iex
+ 4439  iex -S mix
+ 4440  %
+ 4441  iex -S mix
+ 4442  git status
+ 4443  git add -A
+ 4444  git commit -am "Added a consumer to the mix"
+ 4445  git push origin main
+ 4446  git push origin amqp-publisher
+ 4447  iex -S mix
+ 4448  cd ~/Projects/jamescarr.github.io
+ 4449  git status
+ 4450  git reset HEAD --hard
+ 4451  git status
+ 4452  rm content/posts/152-days-of-majjhima-nikaya
+ 4453  rm content/posts/152-days-of-majjhima-nikayaxitxit.md
+ 4454  make new_post title="Elixir Basics: Working with AMQP" description="Expanding on the Interval Timer to Publish and Consume Messages Over AMQP"
+ 4455  nvim
+ 4456  iex -S mix
+ 4457  hugo serve
+ 4458  git status 
+ 4459  git add -A
+ 4460  iex -S mix
+ 4461  clear
+ 4462  iex -S mix
+ 4463  clear
+ 4464  iex -S mix
+ 4465  %
+ 4466  mix compile
+ 4467  iex -S mix
+ 4468  git add -A\ngit commit -am "Working publish / consumer example"
+ 4469  git push orign amqp-publisher
+ 4470  git push origin amqp-publisher
+ 4471  git add -A
+ 4472  git commit -am "Added post on amqp supervisor"
+ 4473  git push origin main
+ 4474  git commit -am "Added AMQP example and fixed tags"
+ 4475  git push orign main
+ 4476  git push origin main
+ 4477  iex -S mix
+ 4478  git commit -am "added the connections panel"
+ 4479  git push origin main
+ 4480  git commit -am "A few more words"
+ 4481  git push origin main
+ 4482  exit
+ 4483  git commit -am "fix about page"
+ 4484  git push orign main
+ 4485  git push origin main
+ 4486  exit
+ 4487  ps ax
+ 4488  tmux ls
+ 4489  \ttmux attach-session -t 0
+ 4490  ls
+ 4491  git checkout main
+ 4492  git pull --rebase origin main
+ 4493  cd ..
+ 4494  cd jm
+ 4495  cd jamescarr.github.io
+ 4496  ls
+ 4497  nvim 
+ 4498  make new_post title="Exploring Elixir Application Internals with Runtime Tools" description="A brief exploration of using the batteries included with erlang/elixir to inspect internal application operation locally" publishDate="2024-10-17T12:00:00+00:00"
+ 4499  iex -S mix
+ 4500  git status
+ 4501  iex -S mix
+ 4502  git commit -am "Additional changes"
+ 4503  git push origin main
+ 4504  cd ..
+ 4505  cd phoenix-programming-live-view
+ 4506  cd ..
+ 4507  cd phoenix-programming-live-view
+ 4508  nvim
+ 4509  mix test
+ 4510  cd pento
+ 4511  mix deps.get
+ 4512  mix test
+ 4513  mix compile
+ 4514  iex 
+ 4515  mix compile
+ 4516  mix test
+ 4517  ls
+ 4518  cd ..
+ 4519  cd phoenix-programming-live-view
+ 4520  l
+ 4521  cd pento
+ 4522  l
+ 4523  docker-compose up
+ 4524  mix ecto
+ 4525  mix ecto.create
+ 4526  mix ecto.migrate
+ 4527  mix test
+ 4528  cd ..
+ 4529  mix new genserver
+ 4530  cd genserver
+ 4531  ls
+ 4532  nvim
+ 4533  cd ..
+ 4534  cd genserver
+ 4535  iex -S mix
+ 4536  mix compile
+ 4537  iex -S mix
+ 4538  cd ..
+ 4539  cd phoenix-programming-live-view
+ 4540  cd pento
+ 4541  nvim
+ 4542  cd phoenix-programming-live-view
+ 4543  cd pento
+ 4544  mix test
+ 4545  git commit -am "Fix broken tests in pento"
+ 4546  git push origin main
+ 4547  mix test
+ 4548  mix test\n
+ 4549  git add -A
+ 4550  git commit -am "added two test cases"
+ 4551  mix test
+ 4552  mix test test/pento_web/live/survey_results_live_test.exs
+ 4553  git commit -am "Added additional test pipeline"
+ 4554  git push origin main
+ 4555  mix test test/pento_web/live/admin_dashboard_live_test.exs
+ 4556  git commit -am "Added live view test"
+ 4557  git add -A
+ 4558  git commit -am "Added live view test"
+ 4559  git push origin main
+ 4560  iex -S mix
+ 4561  git add -A
+ 4562  git commit -am "Chapter 11: Game design"
+ 4563  git push origin main
+ 4564  git commit -am "Completed Chapter 11, except for the 'Give It a Try' section"
+ 4565  git push origin main
+ 4566  iex -S mix
+ 4567  mix test
+ 4568  iex
+ 4569  iex -S mix
+ 4570  mix test
+ 4571  git commit -am "Simple example testing pipeline of Pentomino"
+ 4572  git add -A
+ 4573  git commit -am "Simple example testing pipeline of Pentomino"
+ 4574  git push origin main
+ 4575  mix test
+ 4576  git commit -am "Correct type check"
+ 4577  git push origin main
+ 4578  iex -S mix
+ 4579  make
+ 4580  make run
+ 4581  mv test/pento_web/live/game_live.ex lib/pento_web/live
+ 4582  make run
+ 4583  git add -A
+ 4584  git commit -am "Page 386 completed"
+ 4585  git push origin main
+ 4586  make run
+ 4587  git status
+ 4588  git add -A
+ 4589  git commit -am "added game instructions and control panel"
+ 4590  git push origin main
+ 4591  make run
+ 4592  git commit -am "Positioned directional buttons on the control panel"
+ 4593  git push origin main
+ 4594  make run
+ 4595  git status
+ 4596  git add -A
+ 4597  git commit -am "Added game boundry, default handler to catch events in the control panel"
+ 4598  git push origin main
+ 4599  make run
+ 4600  git diff
+ 4601  make run
+ 4602  git reset HEAD --hard
+ 4603  mix compile
+ 4604  make run
+ 4605  exit
+ 4606  git status
+ 4607  git commit -am "added help toggle"
+ 4608  git push origin main
+ 4609  git add -A
+ 4610  git commit -am 
+ 4611  git commit -am "Add picker"
+ 4612  git push origin main
+ 4613  git diff
+ 4614  git commit -am "added additional games"
+ 4615  git push origin main
+ 4616  git diff
+ 4617  git push origin main
+ 4618  cd ../..
+ 4619  ls
+ 4620  mix igniter.new
+ 4621  mix install igniter
+ 4622  mix archive.install hex igniter_new
+ 4623  mix igniter.new
+ 4624  mix igniter.new ash_demo --with phx.new --install ash,ash_postgres,ash_json_api --install ash_authentication_phoenix --auth-strategy password --auth-strategy magic_link
+ 4625  mix igniter.new ash_demo --with phx.new --install ash,ash_postgres,ash_json_api --install ash_authentication_phoenix --auth-strategy magic_link
+ 4626  mix igniter
+ 4627  mix igniter.new
+ 4628  mix igniter
+ 4629  mix igniter.help
+ 4630  rm -rf ash_demo
+ 4631  mix igniter.new ash_demo --with phx.new --install ash,ash_postgres,ash_json_api --install ash_authentication_phoenix --auth-strategy password
+ 4632  mix igniter.new ash_demo \--with phx.new --install ash,ash_postgres,ash_json_api --install ash_authentication_phoenix --auth-strategy password
+ 4633  cd ash_demo
+ 4634  nvim 
+ 4635  %
+ 4636  cd ..
+ 4637  cd ash_demo
+ 4638  ls
+ 4639  cd ..
+ 4640  cd ash_demo
+ 4641  iex -S mix
+ 4642  mix ecto.create
+ 4643  mix ecto.migrate
+ 4644  iex -S mix
+ 4645  mix phx.serve
+ 4646  mix phx.server
+ 4647  git add -A
+ 4648  git commit -am "Stock ash framework project"
+ 4649  git push origin main
+ 4650  mix ash.generate.resource --help
+ 4651  mix ash.gen.resource
+ 4652  mix ash.gen.resource --help
+ 4653  nvim
+ 4654  exit
+ 4655  mix ash.gen.resource AshDemo.Accounts.Profile \\n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:text:optional:public \\n    --attribute profile_picture:string:optional:public \\n    --attribute public_profile:boolean:default:true:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,graphql,json
+ 4656  mix ash.gen.resource AshDemo.Accounts.Profile \\n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:text:optional:public \\n    --attribute profile_picture:string:optional:public \\n    --attribute public_profile:boolean:default:true:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,graphql
+ 4657  mix ash.gen.resource AshDemo.Accounts.Profile \\n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:text:optional:public \\n    --attribute profile_picture:string:optional:public \\n    --attribute public_profile:boolean:default:true:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json
+ 4658  mix ash.gen.resource AshDemo.Accounts.Profile \\n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:text:optional:public profile_picture:string:optional:public public_profile:boolean:default:true:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json
+ 4659  mix ash.gen.resource AshDemo.Accounts.Profile \\n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:text:optional:public,profile_picture:string:optional:public,public_profile:boolean:default:true:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json
+ 4660  mix ash.gen.resource AshDemo.Accounts.Profile \\n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:text:public \\n    --attribute profile_picture:string:public \\n    --attribute public_profile:boolean:default:true:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json
+ 4661  mix ash.gen.resource AshDemo.Accounts.Profile \\n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:text:public \\n    --attribute profile_picture:string:public \\n    --attribute public_profile:boolean:required:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json
+ 4662  mix ash.gen.resource AshDemo.Accounts.Profile \\n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:text:public \\n    --attribute profile_picture:string:public \\n    --attribute public_profile:boolean:required:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json_api
+ 4663  xit
+ 4664  exit
+ 4665  mix ash.gen.resource AshDemo.Accounts.Profile \\n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:text:public \\n    --attribute profile_picture:string:public \\n    --attribute public_profile:boolean:required:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json
+ 4666  mix ash.gen.resource AshDemo.Accounts.Profile \\n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:string:public \\n    --attribute profile_picture:string:public \\n    --attribute public_profile:boolean:required:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json
+ 4667  mix ash.gen.resource AshDemo.Accounts.Profile2 \                                                                                                                                                                                       \n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:string:public \\n    --attribute profile_picture:string:public \\n    --attribute public_profile:boolean:required:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json
+ 4668  nvim fff
+ 4669  mix ash.gen.resource AshDemo.Accounts.Plan \                                                                                                                                                           \n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute bio:string:public \\n    --attribute profile_picture:string:public \\n    --attribute public_profile:boolean:required:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json
+ 4670  mix ash.gen.resource AshDemo.Accounts.Plan \                                                                                                                                                           \n    --default-actions read create update delete \\n    --uuid-primary-key id \\n    --attribute profile_picture:string:public \\n    --attribute public_profile:boolean:required:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json
+ 4671  mix ash.gen.resource AshDemo.Accounts.Plan \                                                                                                                                                           \n    --uuid-primary-key id \\n    --attribute profile_picture:string:public \\n    --attribute public_profile:boolean:required:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,json
+ 4672  rm lib/ash_demo/accounts/plan.ex
+ 4673  mix ash.gen.resource AshDemo.Accounts.Plan \                                                                                                                                                           \n    --uuid-primary-key id \\n    --attribute profile_picture:string:public \\n    --attribute public_profile:boolean:required:public \\n    --relationship belongs_to:user:AshDemo.Accounts.User \\n    --timestamps \\n    --extend postgres,graphql,json
+ 4674  elixir --version
+ 4675  erl --version
+ 4676  brew upgrade erlang
+ 4677  git status
+ 4678  git add -A
+ 4679  git commit -am "Added a custom profile"
+ 4680  git push origin main
+ 4681  mix ash.setup
+ 4682  ag Plan
+ 4683  mix ash.setup
+ 4684  mix ash.codegen blog_migration
+ 4685  cat priv/repo/migrations/20241024173456_blog_migration.ex'
+ 4686  cat priv/repo/migrations/20241024173456_blog_migration.exs
+ 4687  mix ash.migrate
+ 4688* mix phx.server
+ 4689* iex -S mix phx.server
+ 4690  mix ash.patch extend AshDemo.Blog json_api
+ 4691  mix ash.patch.extend AshDemo.Blog json_api
+ 4692  git status
+ 4693  git add -A
+ 4694  git commit -am "Simple blog post domain in ash+phoenix"
+ 4695  git push origin main
+ 4696  mix ash.gen.live
+ 4697  mix ash_phoenix.gen.live AshDemo.Blog Post
+ 4698  mix ash_phoenix.gen.live AshDemo.Blog AshDemo.Blog.Post
+ 4699  git add -A
+ 4700  git commit -am "Used codegen to generate live view for blog post"
+ 4701  git push origin main
+ 4702  mix ash_phoenix.gen.live AshDemo.Blog AshDemo.Blog.Post
+ 4703  mix ash.gen
+ 4704  mix ash.gen.resource
+ 4705  mix ash.gen.domain
+ 4706  git add -A
+ 4707  git commit -am "Regenerated live view based on resource updates"
+ 4708  git push origin main
+ 4709  mix ash.gen.domain AshDemo.Notifications
+ 4710  mix ash_phoenix.gen.live AshDemo.Notifications AshDemo.Notifications.Subscription
+ 4711  history
