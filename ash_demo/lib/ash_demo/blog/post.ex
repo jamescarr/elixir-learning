@@ -16,18 +16,42 @@ defmodule AshDemo.Blog.Post do
     repo AshDemo.Repo
   end
 
+  defp notify_change(changeset, post) do
+      IO.puts("After create")
+      IO.inspect(changeset)
+      IO.inspect(post)
+      IO.puts("---")
+      {:ok, post}
+  end
+
   actions do
     # Exposes default built in actions to manage the resource
-    defaults [:read, :destroy]
+    defaults [:read]
+
+    destroy :destroy do
+      require_atomic? false
+      change fn changeset, _ ->
+        Ash.Changeset.after_action(changeset, &notify_change/2)
+      end
+    end
 
     create :create do
       # accept title as input
       accept [:title, :content]
+
+      change fn changeset, _ ->
+        Ash.Changeset.after_action(changeset, &notify_change/2)
+      end
+
     end
 
     update :update do
       # accept content as input
       accept [:title, :content]
+      require_atomic? false
+      change fn changeset, _ ->
+        Ash.Changeset.after_action(changeset, &notify_change/2)
+      end
     end
 
     # Defines custom read action which fetches post by id.
